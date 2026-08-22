@@ -1,0 +1,144 @@
+# The Monday run. Fetch and execution are separate: everything that needs the
+# network happens first; the three offline measurement legs then run with the
+# network namespace unshared. The ecosystem leg is the exception — `rakupp
+# test` resolves and fetches dependencies as part of the run — so it runs
+# online but token-free: no checkout persists credentials, and the push token
+# appears only in the final commit step, after every line of third-party code
+# has finished.
+name: weekly
+on:
+  schedule:
+    - cron: '17 5 * * 1'   # Monday 05:17 UTC — off the congested top of the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: eye-weekly
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout raku-eye
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Checkout rakupp (main)
+        uses: actions/checkout@v4
+        with:
+          repository: ash/rakupp
+          path: rakupp
+          persist-credentials: false
+
+      - name: Tools
+        run: sudo apt-get update -q && sudo apt-get install -y -q ninja-build ccache
+
+      - name: ccache
+        uses: actions/cache@v4
+        with:
+          path: ~/.ccache
+          key: ccache-${{ runner.os }}-${{ hashFiles('rakupp/src/**', 'rakupp/include/**', 'rakupp/CMakeLists.txt') }}
+          restore-keys: ccache-${{ runner.os }}-
+
+      - name: Build rakupp
+        run: |
+          export CCACHE_DIR=~/.ccache
+          cmake -S rakupp -B rakupp/build -G Ninja \
+                -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+          cmake --build rakupp/build
+          rakupp/build/rakupp -e 'say "rakupp alive: ", $*RAKU.compiler.version' || rakupp/build/rakupp -e 'say 42'
+          ccache -s | head -5
+
+      - name: Resolve latest Rakudo release
+        id: rakudo
+        run: |
+          set -e
+          url=$(curl -sSL --retry 3 https://api.github.com/repos/rakudo/rakudo/releases/latest \
+                | jq -r '.assets[].browser_download_url' \
+                | grep -E 'linux-x86_64.*\.tar\.gz$' | head -1)
+          if [ -z "$url" ]; then
+            url=$(curl -sSL --retry 3 https://rakudo.org/dl/rakudo \
+                  | jq -r '.[] | select(.platform=="linux" and .arch=="x86_64" and .backend=="moar" and .format=="tar.gz") | .url' \
+                  | sort | tail -1)
+          fi
+          [ -n "$url" ] || { echo "no rakudo release found" >&2; exit 1; }
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "key=$(basename "$url")" >> "$GITHUB_OUTPUT"
+          echo "resolved: $url"
+
+      - name: Rakudo cache
+        id: rakudo-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/rakudo
+          key: ${{ steps.rakudo.outputs.key }}
+
+      - name: Install Rakudo
+        run: |
+          set -e
+          if [ ! -x ~/rakudo/bin/raku ]; then
+            mkdir -p ~/rakudo
+            curl -sSL --retry 3 "${{ steps.rakudo.outputs.url }}" | tar xz -C ~/rakudo --strip-components=1
+          fi
+          echo "$HOME/rakudo/bin" >> "$GITHUB_PATH"
+          echo "$HOME/rakudo/share/perl6/site/bin" >> "$GITHUB_PATH"
+          ~/rakudo/bin/raku --version
+
+      - name: zef (for the Rakudo control leg)
+        run: |
+          if ! command -v zef >/dev/null; then
+            git clone --depth=1 https://github.com/ugexe/zef ~/zef
+            (cd ~/zef && raku -I. bin/zef install . --/test)
+          fi
+          zef --version || echo "zef unavailable — control column will say no-zef"
+
+      - name: Fetch (network)
+        run: rakupp/build/rakupp tools/eye-run.raku fetch
+
+      - name: Measure (network unshared)
+        run: |
+          sudo unshare -n true   # preflight: fail loudly if unshare is unavailable
+          # loopback up inside the namespace, then drop back to the runner user
+          sudo unshare -n -- sh -c "ip link set lo up; exec sudo -u '$(id -un)' -- env 'PATH=$PATH' 'HOME=$HOME' rakupp/build/rakupp tools/eye-run.raku measure"
+
+      - name: Ecosystem leg (network, token-free)
+        run: rakupp/build/rakupp tools/eye-run.raku eco
+
+      - name: Ledger and site
+        run: rakupp/build/rakupp tools/eye-run.raku ledger
+
+      - name: Commit state and data
+        run: |
+          git config user.name 'raku-eye'
+          git config user.email 'raku-eye@users.noreply.github.com'
+          git add data state
+          if git commit -m "eye: $(date -u +%F)"; then
+            git push "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:main
+          else
+            echo "nothing to commit"
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-build
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
