@@ -1,0 +1,2 @@
+date	corpus_commit	rakupp_commit	eligible	match	diff_out	diff_exit	diff_both	timeout	regressions
+2026-08-22	4bede39696ec864da04073a5fcbb1638968055f2	adc9230d152eac1de98c80e5665f4ef2ace20ad2	1812	1608	142	14	48	0	0

@@ -1,0 +1,2 @@
+date	club_commit	rakupp_commit	tested	match	mismatch	regressions	skip_rakudo	skip_nondet	gone	open_total	pass_total
+2026-08-22	e4990534987614def6827af6c377b5b81546003d	adc9230d152eac1de98c80e5665f4ef2ace20ad2	45	23	22	0	0	0	0	22	230
