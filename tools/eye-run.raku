@@ -149,7 +149,17 @@ sub do-measure(%c) {
     my $sweep-out = $p.out.slurp(:close);
     my $sweep-err = $p.err.slurp(:close);
     $sweep-log.spurt($sweep-out ~ "\n--- stderr ---\n" ~ $sweep-err);
-    die "pwc-sweep failed (exit {$p.exitcode}) — see $sweep-log" if $p.exitcode != 0;
+    if $p.exitcode != 0 {
+        # Print what went wrong rather than pointing at a file inside a
+        # disposable VM. Exit 2 with a Usage block means rakupp's main is
+        # older than the flags asked for — the tools live in the rakupp repo
+        # and must be pushed there before the Eye can drive them.
+        note "--- pwc-sweep stdout ---";
+        note $sweep-out.lines.tail(20).join("\n");
+        note "--- pwc-sweep stderr ---";
+        note $sweep-err.lines.tail(20).join("\n");
+        die "pwc-sweep failed (exit {$p.exitcode})";
+    }
     note $sweep-out.lines.grep({ .starts-with('SUMMARY') || .starts-with('REGRESSION') }).join("\n");
 
     # --- leg 2: raku-corpus golden battery ---------------------------------
@@ -206,8 +216,18 @@ sub do-measure(%c) {
     my $berr = $bp.err.slurp(:close);
     $work.add('bench.log').spurt($bout ~ "\n--- stderr ---\n" ~ $berr);
     note $bout.lines.tail(3).join("\n");
-    note "bench exit {$bp.exitcode} (1 = an engine's output diverged; rows are still recorded, flagged)"
-        if $bp.exitcode != 0;
+    if $bp.exitcode != 0 {
+        note "bench exit {$bp.exitcode} (1 = an engine's output diverged; rows are still recorded, flagged)";
+    }
+    # A missing TSV is not a flagged row — it is no measurement at all, and it
+    # must not pass quietly as "no bench data this week".
+    unless $work.add('bench.tsv').e {
+        note "--- run-bench stdout ---";
+        note $bout.lines.tail(20).join("\n");
+        note "--- run-bench stderr ---";
+        note $berr.lines.tail(20).join("\n");
+        die "run-bench produced no TSV (exit {$bp.exitcode})";
+    }
 }
 
 #----------------------------------------------------------------------------
