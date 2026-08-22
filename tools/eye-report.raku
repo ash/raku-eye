@@ -297,5 +297,8 @@ sub MAIN(Str :$data!, Str :$out!) {
 
     $o.add('index.html').spurt($html);
     $o.add('latest.json').spurt($d.add('latest.json').e ?? $d.add('latest.json').slurp !! "{}\n");
+    # Belt and braces beside the repo's Pages custom-domain setting: a deploy
+    # that carried no CNAME has dropped a domain before.
+    $o.add('CNAME').spurt("eye.raku.online\n");
     note "site: {$o.add('index.html')} ({$o.add('index.html').s} bytes)";
 }
