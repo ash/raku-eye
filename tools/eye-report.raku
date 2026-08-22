@@ -222,14 +222,15 @@ sub MAIN(Str :$data!, Str :$out!) {
     <!doctype html>
     <html lang="en"><head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>raku-eye</title>
+    <title>Raku Eye — the weekly watch on fresh Raku code</title>
     <style>
       :root \{ color-scheme: light \}
       body \{ margin: 0 auto; max-width: 780px; padding: 24px 16px 60px;
              font: 15px/1.55 -apple-system, "Segoe UI", sans-serif;
              color: #26261f; background: #faf9f5 \}
-      h1 \{ font-size: 26px; margin: 0 \}
+      h1 \{ font-size: 34px; letter-spacing: -0.4px; margin: 0 0 2px \}
       h2 \{ font-size: 18px; margin: 34px 0 6px; border-bottom: 1px solid #e3e3de; padding-bottom: 4px \}
+      .tagline \{ font-size: 18px; color: #45453d; margin: 0 0 12px \}
       .sub \{ color: #6c6c64; margin: 2px 0 18px \}
       .cards \{ display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 \}
       .card \{ flex: 1 1 150px; background: #fff; border: 1px solid #e3e3de; border-radius: 8px; padding: 10px 14px \}
@@ -250,11 +251,13 @@ sub MAIN(Str :$data!, Str :$out!) {
       a \{ color: #1d5b8c \}
       footer \{ margin-top: 40px; font-size: 12px; color: #8a8a83 \}
     </style></head><body>
-    <h1>raku-eye</h1>
-    <p class="sub">The weekly, unattended measurement of <a href="https://github.com/ash/rakupp">rakupp</a>
-    against fresh Raku code — Weekly Challenge solutions, ecosystem releases, the
-    <a href="https://github.com/ash/raku-corpus">raku-corpus</a> golden battery — with Rakudo as
-    control and reference. Updated $date at rakupp <code>{$commit.substr(0, 9)}</code>.</p>
+    <h1>Raku Eye</h1>
+    <p class="tagline">The weekly watch on fresh Raku code.</p>
+    <p class="sub">Every Monday, unattended, <a href="https://github.com/ash/rakupp">Raku++</a> is measured
+    against what the Raku world published that week — Weekly Challenge solutions, new ecosystem
+    releases, and the <a href="https://github.com/ash/raku-corpus">raku-corpus</a> golden battery —
+    with Rakudo as both control and speed reference.
+    Updated $date at rakupp <code>{$commit.substr(0, 9)}</code>.</p>
 
     <div class="cards">
       <div class="card"><div class="n">{$pct}</div><div class="l">Weekly Challenge — byte-identical of counted</div></div>

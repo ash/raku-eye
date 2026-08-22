@@ -1,0 +1,69 @@
+# Republish the dashboard from the data already in the ledger.
+#
+# The weekly run is an hour of measurement; a wording change to the report
+# should not cost that. This rebuilds the site from committed data/ and
+# deploys, using the released rakupp binary rather than building from source —
+# nothing here measures anything, so the engine only has to run the generator.
+#
+# It shares the `eye-deploy` concurrency group with weekly.yml so two Pages
+# deployments can never race; a site build started during a sweep simply waits.
+name: site
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/eye-report.raku'
+      - 'data/**'
+      - '.github/workflows/site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: eye-deploy
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Fetch the released rakupp
+        run: |
+          set -e
+          url=$(gh release view --repo ash/rakupp --json assets \
+                -q '.assets[].url | select(endswith("rakupp-linux-x86_64.tar.gz"))' | head -1)
+          [ -n "$url" ] || { echo "no linux asset on the latest rakupp release" >&2; exit 1; }
+          mkdir -p "$HOME/rakupp"
+          curl -sSL --retry 3 "$url" | tar xz -C "$HOME/rakupp"
+          bin=$(find "$HOME/rakupp" -type f -name rakupp -perm -u+x | head -1)
+          [ -n "$bin" ] || { echo "no rakupp binary in the archive" >&2; exit 1; }
+          echo "RAKUPP=$bin" >> "$GITHUB_ENV"
+          "$bin" -e 'say "generator engine ok"'
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Build the site
+        run: |
+          "$RAKUPP" tools/eye-report.raku --data=data --out=site-build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-build
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

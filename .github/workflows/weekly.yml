@@ -16,8 +16,9 @@ permissions:
   pages: write
   id-token: write
 
+# Shared with site.yml: two Pages deployments must never race.
 concurrency:
-  group: eye-weekly
+  group: eye-deploy
   cancel-in-progress: false
 
 jobs:
