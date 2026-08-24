@@ -1,1 +1,1 @@
-{"date":"2026-08-22","rakupp_commit":"adc9230d152eac1de98c80e5665f4ef2ace20ad2","pwc":{"tested":45,"match":23,"mismatch":22,"regressions":0,"open_total":22,"pass_total":230},"corpus":{"eligible":1812,"match":1608}}
+{"date":"2026-08-24","rakupp_commit":"7d6914e62b5aa6a9642857ab5a31fe4c720d89f3","pwc":{"tested":56,"match":29,"mismatch":22,"regressions":0,"open_total":22,"pass_total":236},"corpus":{"eligible":1812,"match":1608}}

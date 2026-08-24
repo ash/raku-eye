@@ -1,4 +1,4 @@
-# corpus-commit=4bede39696ec864da04073a5fcbb1638968055f2 date=2026-08-22
+# corpus-commit=4bede39696ec864da04073a5fcbb1638968055f2 date=2026-08-24
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -13,7 +13,7 @@ MATCH	./books/perl6-at-a-glance/classx.pl
 MATCH	./books/perl6-at-a-glance/classy.pl
 MATCH	./books/perl6-at-a-glance/classz.pl
 MATCH	./books/perl6-at-a-glance/db1.pl
-MATCH	./books/perl6-at-a-glance/db2.pl
+DIFF-EXIT	./books/perl6-at-a-glance/db2.pl
 MATCH	./books/perl6-at-a-glance/do-for.pl
 MATCH	./books/perl6-at-a-glance/dot-say.pl
 MATCH	./books/perl6-at-a-glance/ex1.pl
@@ -1234,7 +1234,7 @@ MATCH	./programs/rakupp-examples/json.raku
 MATCH	./programs/rakupp-examples/mandel.raku
 MATCH	./programs/rakupp-examples/matrix.raku
 MATCH	./programs/rakupp-examples/nqueens.raku
-DIFF-OUT	./programs/rakupp-examples/parallel.raku
+MATCH	./programs/rakupp-examples/parallel.raku
 MATCH	./programs/rakupp-examples/pascal.raku
 MATCH	./programs/rakupp-examples/primes.raku
 MATCH	./programs/rakupp-examples/quicksort.raku
@@ -1344,7 +1344,7 @@ MATCH	./snippets/perl6-assorti/27-power.pl
 MATCH	./snippets/perl6-play/1/args.pl
 MATCH	./snippets/perl6-play/1/array.pl
 DIFF-OUT	./snippets/perl6-play/1/bare-sigil.pl
-DIFF-OUT	./snippets/perl6-play/1/bool.pl
+MATCH	./snippets/perl6-play/1/bool.pl
 MATCH	./snippets/perl6-play/1/catch-var.pl
 MATCH	./snippets/perl6-play/1/class-assign.pl
 MATCH	./snippets/perl6-play/1/class-build.pl
@@ -1638,7 +1638,7 @@ MATCH	./snippets/perl6tests/parallel/channel5.pl
 MATCH	./snippets/perl6tests/parallel/channel6.pl
 MATCH	./snippets/perl6tests/parallel/channel7.pl
 DIFF-OUT	./snippets/perl6tests/parallel/channel8.pl
-MATCH	./snippets/perl6tests/parallel/channel9.pl
+DIFF-OUT	./snippets/perl6tests/parallel/channel9.pl
 DIFF-OUT	./snippets/perl6tests/parallel/junction.pl
 MATCH	./snippets/perl6tests/parallel/lock.pl
 MATCH	./snippets/perl6tests/parallel/new-thread.pl

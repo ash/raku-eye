@@ -1,4 +1,6 @@
-# run=2 commit=e4990534987614def6827af6c377b5b81546003d date=2026-08-22
+# run=3 commit=30775e8602041b462b864b58e18a80c1773ee610 date=2026-08-24
+match	challenge-131/jaldhar-h-vyas/raku/ch-1.raku
+skip-rakudo-fails	challenge-131/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-371/0rir/raku/ch-1.raku
 match	challenge-371/0rir/raku/ch-2.raku
 skip-rakudo-fails	challenge-371/arne-sommer/raku/ch-1.raku
@@ -350,11 +352,20 @@ match	challenge-386/packy-anderson/raku/ch-1.raku
 match	challenge-386/packy-anderson/raku/ch-2.raku
 match	challenge-386/ulrich-rieke/raku/ch-1.raku
 match	challenge-386/ulrich-rieke/raku/ch-2.raku
+match	challenge-387/0rir/raku/ch-1.raku
+skip-rakudo-fails	challenge-387/arne-sommer/raku/ch-1.raku
+skip-rakudo-fails	challenge-387/arne-sommer/raku/ch-2.raku
 match	challenge-387/ash/raku/1.raku
+match	challenge-387/asherbhs/raku/ch-1.raku
+match	challenge-387/athanasius/raku/ch-1.raku
+match	challenge-387/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-387/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-387/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-387/jaldhar-h-vyas/raku/ch-1.raku
+skip-rakudo-fails	challenge-387/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-387/mark-anderson/raku/ch-1.raku
 match	challenge-387/mark-anderson/raku/ch-2.raku
 match	challenge-387/mohammad-anwar/raku/ch-1.raku
 match	challenge-387/packy-anderson/raku/ch-1.raku
 match	challenge-387/packy-anderson/raku/ch-2.raku
+match	challenge-387/ulrich-rieke/raku/ch-1.raku

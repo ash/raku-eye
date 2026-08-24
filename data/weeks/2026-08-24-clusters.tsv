@@ -1,0 +1,8 @@
+count	signature
+8	(output differs)
+5	# Failed test '…' at <file> line N
+5	# Failed test at <file> line N
+1	# Failed test '$(\
+1	# Failed test '…'[this] [this]'), a common problem <- \
+1	(no output from rakupp)
+1	The matrix must have the same number of rows and columns
