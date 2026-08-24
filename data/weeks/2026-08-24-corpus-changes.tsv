@@ -1,0 +1,5 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+regression	./books/perl6-at-a-glance/db2.pl	MATCH	DIFF-EXIT						
+fix	./programs/rakupp-examples/parallel.raku	DIFF-OUT	MATCH						
+fix	./snippets/perl6-play/1/bool.pl	DIFF-OUT	MATCH						
+regression	./snippets/perl6tests/parallel/channel9.pl	MATCH	DIFF-OUT						

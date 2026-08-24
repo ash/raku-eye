@@ -66,6 +66,12 @@ sub jstr(Str $s) {
 }
 
 # Append one TSV row, writing the header first if the file is new.
+# One TSV cell: no tabs, no newlines, and bounded — these carry program output.
+sub cell($v, $max = 200) {
+    my $s = (~($v // '')).subst(/\t/, ' ', :g).subst(/\n/, ' ', :g).trim;
+    $s.chars > $max ?? $s.substr(0, $max) ~ '…' !! $s
+}
+
 sub ledger-row(IO::Path $file, Str $header, Str $row) {
     my $new = !$file.e;
     my $fh = $file.open(:a);
@@ -205,6 +211,59 @@ sub do-measure(%c) {
     $cfh.say: "{%cver{$_}}\t$_" for %cver.keys.sort;
     $cfh.close;
     $work.add('corpus-regressions.txt').spurt(@cregress.join("\n") ~ (@cregress ?? "\n" !! ''));
+
+    # What moved since last week, both directions — and for a regression, WHY.
+    # A count on the dashboard that no one can act on is not a measurement:
+    # the harness leaves rakupp's own stdout and stderr beside the verdict for
+    # every non-MATCH file, and the corpus carries the Rakudo reference, so the
+    # first line where they part ways can be quoted on the page rather than
+    # dug out of a CI log inside a VM that no longer exists.
+    my @cchanges;
+    for %cver.keys.sort -> $f {
+        my $was = %cprev{$f} // '';
+        my $now = %cver{$f};
+        next if !$was || $was eq $now;
+        next unless $was eq 'MATCH' || $now eq 'MATCH'; # DIFF-OUT -> DIFF-EXIT is not news
+        my %d = kind => ($now eq 'MATCH' ?? 'fix' !! 'regression'),
+                file => $f, was => $was, now => $now,
+                exit => '', expected-exit => '', line => '', expected => '', got => '', stderr => '';
+        if %d<kind> eq 'regression' {
+            my $rel = $f.subst(/^ './' /, '');
+            my $vf = $results.add("$rel.verdict");
+            if $vf.e {
+                my @v = $vf.slurp.trim.split("\t");
+                %d<exit> = @v[1] // '';
+                %d<expected-exit> = @v[2] // '';
+            }
+            my $got = $results.add("$rel.out");
+            my $exp = %c<corpus>.add("expected/$rel.out");
+            if $got.e && $exp.e {
+                my @g = $got.lines;
+                my @e = $exp.lines;
+                for ^(@g.elems max @e.elems) -> $i {
+                    my $a = @e[$i];
+                    my $b = @g[$i];
+                    next if $a.defined && $b.defined && $a eq $b;
+                    %d<line>     = $i + 1;
+                    %d<expected> = $a // '(no more output)';
+                    %d<got>      = $b // '(no more output)';
+                    last;
+                }
+            }
+            my $errf = $results.add("$rel.err");
+            %d<stderr> = ($errf.e ?? ($errf.lines.grep(*.chars).head // '') !! '');
+        }
+        @cchanges.push: %d;
+    }
+    note "corpus changes: {+@cchanges.grep({ .<kind> eq 'regression' })} regressed, "
+       ~ "{+@cchanges.grep({ .<kind> eq 'fix' })} fixed";
+    my $cch = $work.add('corpus-changes.tsv').open(:w);
+    $cch.say: "kind\tfile\twas\tnow\texit\texpected_exit\tline\texpected\tgot\tstderr";
+    for @cchanges -> %d {
+        $cch.say: <kind file was now exit expected-exit line expected got stderr>
+                  .map({ cell(%d{$_}) }).join("\t");
+    }
+    $cch.close;
 
     # --- leg 3: benchmarks -------------------------------------------------
     %*ENV<RAKUPP> = %c<rakupp>;
@@ -412,6 +471,8 @@ sub do-ledger(%c, :$site) {
              %t<MATCH> // 0, %t<DIFF-OUT> // 0, %t<DIFF-EXIT> // 0,
              %t<DIFF-BOTH> // 0, %t<TIMEOUT> // 0, +@cregress).join("\t");
         %c<state>.add('corpus-state.tsv').spurt($crun.slurp);
+        my $cch = $work.add('corpus-changes.tsv');
+        %c<data>.add("weeks/{$date}-corpus-changes.tsv").spurt($cch.slurp) if $cch.e;
     }
 
     # --- eco ---------------------------------------------------------------
