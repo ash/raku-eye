@@ -29,6 +29,14 @@ sub clip(Str() $s, $n = 96) {
     $s.chars > $n ?? $s.substr(0, $n) ~ '…' !! $s
 }
 
+# A test failure quotes the file it happened in, which for an ecosystem sweep is
+# a path inside a throwaway install directory — two segments of serial number
+# (the pid-stamped root, then either `dist` or the unpacked `Name-version`)
+# in front of the part a reader can actually look up.
+sub tidy-path(Str() $s) {
+    $s.subst(/ \S*? 'rakupp-install-' <-[/\s]>+ '/' <-[/\s]>+ '/' /, '', :g)
+}
+
 # One string field out of a JSON object line. The mismatch ledger quotes whole
 # program outputs, so the escapes are real: a regex to the next '"' would stop
 # inside the first quoted string a program printed.
@@ -406,6 +414,40 @@ sub MAIN(Str :$data!, Str :$out!) {
         else { '<p class="thin">no data yet</p>' }
     };
 
+    # Every column of that row is a term of art, and one of them — "ours" — is
+    # the only number on the page that says whose bug it is. Spell them out.
+    my @eco-legend =
+        'new'             => 'distributions that appeared in the REA index since the previous run. This leg sweeps exactly that set: the ecosystem is measured as it is published, week by week, not re-swept whole.',
+        'pass'            => 'installed under <code>rakupp test</code>, and the distribution&#8217;s own test suite came out green.',
+        'self-fail'       => 'it installed, but its own suite fails.',
+        'dep-fail'        => 'a dependency broke first, so the distribution itself never got as far as being tested. The dependency is named in the table below.',
+        'timeout'         => 'still running after 180 seconds, and killed.',
+        'other'           => 'it failed for a reason the classifier does not recognise; the raw log line is in the table below.',
+        'upstream-broken' => 'of the failures rakupp could be answerable for, the ones <strong>Rakudo cannot install either</strong>. The run re-tries each of them with <code>zef install</code> under Rakudo: if that fails too, the distribution is broken on its own account and is out of scope here.',
+        'ours'            => '&#8230;and the ones where <strong>Rakudo installs and tests it fine</strong>. These are rakupp&#8217;s to fix — the single actionable number in the row.';
+
+    my $eco-legend-html = '<dl class="defs">'
+        ~ @eco-legend.map({ "<dt>{esc(.key)}</dt><dd>{.value}</dd>" }).join
+        ~ '</dl>'
+        ~ '<p class="sub">The control runs over <code>self-fail</code>, <code>build-fail</code>, '
+        ~ '<code>timeout</code> and <code>other</code> only — a <code>dep-fail</code> is charged to the '
+        ~ 'dependency, and shows up under its own name in a later week.</p>';
+
+    # The tally says seven are ours; it should also say which seven.
+    my $eco-fails = do {
+        my $ef = $d.add("weeks/{$date}-eco.tsv");
+        my @fails = $ef.e ?? rows($ef).grep({ .<verdict> && .<verdict> ne 'pass' }) !! ();
+        if @fails {
+            table-raw(('distribution', 'verdict', 'first error'),
+                @fails.map({
+                    [ qq[<a href="https://raku.land/?q={.<name>}"><code>{esc(.<name>)}</code></a>],
+                      esc(.<verdict>) ~ (.<detail> ?? qq[ <span class="thin">({esc(.<detail>)})</span>] !! ''),
+                      .<first-error> ?? qq[<code>{esc(clip(tidy-path(.<first-error>), 150))}</code>] !! '<span class="thin">&#8212;</span>' ]
+                }));
+        }
+        else { '' }
+    };
+
     my $css = q:to/CSS/;
       :root { color-scheme: light }
       body { margin: 0 auto; max-width: 780px; padding: 24px 16px 60px;
@@ -460,6 +502,13 @@ sub MAIN(Str :$data!, Str :$out!) {
       .tip-r { display: flex; gap: 6px; align-items: baseline; white-space: nowrap }
       .tip-r .n { color: #55554e; overflow: hidden; text-overflow: ellipsis; max-width: 250px }
       .tip-r .v { margin-left: auto; font-variant-numeric: tabular-nums }
+      .defs { display: grid; grid-template-columns: max-content 1fr; gap: 3px 14px;
+              margin: 12px 0 4px; font-size: 13px }
+      .defs dt { font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                 font-size: 12px; color: #45453d; white-space: nowrap }
+      .defs dd { margin: 0; color: #55554e }
+      @media (max-width: 520px) { .defs { grid-template-columns: 1fr; gap: 0 }
+                                  .defs dd { margin: 0 0 8px } }
       .hint { font-size: 12px; color: #8a8a83; margin: 0 0 8px; display: none }
       .js .hint { display: block }
     CSS
@@ -654,7 +703,10 @@ sub MAIN(Str :$data!, Str :$out!) {
     $bench-latest
 
     <h2>Ecosystem — this week's releases</h2>
+    <p class="sub">Every distribution the ecosystem published since the last run, installed and run against its own test suite by <code>rakupp test</code> — with Rakudo as the control for anything that failed.</p>
     $eco-latest
+    $eco-legend-html
+    $eco-fails
 
     <h2>Things to improve — this week's mismatch clusters</h2>
     <p class="sub">Mechanically grouped by normalized error signature; ranked by files affected.</p>
