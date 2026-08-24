@@ -274,14 +274,26 @@ sub do-eco(%c) {
     $lfh.close;
 
     if @fresh {
-        sh %c<rakupp>, ~%c<rakupp-repo>.add('tools/eco-fresh/sweep-fresh.raku'),
-           ~$list, "--store={$work.add('eco-store')}", "--logs={$work.add('eco-logs')}",
-           "--out={$work.add('eco-results.tsv')}", '--timeout=180',
-           "--rakupp={%c<rakupp>}", :ok;
+        my $results = $work.add('eco-results.tsv');
+        # The options come BEFORE the list: args-to-capture stops recognising
+        # --opt once a positional has been taken (Rakudo's rule, and rakupp
+        # matches it), so a trailing --out= arrives as a literal string and
+        # MAIN refuses the command line. The sweep spells its own usage the
+        # same way. This cost the 2026-08-24 run its ecosystem leg.
+        my $ec = sh %c<rakupp>, ~%c<rakupp-repo>.add('tools/eco-fresh/sweep-fresh.raku'),
+           "--store={$work.add('eco-store')}", "--logs={$work.add('eco-logs')}",
+           "--out=$results", '--timeout=180',
+           "--rakupp={%c<rakupp>}", ~$list, :ok;
+        # :ok tolerates a sweep that died partway — the rows it did write are
+        # still worth recording, and the next run resumes from them — but not
+        # one that produced no file at all, which is a broken invocation
+        # rather than a broken distribution.
+        die "the ecosystem sweep exited $ec without writing {$results.basename}" unless $results.e;
+        note "the sweep exited $ec — recording the rows it managed to write" if $ec != 0;
         # Rakudo control for what failed on its own account: does zef manage to
         # install (and so test) it? A dist Rakudo also rejects is
         # upstream-broken and out of scope.
-        my @rows = $work.add('eco-results.tsv').lines.skip(1).map({ .split("\t") });
+        my @rows = $results.lines.skip(1).map({ .split("\t") });
         my @suspect = @rows.grep({ .[3] eq 'self-fail' | 'build-fail' | 'other' | 'timeout' });
         my $ctrl = $work.add('eco-control.tsv').open(:w);
         $ctrl.say: "name\tcontrol";
