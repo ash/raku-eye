@@ -1,4 +1,4 @@
-# corpus-commit=4bede39696ec864da04073a5fcbb1638968055f2 date=2026-08-24
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-08-31
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -13,7 +13,7 @@ MATCH	./books/perl6-at-a-glance/classx.pl
 MATCH	./books/perl6-at-a-glance/classy.pl
 MATCH	./books/perl6-at-a-glance/classz.pl
 MATCH	./books/perl6-at-a-glance/db1.pl
-DIFF-EXIT	./books/perl6-at-a-glance/db2.pl
+MATCH	./books/perl6-at-a-glance/db2.pl
 MATCH	./books/perl6-at-a-glance/do-for.pl
 MATCH	./books/perl6-at-a-glance/dot-say.pl
 MATCH	./books/perl6-at-a-glance/ex1.pl
@@ -42,7 +42,7 @@ DIFF-OUT	./books/perl6-at-a-glance/file6.pl
 MATCH	./books/perl6-at-a-glance/file7.pl
 MATCH	./books/perl6-at-a-glance/file8.pl
 MATCH	./books/perl6-at-a-glance/grammar1.pl
-DIFF-OUT	./books/perl6-at-a-glance/grammar2.pl
+MATCH	./books/perl6-at-a-glance/grammar2.pl
 MATCH	./books/perl6-at-a-glance/grammar3.pl
 MATCH	./books/perl6-at-a-glance/grammar4.pl
 MATCH	./books/perl6-at-a-glance/hash.pl
@@ -383,7 +383,7 @@ MATCH	./books/using-raku/isinlist3.pl
 MATCH	./books/using-raku/isinlist4.pl
 MATCH	./books/using-raku/leapyear.pl
 MATCH	./books/using-raku/leapyear1.pl
-DIFF-OUT	./books/using-raku/license-plate.pl
+MATCH	./books/using-raku/license-plate.pl
 MATCH	./books/using-raku/longestcommon.pl
 MATCH	./books/using-raku/longestpalindrome.pl
 MATCH	./books/using-raku/minmax.pl
@@ -439,7 +439,7 @@ MATCH	./books/using-raku/roman-test.pl
 MATCH	./books/using-raku/roman.pl
 MATCH	./books/using-raku/roman2.pl
 MATCH	./books/using-raku/rotatelist.pl
-DIFF-OUT	./books/using-raku/rotatelist2.pl
+MATCH	./books/using-raku/rotatelist2.pl
 MATCH	./books/using-raku/rotatelist3.pl
 MATCH	./books/using-raku/rotatelist4.pl
 DIFF-OUT	./books/using-raku/run.pl
@@ -464,7 +464,7 @@ MATCH	./books/using-raku/sumofnumbers2.pl
 MATCH	./books/using-raku/swap.pl
 MATCH	./books/using-raku/swap2.pl
 MATCH	./books/using-raku/swap3.pl
-DIFF-BOTH	./books/using-raku/swap4.pl
+MATCH	./books/using-raku/swap4.pl
 DIFF-OUT	./books/using-raku/templating.pl
 MATCH	./books/using-raku/timeout.pl
 MATCH	./books/using-raku/transpose-matrix.pl
@@ -532,7 +532,7 @@ MATCH	./challenges/perl-weekly-challenge/007/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/017/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/018/ch-2.raku
 DIFF-BOTH	./challenges/perl-weekly-challenge/021/ch-1.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/022/ch-1.raku
+MATCH	./challenges/perl-weekly-challenge/022/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/026/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/026/ch-1a.raku
 MATCH	./challenges/perl-weekly-challenge/030/ch-1.raku
@@ -543,7 +543,7 @@ MATCH	./challenges/perl-weekly-challenge/040/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/041/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/042/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/044/ch-1.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/047/ch-2.raku
+MATCH	./challenges/perl-weekly-challenge/047/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/048/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/049/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/052/ch-1.raku
@@ -655,7 +655,7 @@ MATCH	./challenges/perl-weekly-challenge/264/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/264/ch-1a.raku
 MATCH	./challenges/perl-weekly-challenge/264/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/265/ch-1.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/268/ch-1.raku
+MATCH	./challenges/perl-weekly-challenge/268/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/268/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/273/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/273/ch-2.raku
@@ -676,7 +676,7 @@ MATCH	./challenges/perl-weekly-challenge/326/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/326/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/327/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/327/ch-2.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/327/ch-2a.raku
+MATCH	./challenges/perl-weekly-challenge/327/ch-2a.raku
 MATCH	./challenges/perl-weekly-challenge/328/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/328/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/329/ch-1.raku
@@ -911,7 +911,7 @@ MATCH	./course/exercises/essentials/functions/interval-function.raku
 MATCH	./course/exercises/essentials/functions/odd-or-even.raku
 MATCH	./course/exercises/essentials/functions/recursive-factorial-2.raku
 MATCH	./course/exercises/essentials/functions/recursive-factorial.raku
-DIFF-OUT	./course/exercises/essentials/functions/the-value-of-e.raku
+MATCH	./course/exercises/essentials/functions/the-value-of-e.raku
 MATCH	./course/exercises/essentials/loops/digital-stairs.raku
 MATCH	./course/exercises/essentials/loops/division-via-subtraction.raku
 MATCH	./course/exercises/essentials/loops/factorial.raku
@@ -956,7 +956,7 @@ MATCH	./course/exercises/functions/interval-function.raku
 MATCH	./course/exercises/functions/odd-or-even.raku
 MATCH	./course/exercises/functions/recursive-factorial-2.raku
 MATCH	./course/exercises/functions/recursive-factorial.raku
-DIFF-OUT	./course/exercises/functions/the-value-of-e.raku
+MATCH	./course/exercises/functions/the-value-of-e.raku
 MATCH	./course/exercises/loops/digital-stairs.raku
 MATCH	./course/exercises/loops/division-via-subtraction.raku
 MATCH	./course/exercises/loops/factorial.raku
@@ -1195,19 +1195,20 @@ DIFF-EXIT	./programs/lingua/lib/LinguaFunctions.rakumod
 MATCH	./programs/lingua/lib/LinguaGrammar.rakumod
 DIFF-EXIT	./programs/lingua/lib/LinguaOptimizer.rakumod
 MATCH	./programs/lingua/lib/Number.rakumod
+DIFF-EXIT	./programs/lingua/lingua
 MATCH	./programs/lingua/misc/ast-dumper.raku
 DIFF-BOTH	./programs/lingua/misc/calc.raku
 MATCH	./programs/lingua/misc/junction.raku
-DIFF-BOTH	./programs/lingua/misc/parse_number.raku
+DIFF-OUT	./programs/lingua/misc/parse_number.raku
 MATCH	./programs/lingua/misc/parse_number_raku.raku
-MATCH	./programs/lingua/t/string-escaping.t
+MATCH	./programs/lingua/run-tests
 MATCH	./programs/num-seq/fibonacci/fibonacci-cached.raku
 MATCH	./programs/num-seq/fibonacci/fibonacci-sequence.raku
 MATCH	./programs/num-seq/fibonacci/fibonacci.raku
 MATCH	./programs/num-seq/lazy-caterer/lazy-caterer.raku
 MATCH	./programs/perl6-grammar-play/calc/calc.pl
 MATCH	./programs/perl6-grammar-play/mini-lang/lang-1.pl
-DIFF-OUT	./programs/perl6-grammar-play/mini-lang/lang-2.pl
+MATCH	./programs/perl6-grammar-play/mini-lang/lang-2.pl
 MATCH	./programs/perl6-grammar-play/mini-lang/lang-3.pl
 MATCH	./programs/perl6-grammar-play/mini-lang/lang.pl
 MATCH	./programs/perl6-grammar-play/test1/0.pl
@@ -1327,7 +1328,7 @@ MATCH	./snippets/perl6-assorti/08-factorial3.pl
 DIFF-OUT	./snippets/perl6-assorti/09-compare.pl
 MATCH	./snippets/perl6-assorti/11-distance.pl
 MATCH	./snippets/perl6-assorti/12-unicode-digits.pl
-DIFF-BOTH	./snippets/perl6-assorti/13-swap.pl
+MATCH	./snippets/perl6-assorti/13-swap.pl
 MATCH	./snippets/perl6-assorti/15-hyper-op.pl
 MATCH	./snippets/perl6-assorti/16-hyper-op2.pl
 MATCH	./snippets/perl6-assorti/17-reduction.pl
@@ -1392,7 +1393,7 @@ MATCH	./snippets/perl6-play/2/promise.pl
 MATCH	./snippets/perl6-play/fosdem/factorial1.pl
 MATCH	./snippets/perl6-play/fosdem/factorial2.pl
 DIFF-OUT	./snippets/perl6-play/fosdem/fib1.pl
-DIFF-OUT	./snippets/perl6-play/promise/in.pl
+MATCH	./snippets/perl6-play/promise/in.pl
 MATCH	./snippets/perl6-play/promise/promise-prime.pl
 MATCH	./snippets/perl6-play/promise/promise1.pl
 MATCH	./snippets/perl6-play/promise/promise2.pl
@@ -1404,10 +1405,10 @@ MATCH	./snippets/perl6-play/promise/start.pl
 MATCH	./snippets/perl6-play/promise/start1.pl
 MATCH	./snippets/perl6-play/promise/start2.pl
 MATCH	./snippets/perl6-play/promise/start3.pl
-DIFF-OUT	./snippets/perl6-play/promise/then.pl
+MATCH	./snippets/perl6-play/promise/then.pl
 MATCH	./snippets/perl6-play/promise/then1.pl
 MATCH	./snippets/perl6-play/promise/then2.pl
-DIFF-OUT	./snippets/perl6-play/promise/timeout-await.pl
+MATCH	./snippets/perl6-play/promise/timeout-await.pl
 MATCH	./snippets/perl6-play/promise/timeout.pl
 DIFF-BOTH	./snippets/perl6tests/add.pl
 MATCH	./snippets/perl6tests/add1.pl
@@ -1459,8 +1460,8 @@ DIFF-OUT	./snippets/perl6tests/grammars/16.pl
 DIFF-OUT	./snippets/perl6tests/grammars/17.pl
 MATCH	./snippets/perl6tests/grammars/18.pl
 MATCH	./snippets/perl6tests/grammars/19.pl
-DIFF-OUT	./snippets/perl6tests/grammars/2.pl
-DIFF-OUT	./snippets/perl6tests/grammars/20.pl
+MATCH	./snippets/perl6tests/grammars/2.pl
+MATCH	./snippets/perl6tests/grammars/20.pl
 MATCH	./snippets/perl6tests/grammars/21.pl
 DIFF-OUT	./snippets/perl6tests/grammars/22.pl
 MATCH	./snippets/perl6tests/grammars/3.pl
@@ -1526,9 +1527,9 @@ MATCH	./snippets/perl6tests/modules/Add1.pm
 MATCH	./snippets/perl6tests/modules/Credentials.pm
 MATCH	./snippets/perl6tests/modules/Math.pm
 MATCH	./snippets/perl6tests/modules/login.pl
-DIFF-OUT	./snippets/perl6tests/modules/test.pl
+MATCH	./snippets/perl6tests/modules/test.pl
 DIFF-EXIT	./snippets/perl6tests/modules/ver1.pl
-DIFF-OUT	./snippets/perl6tests/modules/x.pl
+MATCH	./snippets/perl6tests/modules/x.pl
 MATCH	./snippets/perl6tests/modulo.pl
 MATCH	./snippets/perl6tests/modulo1.pl
 MATCH	./snippets/perl6tests/modulo2.pl
@@ -1566,7 +1567,7 @@ DIFF-BOTH	./snippets/perl6tests/oop/35.pl
 MATCH	./snippets/perl6tests/oop/4.pl
 MATCH	./snippets/perl6tests/oop/5.pl
 DIFF-OUT	./snippets/perl6tests/oop/6.pl
-DIFF-BOTH	./snippets/perl6tests/oop/7.pl
+MATCH	./snippets/perl6tests/oop/7.pl
 DIFF-OUT	./snippets/perl6tests/oop/8.pl
 MATCH	./snippets/perl6tests/oop/9.pl
 DIFF-BOTH	./snippets/perl6tests/oop/introspection.pl
@@ -1628,23 +1629,23 @@ MATCH	./snippets/perl6tests/operators/x.pl
 MATCH	./snippets/perl6tests/operators/xx.pl
 MATCH	./snippets/perl6tests/operators/z.pl
 DIFF-OUT	./snippets/perl6tests/operators/{}.pl
-DIFF-OUT	./snippets/perl6tests/parallel/allof.pl
+MATCH	./snippets/perl6tests/parallel/allof.pl
 MATCH	./snippets/perl6tests/parallel/app-lifetime.pl
 MATCH	./snippets/perl6tests/parallel/channel1.pl
 MATCH	./snippets/perl6tests/parallel/channel2.pl
 MATCH	./snippets/perl6tests/parallel/channel3.pl
-MATCH	./snippets/perl6tests/parallel/channel4.pl
+DIFF-OUT	./snippets/perl6tests/parallel/channel4.pl
 MATCH	./snippets/perl6tests/parallel/channel5.pl
 MATCH	./snippets/perl6tests/parallel/channel6.pl
 MATCH	./snippets/perl6tests/parallel/channel7.pl
 DIFF-OUT	./snippets/perl6tests/parallel/channel8.pl
-DIFF-OUT	./snippets/perl6tests/parallel/channel9.pl
+MATCH	./snippets/perl6tests/parallel/channel9.pl
 DIFF-OUT	./snippets/perl6tests/parallel/junction.pl
 MATCH	./snippets/perl6tests/parallel/lock.pl
 MATCH	./snippets/perl6tests/parallel/new-thread.pl
 DIFF-OUT	./snippets/perl6tests/parallel/new-thread2.pl
 MATCH	./snippets/perl6tests/parallel/promise1.pl
-DIFF-OUT	./snippets/perl6tests/parallel/promise10.pl
+MATCH	./snippets/perl6tests/parallel/promise10.pl
 MATCH	./snippets/perl6tests/parallel/promise11.pl
 DIFF-OUT	./snippets/perl6tests/parallel/promise12.pl
 MATCH	./snippets/perl6tests/parallel/promise13.pl
@@ -1730,7 +1731,7 @@ MATCH	./snippets/perl6tests/subroutines/block-vs-sub.pl
 MATCH	./snippets/perl6tests/subroutines/block.pl
 MATCH	./snippets/perl6tests/subroutines/block2.pl
 DIFF-BOTH	./snippets/perl6tests/subroutines/block3.pl
-DIFF-BOTH	./snippets/perl6tests/subroutines/d.pl
+MATCH	./snippets/perl6tests/subroutines/d.pl
 MATCH	./snippets/perl6tests/subroutines/fib.pl
 MATCH	./snippets/perl6tests/subroutines/func.pl
 MATCH	./snippets/perl6tests/subroutines/israw2.pl
@@ -1758,7 +1759,7 @@ MATCH	./snippets/perl6tests/subroutines/sbtrct.pl
 MATCH	./snippets/perl6tests/subroutines/subset.pl
 MATCH	./snippets/perl6tests/subroutines/wh.pl
 MATCH	./snippets/perl6tests/unicode.pl
-DIFF-OUT	./snippets/perl6tests/whitespace.pl
+MATCH	./snippets/perl6tests/whitespace.pl
 MATCH	./snippets/raku-test/004/calc1.raku
 DIFF-EXIT	./snippets/raku-test/004/calc2.raku
 MATCH	./snippets/raku-test/004/round.raku
@@ -1776,7 +1777,7 @@ MATCH	./snippets/raku-test/008/min-by.raku
 MATCH	./snippets/raku-test/008/min.raku
 DIFF-BOTH	./snippets/raku-test/010/return-rw.raku
 DIFF-OUT	./snippets/raku-test/010/substr-rw.raku
-DIFF-BOTH	./snippets/raku-test/010/take-rw.raku
+MATCH	./snippets/raku-test/010/take-rw.raku
 MATCH	./snippets/raku-test/011/wrap-unwrap.raku
 MATCH	./snippets/raku-test/011/wrap1.raku
 MATCH	./snippets/raku-test/012/all-1.raku

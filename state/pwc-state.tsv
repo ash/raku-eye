@@ -1,4 +1,4 @@
-# run=3 commit=30775e8602041b462b864b58e18a80c1773ee610 date=2026-08-24
+# run=4 commit=106a783315ba66bf0027d97414cffd4c67ee8a59 date=2026-08-31
 match	challenge-131/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-131/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-371/0rir/raku/ch-1.raku
@@ -231,7 +231,7 @@ match	challenge-380/zapwai/raku/ch-1.raku
 match	challenge-380/zapwai/raku/ch-2.raku
 mismatch	challenge-381/0rir/raku/ch-1.raku
 mismatch	challenge-381/0rir/raku/ch-2.raku
-mismatch	challenge-381/arne-sommer/raku/ch-1.raku
+match	challenge-381/arne-sommer/raku/ch-1.raku
 skip-rakudo-fails	challenge-381/arne-sommer/raku/ch-2.raku
 match	challenge-381/asherbhs/raku/ch-1.raku
 match	challenge-381/asherbhs/raku/ch-2.raku
@@ -267,7 +267,7 @@ match	challenge-382/mark-anderson/raku/ch-2.raku
 match	challenge-382/mohammad-anwar/raku/ch-1.raku
 match	challenge-382/packy-anderson/raku/ch-1.raku
 match	challenge-382/packy-anderson/raku/ch-2.raku
-match	challenge-382/roger-bell-west/raku/ch-1.p6
+skip-nondeterministic	challenge-382/roger-bell-west/raku/ch-1.p6
 match	challenge-382/roger-bell-west/raku/ch-2.p6
 match	challenge-382/ulrich-rieke/raku/ch-2.raku
 match	challenge-382/zapwai/raku/ch-2.raku
@@ -303,7 +303,7 @@ skip-rakudo-fails	challenge-384/davidsmith3/raku/ch-2.raku
 skip-rakudo-fails	challenge-384/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-384/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-384/mark-anderson/raku/ch-1.raku
-mismatch	challenge-384/mark-anderson/raku/ch-2.raku
+match	challenge-384/mark-anderson/raku/ch-2.raku
 match	challenge-384/mohammad-anwar/raku/ch-1.raku
 match	challenge-384/packy-anderson/raku/ch-1.raku
 match	challenge-384/packy-anderson/raku/ch-2.raku
@@ -369,3 +369,22 @@ match	challenge-387/mohammad-anwar/raku/ch-1.raku
 match	challenge-387/packy-anderson/raku/ch-1.raku
 match	challenge-387/packy-anderson/raku/ch-2.raku
 match	challenge-387/ulrich-rieke/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/arne-sommer/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/arne-sommer/raku/ch-2.raku
+match	challenge-388/athanasius/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/athanasius/raku/ch-2.raku
+skip-rakudo-fails	challenge-388/davidsmith3/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-388/jaldhar-h-vyas/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/jaldhar-h-vyas/raku/ch-2.raku
+match	challenge-388/mark-anderson/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/mark-anderson/raku/ch-2.raku
+match	challenge-388/mohammad-anwar/raku/ch-1.raku
+skip-rakudo-fails	challenge-388/packy-anderson/raku/ch-1.raku
+match	challenge-388/packy-anderson/raku/ch-2.raku
+match	challenge-388/roger-bell-west/raku/ch-1.p6
+match	challenge-388/roger-bell-west/raku/ch-2.p6
+match	challenge-388/ulrich-rieke/raku/ch-1.raku
+match	challenge-388/ulrich-rieke/raku/ch-2.raku
+match	challenge-388/zapwai/raku/ch-1.raku
+match	challenge-388/zapwai/raku/ch-2.raku
