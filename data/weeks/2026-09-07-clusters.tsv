@@ -1,0 +1,7 @@
+count	signature
+9	(output differs)
+4	# Failed test '…' at <file> line N
+4	# Failed test at <file> line N
+1	# Failed test '$(\
+1	# Failed test '…'[this] [this]'), a common problem <- \
+1	Cannot convert string to number: '…' is not a valid base-N number

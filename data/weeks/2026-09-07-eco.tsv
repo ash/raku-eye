@@ -1,0 +1,24 @@
+name	version	released	verdict	detail	seconds	exit	first-error
+Lingua::Stem::Portuguese	0.1.2	2026-09-05	self-fail		1	1	FAILED: 01-stem-word.rakutest | Undefined routine 'ns'
+Lingua::Stem::Portuguese	0.1.1	2026-09-05	self-fail		0.5	1	FAILED: 01-stem-word.rakutest | Undefined routine 'ns'
+CSS::Minifier	0.0.14	2026-09-04	self-fail		0.7	1	FAILED: 01-plugins.rakutest | Cannot resolve caller uc(Any:U); the invocant is a type object, not an instance
+CSV::Native	0.0.1	2026-09-04	pass		1.1	0	
+LLM::Resources	0.0.3	2026-09-04	dep-fail	Data::Importers	14.6	1	FAILED: 03-harwell-boeing-roundtrip.rakutest | # Failed test 'g05.rua round-trip is byte-identical' at /tmp/rakupp-install-43801-Data--Importers/dist/t/03-harwell-boeing-roundtrip.rakutest line 16
+Math::NumberTheory	0.1.4	2026-09-04	pass		13	0	
+BSON	0.13.4	2026-09-03	self-fail		3.1	1	FAILED: Document-all-types.rakutest | ===SORRY!=== Parse error at line 182: Error while compiling module BSON::Decode (line 182): expected ] (got ';')
+LLM::Graph	0.1.1	2026-09-03	dep-fail	LLM::Functions	43.6	1	FAILED: 04-LLM-chats.rakutest | # Failed test at /tmp/rakupp-install-44073-LLM--Functions/dist/t/04-LLM-chats.rakutest line 50
+ORM::ActiveRecord	0.9.4	2026-09-03	dep-fail	NativeLibs	2.4	1	FAILED: 02-cannon-name.t | # Failed test 'In CWD' at /tmp/rakupp-install-44356-NativeLibs/NativeLibs-master/t/02-cannon-name.t line 19
+Sitemap	0.0.1	2026-09-03	dep-fail	IO::Socket::Async::SSL	9.6	1	FAILED: client-server.rakutest | The socket was closed during negotiation
+App::Rakus	0.0.2	2026-09-02	pass		2.6	0	
+JSON::Native	0.0.2	2026-09-02	pass		0.7	0	
+LLM::Graph	0.1.0	2026-09-02	dep-fail	LLM::Functions	4	1	FAILED: 04-LLM-chats.rakutest | # Failed test at /tmp/rakupp-install-44464-LLM--Functions/dist/t/04-LLM-chats.rakutest line 50
+NotoFonts-OT	0.3.1	2026-09-02	dep-fail	OO::Monitors	6.9	1	FAILED: BUILD.rakutest | Variable '$cond' is not declared
+Syndicate	0.0.6	2026-09-02	self-fail		2.5	1	FAILED: 01-roundtrip.rakutest | No such method 'new' for invocant of type 'FeedFormat'
+Syndicate	0.0.5	2026-09-02	self-fail		0.9	1	FAILED: 01-roundtrip.rakutest | No such method 'new' for invocant of type 'FeedFormat'
+Dawa	0.0.10	2026-09-01	dep-fail	LibraryCheck	2.2	1	FAILED: 010-basic.t | # Failed test 'not ok for a bogus one' at /tmp/rakupp-install-44697-LibraryCheck/LibraryCheck-0.0.12/t/010-basic.t line 11
+Digest::SHA256::Native	1.0.2	2026-09-01	pass		2.5	0	
+LeftistHeap	0.0.3	2026-09-01	pass		0.7	0	
+CellularAutomata	0.0.1	2026-08-31	self-fail		5.8	1	FAILED: 03-scan-1D.rakutest | ===SORRY!=== Parse error at line 143: Error while compiling module CellularAutomata::Scan (line 143): unexpected operator in term position (got '*=')
+Data::Transformers	0.0.2	2026-08-31	pass		0.5	0	
+Syndicate	0.0.4	2026-08-31	self-fail		0.9	1	FAILED: 01-roundtrip.rakutest | No such method 'new' for invocant of type 'FeedFormat'
+Draku	0.0.4	2026-08-19	dep-fail	Log::Async	9.4	1	FAILED: 12-context.rakutest | # Failed test 'Got context' at /tmp/rakupp-install-45000-Log--Async/Log-Async-0.0.17/t/12-context.rakutest line 23

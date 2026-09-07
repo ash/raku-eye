@@ -1052,6 +1052,7 @@ App::Raku::Log:ver<0.0.9>:auth<zef:lizmat>
 App::RakuCron:ver<0.0.1>:auth<zef:FCO>
 App::Rakuman:ver<0.1.0>:auth<cpan:TYIL>
 App::Rakus:ver<0.0.1>:auth<zef:ash>
+App::Rakus:ver<0.0.2>:auth<zef:ash>
 App::SerializerPerf:ver<0.0.3>:auth<zef:japhb>
 App::SerializerPerf:ver<0.0.4>:auth<zef:japhb>
 App::SerializerPerf:ver<0.0.5>:auth<zef:japhb>
@@ -1570,6 +1571,7 @@ BSON:ver<0.13.0>:auth<cpan:MARTIMM>
 BSON:ver<0.13.1>:auth<cpan:MARTIMM>
 BSON:ver<0.13.2>:auth<cpan:MARTIMM>
 BSON:ver<0.13.3>:auth<zef:martimm>
+BSON:ver<0.13.4>:auth<zef:martimm>
 BTree:ver<0.0.1>:auth<zef:Scimon>
 BTree:ver<0.0.2>:auth<zef:Scimon>
 Backtrace::AsHTML:ver<0.0.1>:auth<cpan:MOZNION>
@@ -1873,6 +1875,7 @@ CSS::Minifier:ver<0.0.10>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.11>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.12>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.13>:auth<zef:sasha>
+CSS::Minifier:ver<0.0.14>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.1>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.2>:auth<zef:sasha>
 CSS::Minifier:ver<0.0.3>:auth<zef:sasha>
@@ -2005,6 +2008,7 @@ CSS:ver<0.1.2>:auth<zef:dwarring>
 CSV-AutoClass:ver<0.0.1>:auth<zef:tbrowder>
 CSV-AutoClass:ver<0.1.0>:auth<zef:tbrowder>
 CSV-Autoclass:ver<0.2.0>:auth<zef:tbrowder>:api<2>
+CSV::Native:ver<0.0.1>:auth<zef:ash>
 CSV::Parser:ver<0.1.2>:auth<zef:tony-o>
 CSV::Parser:ver<0.1.3>:auth<zef:tony-o>
 CSV::Parser:ver<0.1.4>:auth<zef:tony-o>
@@ -2060,6 +2064,7 @@ CamelPub:ver<0.2.5>:auth<cpan:DONPDONP>
 CamelPub:ver<0.2.6>:auth<cpan:DONPDONP>
 Canoe:ver<0.0.3>:auth<cpan:ALOREN>
 Carp:ver<0.1>:auth<github:alabamenhu>
+CellularAutomata:ver<0.0.1>:auth<zef:antononcube>
 Channel::Pauseable:ver<1.0.0>:auth<cpan:THINCH>
 Chart::EasyGnuplot:ver<0.0.1>:auth<zef:Air4x>
 Chart::EasyGnuplot:ver<0.0.2>:auth<zef:Air4x>
@@ -3243,6 +3248,7 @@ Data::TextOrBinary:ver<1.3>:auth<github:jnthn>
 Data::TextOrBinary:ver<1.4>:auth<zef:raku-community-modules>
 Data::TextOrBinary:ver<1.5>:auth<zef:raku-community-modules>
 Data::Transformers:ver<0.0.1>:auth<zef:antononcube>
+Data::Transformers:ver<0.0.2>:auth<zef:antononcube>
 Data::Translators:ver<0.1.0>:auth<zef:antononcube>:api<1>
 Data::Translators:ver<0.1.10>:auth<zef:antononcube>:api<1>
 Data::Translators:ver<0.1.11>:auth<zef:antononcube>:api<1>
@@ -3466,6 +3472,7 @@ DateTime::strftime:ver<0.0.7>:auth<zef:lizmat>
 DateTime::strftime:ver<0.0.8>:auth<zef:lizmat>
 Datetime::Math:ver<0.6.1>:auth<zef:raku-community-modules>
 Datetime::Math:ver<0.6.2>:auth<zef:raku-community-modules>
+Dawa:ver<0.0.10>:auth<zef:bduggan>
 Dawa:ver<0.0.1>:auth<cpan:BDUGGAN>
 Dawa:ver<0.0.2>:auth<cpan:BDUGGAN>
 Dawa:ver<0.0.3>:auth<cpan:BDUGGAN>
@@ -3588,6 +3595,7 @@ Digest::SHA256::Native:ver<0.03>:auth<cpan:BDUGGAN>
 Digest::SHA256::Native:ver<0.04>:auth<cpan:BDUGGAN>
 Digest::SHA256::Native:ver<1.0.0>:auth<cpan:BDUGGAN>
 Digest::SHA256::Native:ver<1.0.1>:auth<zef:bduggan>
+Digest::SHA256::Native:ver<1.0.2>:auth<zef:bduggan>
 Digest::xxHash:ver<1.0.0>:auth<github:atweiden>
 Digest::xxHash:ver<1.0.1>:auth<github:atweiden>
 Digest::xxHash:ver<1.1.0>:auth<github:atweiden>
@@ -3778,6 +3786,7 @@ Doublephone:ver<0.1.2>:auth<zef:jonathanstowe>:api<1.0>
 Doublephone:ver<0.1.3>:auth<zef:jonathanstowe>:api<1.0>
 Draku:ver<0.0.2>:auth<zef:bduggan>
 Draku:ver<0.0.3>:auth<zef:bduggan>
+Draku:ver<0.0.4>:auth<zef:bduggan>
 Draw2D::Furniture:ver<1.0.0>:auth<cpan:TBROWDER>
 Druid:ver<0.1>:auth<github:masak>
 Duck::CSV:ver<0.0.1>:auth<zef:bduggan>
@@ -6438,6 +6447,7 @@ JSON::Name:ver<0.0.5>:auth<cpan:JSTOWE>:api<1.0>
 JSON::Name:ver<0.0.6>:auth<cpan:JSTOWE>:api<1.0>
 JSON::Name:ver<0.0.7>:auth<zef:jonathanstowe>:api<1.0>
 JSON::Native:ver<0.0.1>:auth<zef:ash>
+JSON::Native:ver<0.0.2>:auth<zef:ash>
 JSON::OptIn:ver<0.0.1>:auth<cpan:JSTOWE>
 JSON::OptIn:ver<0.0.2>:auth<zef:jonathanstowe>
 JSON::Path:ver<0.1>:auth<cpan:YNOTO>
@@ -6931,6 +6941,8 @@ LLM::Graph:ver<0.0.6>:auth<zef:antononcube>
 LLM::Graph:ver<0.0.7>:auth<zef:antononcube>
 LLM::Graph:ver<0.0.8>:auth<zef:antononcube>
 LLM::Graph:ver<0.0.9>:auth<zef:antononcube>
+LLM::Graph:ver<0.1.0>:auth<zef:antononcube>
+LLM::Graph:ver<0.1.1>:auth<zef:antononcube>
 LLM::Prompts:ver<0.1.0>:auth<zef:antononcube>:api<1>
 LLM::Prompts:ver<0.1.1>:auth<zef:antononcube>:api<1>
 LLM::Prompts:ver<0.1.2>:auth<zef:antononcube>:api<1>
@@ -6958,6 +6970,7 @@ LLM::Prompts:ver<0.2.8>:auth<zef:antononcube>:api<1>
 LLM::Prompts:ver<0.2.9>:auth<zef:antononcube>:api<1>
 LLM::Resources:ver<0.0.1>:auth<zef:antononcube>
 LLM::Resources:ver<0.0.2>:auth<zef:antononcube>
+LLM::Resources:ver<0.0.3>:auth<zef:antononcube>
 LLM::RetrievalAugmentedGeneration:ver<0.0.1>:auth<zef:antononcube>
 LLM::RetrievalAugmentedGeneration:ver<0.0.2>:auth<zef:antononcube>
 LLM::RetrievalAugmentedGeneration:ver<0.0.3>:auth<zef:antononcube>
@@ -7059,6 +7072,7 @@ Lazy::Static:ver<0.0.1>:auth<cpan:SAMGWISE>
 Learn::Raku::With:ver<0.0.1>:auth<zef:codesections>
 LeftistHeap:ver<0.0.1>:auth<zef:antononcube>
 LeftistHeap:ver<0.0.2>:auth<zef:antononcube>
+LeftistHeap:ver<0.0.3>:auth<zef:antononcube>
 LendingClub:ver<0.1.0>:auth<github:peelle>
 LibCurl:ver<0.5.1>:auth<github:CurtTilmes>
 LibCurl:ver<0.5.2>:auth<github:CurtTilmes>
@@ -7317,6 +7331,8 @@ Lingua::Stem::Bulgarian:ver<0.1.1>:auth<cpan:ANTONOV>:api<1>
 Lingua::Stem::Bulgarian:ver<0.1.2>:auth<cpan:ANTONOV>:api<1>
 Lingua::Stem::Es:ver<0.0.1>:auth<cpan:CHSANCH>
 Lingua::Stem::Portuguese:ver<0.1.0>:auth<zef:antononcube>:api<1>
+Lingua::Stem::Portuguese:ver<0.1.1>:auth<zef:antononcube>:api<1>
+Lingua::Stem::Portuguese:ver<0.1.2>:auth<zef:antononcube>:api<1>
 Lingua::Stem::Russian:ver<0.1.0>:auth<zef:antononcube>:api<1>
 Lingua::Stopwords:ver<0.0.1>:auth<cpan:CHSANCH>
 Lingua::Stopwords:ver<0.0.2>:auth<cpan:CHSANCH>
@@ -8128,6 +8144,7 @@ Math::NumberTheory:ver<0.1.0>:auth<zef:antononcube>:api<1>
 Math::NumberTheory:ver<0.1.1>:auth<zef:antononcube>:api<1>
 Math::NumberTheory:ver<0.1.2>:auth<zef:antononcube>:api<1>
 Math::NumberTheory:ver<0.1.3>:auth<zef:antononcube>:api<1>
+Math::NumberTheory:ver<0.1.4>:auth<zef:antononcube>:api<1>
 Math::OddFunctions:ver<*>:auth<github:colomon>
 Math::PascalTriangle:ver<0.1.0>:auth<github:FCO>
 Math::PascalTriangle:ver<0.1.0>:auth<zef:FCO>
@@ -8921,6 +8938,7 @@ NotoFonts-OT:ver<0.1.0>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.2.0>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.2.1>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.0>:auth<zef:tbrowder>:api<2>
+NotoFonts-OT:ver<0.3.1>:auth<zef:tbrowder>:api<2>
 November:ver<*>:auth<github:viklund>
 Num::HexFloat:ver<0.1.0>:auth<github:dankogai>
 Num::HexFloat:ver<0.1.1>:auth<github:dankogai>
@@ -9000,6 +9018,7 @@ ORM::ActiveRecord:ver<0.9.0>:auth<zef:gdonald>:api<1>
 ORM::ActiveRecord:ver<0.9.1>:auth<zef:gdonald>:api<1>
 ORM::ActiveRecord:ver<0.9.2>:auth<zef:gdonald>:api<1>
 ORM::ActiveRecord:ver<0.9.3>:auth<zef:gdonald>:api<1>
+ORM::ActiveRecord:ver<0.9.4>:auth<zef:gdonald>:api<1>
 ORM::Factory:ver<0.9.0>:auth<zef:gdonald>:api<1>
 ORM::Factory:ver<0.9.1>:auth<zef:gdonald>:api<1>
 Object::Container:ver<0.0.1>:auth<cpan:MOZNION>
@@ -11570,6 +11589,7 @@ Shelve6:ver<0.2>:auth<cpan:ROBERTLE>
 Shodan:ver<0.0.1>:auth<cpan:AVERNA>
 Shodan:ver<0.0.2>:auth<zef:averna>
 Shodan:ver<0.0.3>:auth<zef:averna>
+Sitemap:ver<0.0.1>:auth<zef:sasha>
 SixPM:ver<0.0.11>:auth<zef:FCO>
 SixPM:ver<0.0.1>:auth<github:FCO>
 Slang::AltTernary:ver<0.0.1>:auth<github:mryan>
@@ -12281,6 +12301,9 @@ Symbol:ver<0.0.4>:auth<github:grondilu>
 Syndicate:ver<0.0.1>:auth<zef:sasha>
 Syndicate:ver<0.0.2>:auth<zef:sasha>
 Syndicate:ver<0.0.3>:auth<zef:sasha>
+Syndicate:ver<0.0.4>:auth<zef:sasha>
+Syndicate:ver<0.0.5>:auth<zef:sasha>
+Syndicate:ver<0.0.6>:auth<zef:sasha>
 Syndication:ver<1.0.0>:auth<github:retupmoca>
 Syntax::Highlighters:ver<0.1.0>:auth<zef:grizzlysmit>
 Syntax::Highlighters:ver<0.1.1>:auth<zef:grizzlysmit>

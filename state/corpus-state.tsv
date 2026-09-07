@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-08-31
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-09-07
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -236,7 +236,7 @@ MATCH	./books/raku-one-liners/08-strip-whitespace.sh
 MATCH	./books/raku-one-liners/09-print-first-line.sh
 MATCH	./books/raku-one-liners/10-print-first-10-lines.sh
 MATCH	./books/raku-one-liners/11-read-argfiles.raku
-MATCH	./books/raku-one-liners/12-renaming-files.raku
+DIFF-EXIT	./books/raku-one-liners/12-renaming-files.raku
 MATCH	./books/raku-one-liners/13a-merge-files-horizontally.raku
 MATCH	./books/raku-one-liners/13b-merge-files-horizontally.raku
 MATCH	./books/raku-one-liners/14a-reversing-a-file.raku
@@ -488,7 +488,7 @@ MATCH	./challenges/advent-of-code/2020/02/02-2.raku
 MATCH	./challenges/advent-of-code/2020/02/02.raku
 MATCH	./challenges/advent-of-code/2020/03/03-2.raku
 MATCH	./challenges/advent-of-code/2020/03/03.raku
-DIFF-OUT	./challenges/advent-of-code/2020/04/04-2.raku
+MATCH	./challenges/advent-of-code/2020/04/04-2.raku
 MATCH	./challenges/advent-of-code/2020/04/04.raku
 MATCH	./challenges/advent-of-code/2020/05/05-2.raku
 MATCH	./challenges/advent-of-code/2020/05/05.raku
@@ -1186,7 +1186,7 @@ MATCH	./programs/factorial/20-pi-e-factorial.raku
 MATCH	./programs/lang/Lang/Actions.pm
 MATCH	./programs/lang/Lang/Grammar.pm
 MATCH	./programs/lang/lang.pl
-DIFF-EXIT	./programs/languages-in-raku/stack-based/stacky.raku
+MATCH	./programs/languages-in-raku/stack-based/stacky.raku
 MATCH	./programs/lingua/lib/CommentableLanguage.rakumod
 DIFF-EXIT	./programs/lingua/lib/LinguaAST.rakumod
 DIFF-EXIT	./programs/lingua/lib/LinguaActions.rakumod
@@ -1344,8 +1344,8 @@ MATCH	./snippets/perl6-assorti/26-gist-and-str.pl
 MATCH	./snippets/perl6-assorti/27-power.pl
 MATCH	./snippets/perl6-play/1/args.pl
 MATCH	./snippets/perl6-play/1/array.pl
-DIFF-OUT	./snippets/perl6-play/1/bare-sigil.pl
-MATCH	./snippets/perl6-play/1/bool.pl
+MATCH	./snippets/perl6-play/1/bare-sigil.pl
+DIFF-OUT	./snippets/perl6-play/1/bool.pl
 MATCH	./snippets/perl6-play/1/catch-var.pl
 MATCH	./snippets/perl6-play/1/class-assign.pl
 MATCH	./snippets/perl6-play/1/class-build.pl
@@ -1444,7 +1444,7 @@ DIFF-OUT	./snippets/perl6tests/exceptions/13.pl
 DIFF-BOTH	./snippets/perl6tests/exceptions/14.pl
 DIFF-BOTH	./snippets/perl6tests/exceptions/15.pl
 DIFF-OUT	./snippets/perl6tests/exceptions/16.pl
-DIFF-BOTH	./snippets/perl6tests/exceptions/18.pl
+DIFF-OUT	./snippets/perl6tests/exceptions/18.pl
 DIFF-EXIT	./snippets/perl6tests/exceptions/19.pl
 MATCH	./snippets/perl6tests/exceptions/Module.pm
 MATCH	./snippets/perl6tests/exceptions/lift.pl
@@ -1634,7 +1634,7 @@ MATCH	./snippets/perl6tests/parallel/app-lifetime.pl
 MATCH	./snippets/perl6tests/parallel/channel1.pl
 MATCH	./snippets/perl6tests/parallel/channel2.pl
 MATCH	./snippets/perl6tests/parallel/channel3.pl
-DIFF-OUT	./snippets/perl6tests/parallel/channel4.pl
+MATCH	./snippets/perl6tests/parallel/channel4.pl
 MATCH	./snippets/perl6tests/parallel/channel5.pl
 MATCH	./snippets/perl6tests/parallel/channel6.pl
 MATCH	./snippets/perl6tests/parallel/channel7.pl
@@ -1671,7 +1671,7 @@ MATCH	./snippets/perl6tests/rat.pl
 MATCH	./snippets/perl6tests/regex/1.pl
 MATCH	./snippets/perl6tests/regex/100.pl
 MATCH	./snippets/perl6tests/regex/2.pl
-DIFF-OUT	./snippets/perl6tests/regex/20.pl
+MATCH	./snippets/perl6tests/regex/20.pl
 MATCH	./snippets/perl6tests/regex/21.pl
 MATCH	./snippets/perl6tests/regex/22.pl
 DIFF-OUT	./snippets/perl6tests/regex/23.pl
@@ -1783,7 +1783,7 @@ MATCH	./snippets/raku-test/011/wrap1.raku
 MATCH	./snippets/raku-test/012/all-1.raku
 MATCH	./snippets/raku-test/012/all-2.raku
 MATCH	./snippets/raku-test/012/all-3.raku
-MATCH	./snippets/raku-test/012/any-2.raku
+DIFF-BOTH	./snippets/raku-test/012/any-2.raku
 MATCH	./snippets/raku-test/012/any.raku
 MATCH	./snippets/raku-test/013/sub.raku
 MATCH	./snippets/raku-test/013/sum.raku

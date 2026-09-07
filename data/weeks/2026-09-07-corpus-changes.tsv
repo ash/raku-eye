@@ -1,0 +1,9 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+regression	./books/raku-one-liners/12-renaming-files.raku	MATCH	DIFF-EXIT	1	0				Index out of range. Is: -1, should be in 0..^Inf
+fix	./challenges/advent-of-code/2020/04/04-2.raku	DIFF-OUT	MATCH						
+fix	./programs/languages-in-raku/stack-based/stacky.raku	DIFF-EXIT	MATCH						
+fix	./snippets/perl6-play/1/bare-sigil.pl	DIFF-OUT	MATCH						
+regression	./snippets/perl6-play/1/bool.pl	MATCH	DIFF-OUT	0	0	4	False	True	
+fix	./snippets/perl6tests/parallel/channel4.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/20.pl	DIFF-OUT	MATCH						
+regression	./snippets/raku-test/012/any-2.raku	MATCH	DIFF-BOTH	1	0	1	There are negative ints	(no more output)	===SORRY!=== Parse error at line 6: Unable to parse expression in quote words; couldn't find final '>' (corresponding starter was at line 5)
