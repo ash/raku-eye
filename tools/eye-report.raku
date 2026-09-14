@@ -401,14 +401,38 @@ sub MAIN(Str :$data!, Str :$out!) {
             '<p class="ok">No regressions this week — nothing that matched the Rakudo reference last week stopped matching.</p>'
         }
     };
-    my $fixed-html = @fixed
-        ?? qq[<p class="fixed"><strong>Fixed since {$prev-date || 'the previous run'}:</strong> ]
-           ~ @fixed.map({
-                 qq[<a href="{$corpus-url}{.<file>.subst(/^ './' /, '')}"><code>{esc(.<file>)}</code></a>]
-                 ~ qq[ <span class="thin">({verdict-word(.<was>)})</span>]
-             }).join(', ')
-           ~ qq[ — {+@fixed == 1 ?? 'it matches' !! 'they match'} the reference again.</p>]
-        !! '';
+    # The mirror of the alert above — same shape, same weight, other colour.
+    # A week's repairs were a sentence in passing underneath a red box, which
+    # read as though only the breakages were news. Both directions are the
+    # measurement; the page should give them the same furniture.
+    my $fixed-html = do {
+        if @fixed {
+            # Measured, not inferred: the ledger's own match count against last
+            # week's. It has equalled fixes minus regressions every week so far,
+            # but the corpus can also gain or lose programs, and then it would
+            # not — so the number quoted is the one the ledger actually moved.
+            my $net = @corpus > 1
+                ?? do {
+                       my $dm = @corpus.tail<match>.Int - @corpus[*-2]<match>.Int;
+                       " — raku-corpus is {$dm >= 0 ?? '+' !! ''}$dm on the week, "
+                       ~ "at {@corpus.tail<match>} of {@corpus.tail<eligible>} matching."
+                   }
+                !! '';
+            qq[<div class="good"><strong>{+@fixed} fixed since {$prev-date || 'the previous run'}.</strong> ]
+            ~ 'A program that differed from the Rakudo reference '
+            ~ ($prev-date ?? "on $prev-date" !! 'on the previous run')
+            ~ ' and is byte-identical today'
+            ~ ($net || '.')
+            ~ '</div>'
+            ~ '<p class="fixed">'
+            ~ @fixed.map({
+                  qq[<a href="{$corpus-url}{.<file>.subst(/^ './' /, '')}"><code>{esc(.<file>)}</code></a>]
+                  ~ qq[ <span class="thin">({verdict-word(.<was>)})</span>]
+              }).join(', ')
+            ~ '</p>'
+        }
+        else { '' }
+    };
 
     my $clusters = do {
         my $cf = $d.add("weeks/{$date}-clusters.tsv");
@@ -497,6 +521,8 @@ sub MAIN(Str :$data!, Str :$out!) {
                                   .noted tr.top code { overflow-wrap: anywhere } }
       .alert { background: #fbeaea; border: 1px solid #e5b8b8; border-radius: 8px; padding: 10px 14px;
                margin-bottom: 12px }
+      .good { background: #eaf3ec; border: 1px solid #b3d2bd; border-radius: 8px; padding: 10px 14px;
+              margin: 18px 0 12px }
       .ok { color: #2a6f4e }
       .fixed { font-size: 14px; color: #45453d; margin-top: 12px }
       .thin { color: #8a8a83 }
