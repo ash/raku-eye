@@ -192,6 +192,21 @@ sub table-raw(@head, @rows) {
     qq[<div class="scroll"><table><thead><tr>{$h}</tr></thead><tbody>{$b}</tbody></table></div>]
 }
 
+# Same, but the last cell of each row gets a full-width row of its own beneath
+# the others. The regression table's detail is a diff excerpt — two quoted
+# program outputs wide — and as a fourth column it squeezed the three narrow
+# ones into wrapping mid-token; on its own line it simply reads.
+sub table-noted(@head, Str $label, @rows) {
+    return '' unless @rows;
+    my $h = @head.map({ "<th>{esc($_)}</th>" }).join;
+    my $b = @rows.map(-> @r {
+        '<tr class="top">' ~ @r[^(@r.elems - 1)].map({ "<td>{$_}</td>" }).join ~ '</tr>'
+        ~ qq[<tr class="note"><td colspan="{+@head}">]
+        ~ qq[<span class="lbl">{esc($label)}</span> {@r[*-1]}</td></tr>]
+    }).join("\n");
+    qq[<div class="scroll"><table class="noted"><thead><tr>{$h}</tr></thead><tbody>{$b}</tbody></table></div>]
+}
+
 sub MAIN(Str :$data!, Str :$out!) {
     my $d = $data.IO;
     my $o = $out.IO;
@@ -380,7 +395,7 @@ sub MAIN(Str :$data!, Str :$out!) {
             ~ 'A program that was byte-identical to the Rakudo reference '
             ~ ($prev-date ?? "on $prev-date" !! 'on the previous run')
             ~ ' and is not today.</div>'
-            ~ table-raw(('where', 'program', 'last week → this week', 'what differs'), @regress-rows)
+            ~ table-noted(('where', 'program', 'last week → this week'), 'what differs:', @regress-rows)
         }
         else {
             '<p class="ok">No regressions this week — nothing that matched the Rakudo reference last week stopped matching.</p>'
@@ -468,6 +483,18 @@ sub MAIN(Str :$data!, Str :$out!) {
       table { border-collapse: collapse; font-size: 13px; width: 100% }
       th, td { text-align: left; padding: 4px 10px 4px 0; border-bottom: 1px solid #eeeee8; white-space: nowrap }
       td:last-child { white-space: normal }
+      /* a row whose detail is a diff excerpt: the three facts on one line, the
+         excerpt on its own full-width line under them, so neither crowds the
+         other and nothing wraps in the middle of a quoted output */
+      .noted tr.top td { white-space: nowrap; border-bottom: 0; padding-top: 9px }
+      .noted tr.note td { white-space: normal; color: #45453d; padding: 1px 0 9px 16px }
+      .noted tr.note .lbl { color: #8a8a83 }
+      /* the nowrap facts above set the table's width, and on a phone that width
+         pushes the detail line off into the scroll box — where a reader has to
+         drag sideways to find the one thing this section exists to say. Narrow
+         enough, let the facts wrap instead: a path over two lines beats that. */
+      @media (max-width: 560px) { .noted tr.top td { white-space: normal }
+                                  .noted tr.top code { overflow-wrap: anywhere } }
       .alert { background: #fbeaea; border: 1px solid #e5b8b8; border-radius: 8px; padding: 10px 14px;
                margin-bottom: 12px }
       .ok { color: #2a6f4e }
