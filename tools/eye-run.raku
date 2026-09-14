@@ -502,25 +502,49 @@ sub do-ledger(%c, :$site) {
     }
 
     # --- bench -------------------------------------------------------------
+    # run-bench.raku names its own columns, and it gains engine lanes between
+    # releases: the mutsu pair landed in the middle of the row, between native
+    # and rakudo, and a positional splice put Rakudo's times under the ledger's
+    # perl heading for two weeks without anything saying so. So every field is
+    # taken by name, and a lane this ledger does not carry passes by without
+    # moving the columns that it does.
     my $bench = $work.add('bench.tsv');
     if $bench.e {
         my %meta;
+        my @bhead;
         my @brows;
         for $bench.lines -> $l {
             if $l.starts-with('# ') {
                 my ($k, $v) = $l.substr(2).split('=', 2);
                 %meta{$k} = $v // '';
             }
-            elsif !$l.starts-with('kernel') && $l.chars {
-                @brows.push: $l.split("\t");
-            }
+            elsif $l.starts-with('kernel') { @bhead = $l.split("\t") }
+            elsif $l.chars                 { @brows.push: $l.split("\t") }
         }
+        # this ledger's column => the run-bench column it is read from
+        my @map = 'kernel'     => 'kernel',
+                  'interp_min' => 'interp_min_ms', 'interp_med' => 'interp_med_ms',
+                  'native_min' => 'native_min_ms', 'native_med' => 'native_med_ms',
+                  'rakudo_min' => 'rakudo_min_ms', 'rakudo_med' => 'rakudo_med_ms',
+                  'perl_min'   => 'perl_min_ms',   'perl_med'   => 'perl_med_ms',
+                  'flags'      => 'flags';
+        my %at = @bhead.antipairs;   # bench.tsv column name => its index
+        # A column that went away upstream reads as a quiet blank week, which is
+        # the one failure this leg cannot report on itself. Say so in the log,
+        # and carry the same note into the row's own flags, so the gap is on the
+        # permanent record and not only in a CI log nobody reopens.
+        my @missing = @map.map(*.value).grep({ !%at{$_}.defined });
+        note "bench: run-bench.raku has no column{@missing == 1 ?? '' !! 's'} "
+           ~ "{@missing.join(', ')} — those cells go in blank. Its header reads: "
+           ~ "{@bhead.join(', ') || '(none)'}" if @missing;
         my $rv = %meta<rakudo_version> ~~ / ('v' \d+ '.' \S+?) '.'? $ / ?? ~$0 !! %meta<rakudo_version>;
         for @brows -> @r {
+            my @cells = @map.map({ with %at{.value} -> $i { @r[$i] // '' } else { '' } });
+            @cells[*-1] = (@cells[*-1] || 'ok') ~ "; eye: no {@missing.join(' ')}" if @missing;
             ledger-row %c<data>.add('bench-history.tsv'),
-                "date\trakupp_commit\trakudo\tcxx\tcpu\tkernel\tinterp_min\tinterp_med\tnative_min\tnative_med\trakudo_min\trakudo_med\tperl_min\tperl_med\tflags",
+                (<date rakupp_commit rakudo cxx cpu>, @map.map(*.key)).flat.join("\t"),
                 ($date, $rakupp-commit, $rv, %meta<cxx> // '', %meta<cpu> // '',
-                 |@r).join("\t");
+                 |@cells).join("\t");
         }
     }
 
