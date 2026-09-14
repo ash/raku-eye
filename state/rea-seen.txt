@@ -1050,6 +1050,8 @@ App::Raku::Log:ver<0.0.7>:auth<zef:lizmat>
 App::Raku::Log:ver<0.0.8>:auth<zef:lizmat>
 App::Raku::Log:ver<0.0.9>:auth<zef:lizmat>
 App::RakuCron:ver<0.0.1>:auth<zef:FCO>
+App::RakuDocToPDF:ver<0.0.1>:auth<zef:tbrowder>
+App::RakuDocToPDF:ver<0.0.2>:auth<zef:tbrowder>
 App::Rakuman:ver<0.1.0>:auth<cpan:TYIL>
 App::Rakus:ver<0.0.1>:auth<zef:ash>
 App::Rakus:ver<0.0.2>:auth<zef:ash>
@@ -2083,6 +2085,7 @@ Chart::Gnuplot:ver<0.0.20>:auth<cpan:TITSUKI>
 Chart::Gnuplot:ver<0.0.21>:auth<cpan:TITSUKI>
 Chart::Gnuplot:ver<0.0.22>:auth<cpan:TITSUKI>
 Chart::Gnuplot:ver<0.0.23>:auth<zef:titsuki>
+Chart::Gnuplot:ver<0.0.24>:auth<zef:titsuki>
 Chart::Gnuplot:ver<0.0.3>:auth<cpan:TITSUKI>
 Chart::Gnuplot:ver<0.0.4>:auth<cpan:TITSUKI>
 Chart::Gnuplot:ver<0.0.5>:auth<cpan:TITSUKI>
@@ -4490,6 +4493,8 @@ GUI::Editors:ver<0.1.6>:auth<zef:grizzlysmit>
 GUI::Editors:ver<0.1.7>:auth<zef:grizzlysmit>
 GUI::Editors:ver<0.1.8>:auth<zef:grizzlysmit>
 GUI::Editors:ver<0.1.9>:auth<zef:grizzlysmit>
+GUI::Wings:ver<0.1.0>:auth<zef:ash>
+GUI::Wings:ver<0.1.1>:auth<zef:ash>
 Game::Adventure:ver<0.1.1>:auth<cpan:KOBOLDWIZ>:api<1>
 Game::Amazing:ver<0.9.01>:auth<cpan:ARNE>
 Game::Amazing:ver<0.9.02>:auth<cpan:ARNE>
@@ -5001,6 +5006,7 @@ GnomeTools:ver<0.6.0>:auth<zef:martimm>
 GnomeTools:ver<0.6.3>:auth<zef:martimm>
 GnomeTools:ver<0.6.6>:auth<zef:martimm>
 GnomeTools:ver<0.8.2>:auth<zef:martimm>
+GnomeTools:ver<0.8.3>:auth<zef:martimm>
 Godot::Fun:ver<0.0.1>:auth<github:azawawi>
 Godot::Fun:ver<0.1.0>:auth<github:azawawi>
 Godot::Fun:ver<0.2.1>:auth<github:azawawi>
@@ -5191,6 +5197,8 @@ Gzz::Text::Utils:ver<0.1.23>:auth<zef:grizzlysmit>
 Gzz::Text::Utils:ver<0.1.4>:auth<zef:grizzlysmit>
 Gzz::Text::Utils:ver<0.1.5>:auth<zef:grizzlysmit>
 Gzz::Text::Utils:ver<0.1.6>:auth<zef:grizzlysmit>
+H2O::Client:ver<0.0.1>:auth<zef:antononcube>
+H2O::Client:ver<0.0.2>:auth<zef:antononcube>
 HTML::Canvas::To::PDF:ver<0.0.10>:auth<zef:dwarring>
 HTML::Canvas::To::PDF:ver<0.0.11>:auth<zef:dwarring>
 HTML::Canvas::To::PDF:ver<0.0.12>:auth<zef:dwarring>
@@ -8592,6 +8600,7 @@ NativeLibs:ver<0.0.9>:auth<zef:raku-community-modules>
 Needle::Compile:ver<0.0.10>:auth<zef:lizmat>
 Needle::Compile:ver<0.0.11>:auth<zef:lizmat>
 Needle::Compile:ver<0.0.12>:auth<zef:lizmat>
+Needle::Compile:ver<0.0.13>:auth<zef:lizmat>
 Needle::Compile:ver<0.0.1>:auth<zef:lizmat>
 Needle::Compile:ver<0.0.2>:auth<zef:lizmat>
 Needle::Compile:ver<0.0.3>:auth<zef:lizmat>
@@ -8939,6 +8948,7 @@ NotoFonts-OT:ver<0.2.0>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.2.1>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.0>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.1>:auth<zef:tbrowder>:api<2>
+NotoFonts-OT:ver<0.3.2>:auth<zef:tbrowder>:api<2>
 November:ver<*>:auth<github:viklund>
 Num::HexFloat:ver<0.1.0>:auth<github:dankogai>
 Num::HexFloat:ver<0.1.1>:auth<github:dankogai>
@@ -10516,6 +10526,9 @@ Prompt::Expand:ver<0.0.3>:auth<zef:lizmat>
 Prompt::Expand:ver<0.0.4>:auth<zef:lizmat>
 Prompt::Expand:ver<0.0.5>:auth<zef:lizmat>
 Prompt::Gruff:ver<0.0.1>:auth<github:adaptiveoptics>
+Prompt::Hidden:ver<0.0.1>:auth<zef:ash>
+Prompt::Hidden:ver<0.0.2>:auth<zef:ash>
+Prompt::Hidden:ver<0.0.3>:auth<zef:ash>
 Prompt:ver<0.0.10>:auth<zef:lizmat>
 Prompt:ver<0.0.11>:auth<zef:lizmat>
 Prompt:ver<0.0.1>:auth<zef:lizmat>
@@ -11704,6 +11717,8 @@ Sparky-Job-Api:ver<0.0.6>:auth<zef:melezhik>
 Sparky-Job-Api:ver<0.0.7>:auth<zef:melezhik>
 Sparky-Job-Api:ver<0.0.8>:auth<zef:melezhik>
 Sparky-Job-Api:ver<0.0.9>:auth<zef:melezhik>
+Sparky::Minimal:ver<0.0.1>:auth<zef:sp1983>
+Sparky::Minimal:ver<0.0.2>:auth<zef:sp1983>
 Sparky::Plugin::Hello:ver<0.0.1>:auth<cpan:MELEZHIK>
 Sparky::Plugin::Hello:ver<0.0.2>:auth<cpan:MELEZHIK>
 Sparky::Plugin::Notify::Email:ver<0.0.1>:auth<cpan:MELEZHIK>
@@ -11860,6 +11875,8 @@ Sparrow6:ver<0.0.90>:auth<zef:sp1983>
 Sparrow6:ver<0.0.91>:auth<zef:sp1983>
 Sparrow6:ver<0.0.92>:auth<zef:sp1983>
 Sparrow6:ver<0.0.93>:auth<zef:sp1983>
+Sparrow6:ver<0.0.94>:auth<zef:sp1983>
+Sparrow6:ver<0.0.95>:auth<zef:sp1983>
 Sparrow6:ver<0.0.9>:auth<cpan:MELEZHIK>
 SparrowCI - super fun and flexible CI system with many programming languages support:ver<0.0.1>:auth<zef:melezhik>
 SparrowCI - super fun and flexible CI system with many programming languages support:ver<0.0.2>:auth<zef:melezhik>
@@ -12021,6 +12038,7 @@ Sparrowdo:ver<0.1.52>:auth<zef:sp1983>
 Sparrowdo:ver<0.1.53>:auth<zef:sp1983>
 Sparrowdo:ver<0.1.54>:auth<zef:sp1983>
 Sparrowdo:ver<0.1.55>:auth<zef:sp1983>
+Sparrowdo:ver<0.1.57>:auth<zef:sp1983>
 Sparrowdo:ver<0.1.5>:auth<cpan:MELEZHIK>
 Sparrowdo:ver<0.1.6>:auth<cpan:MELEZHIK>
 Sparrowdo:ver<0.1.7>:auth<cpan:MELEZHIK>
@@ -13653,6 +13671,7 @@ Twitter:ver<0.003003>:auth<github:raku-community-modules>
 Twitter:ver<0.004003>:auth<github:raku-community-modules>
 Twitter:ver<0.004004>:auth<github:raku-community-modules>
 Twitter:ver<1.001001>:auth<github:raku-community-modules>
+Type-Relations-Digraph:ver<0.2.0>:auth<zef:finanalyst>
 Type::EnumHOW:ver<0.0.2>:auth<cpan:KAIEPI>
 Typed::Subroutines:ver<*>:auth<github:tadzik>
 Typesafe::HTML:ver<0.1.0>:auth<github:gfldex>
@@ -14129,6 +14148,7 @@ WebDriver2:ver<0.0.6>:auth<zef:zjmarlow>
 WebDriver2:ver<0.0.7>:auth<zef:zjmarlow>
 WebDriver2:ver<0.0.8>:auth<zef:zjmarlow>
 WebDriver2:ver<0.0.9>:auth<zef:zjmarlow>
+WebDriver2:ver<0.1.0>:auth<zef:zjmarlow>
 WebDriver2:ver<0.1.0>:auth<zef:zoss>:api<1>
 WebDriver2:ver<0.1.10>:auth<zef:zoss>:api<11>
 WebDriver2:ver<0.1.11>:auth<zef:zoss>:api<12>
@@ -14274,6 +14294,7 @@ XML::Actions:ver<0.4.6.4>:auth<cpan:MARTIMM>
 XML::Actions:ver<0.4.6>:auth<cpan:MARTIMM>
 XML::Actions:ver<0.5.0>:auth<cpan:MARTIMM>
 XML::Actions:ver<0.5.1>:auth<cpan:MARTIMM>
+XML::Actions:ver<0.5.2>:auth<zef:martimm>
 XML::Canonical:ver<1.0.0>:auth<github:retupmoca>
 XML::Canonical:ver<1.0.1>:auth<zef:raku-community-modules>
 XML::Canonical:ver<1.0.2>:auth<zef:raku-community-modules>

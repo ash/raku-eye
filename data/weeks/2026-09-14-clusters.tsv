@@ -1,0 +1,9 @@
+count	signature
+10	(output differs)
+4	# Failed test '…' at <file> line N
+4	# Failed test at <file> line N
+1	# Failed test '$(\
+1	# Failed test '…'[this] [this]'), a common problem <- \
+1	===SORRY!=== Parse error at line N: Unable to parse expression in quote words; couldn'…'>' (corresponding starter was at
+1	Cannot convert string to number: '…' is not a valid base-N number
+1	Start argument to substr out of range. Is: -N, should be in N..N; use *-N if you want to index relative to the end

@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-09-07
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-09-14
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -95,7 +95,7 @@ MATCH	./books/perl6-at-a-glance/op18.pl
 MATCH	./books/perl6-at-a-glance/op19.pl
 MATCH	./books/perl6-at-a-glance/op2.pl
 MATCH	./books/perl6-at-a-glance/op20.pl
-DIFF-BOTH	./books/perl6-at-a-glance/op21.pl
+DIFF-OUT	./books/perl6-at-a-glance/op21.pl
 MATCH	./books/perl6-at-a-glance/op22.pl
 DIFF-OUT	./books/perl6-at-a-glance/op23.pl
 MATCH	./books/perl6-at-a-glance/op24.pl
@@ -410,7 +410,7 @@ MATCH	./books/using-raku/pi.pl
 DIFF-OUT	./books/using-raku/pig-latin.pl
 MATCH	./books/using-raku/plural.pl
 MATCH	./books/using-raku/pod.pl
-DIFF-BOTH	./books/using-raku/polar.pl
+MATCH	./books/using-raku/polar.pl
 MATCH	./books/using-raku/power2-1.pl
 MATCH	./books/using-raku/power2-2.pl
 MATCH	./books/using-raku/power2.pl
@@ -694,7 +694,7 @@ MATCH	./challenges/perl-weekly-challenge/334/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/335/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/335/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/336/ch-2.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/338/ch-1.raku
+MATCH	./challenges/perl-weekly-challenge/338/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/338/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/340/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/340/ch-2.raku
@@ -1308,7 +1308,7 @@ MATCH	./snippets/perl5to6/re7-6.pl
 MATCH	./snippets/perl5to6/re7a-6.pl
 MATCH	./snippets/perl5to6/re8-6.pl
 MATCH	./snippets/perl5to6/re9-6.pl
-DIFF-BOTH	./snippets/perl5to6/return_rw-6.pl
+MATCH	./snippets/perl5to6/return_rw-6.pl
 MATCH	./snippets/perl5to6/sub-apostr-6.pl
 MATCH	./snippets/perl5to6/var-int-6.pl
 MATCH	./snippets/perl5to6/var-int2-6.pl
@@ -1345,7 +1345,7 @@ MATCH	./snippets/perl6-assorti/27-power.pl
 MATCH	./snippets/perl6-play/1/args.pl
 MATCH	./snippets/perl6-play/1/array.pl
 MATCH	./snippets/perl6-play/1/bare-sigil.pl
-DIFF-OUT	./snippets/perl6-play/1/bool.pl
+MATCH	./snippets/perl6-play/1/bool.pl
 MATCH	./snippets/perl6-play/1/catch-var.pl
 MATCH	./snippets/perl6-play/1/class-assign.pl
 MATCH	./snippets/perl6-play/1/class-build.pl
@@ -1505,7 +1505,7 @@ DIFF-OUT	./snippets/perl6tests/input-output/open3.pl
 MATCH	./snippets/perl6tests/input-output/open4.pl
 MATCH	./snippets/perl6tests/input-output/open5.pl
 DIFF-OUT	./snippets/perl6tests/input-output/open6.pl
-DIFF-OUT	./snippets/perl6tests/input-output/path.pl
+MATCH	./snippets/perl6tests/input-output/path.pl
 DIFF-OUT	./snippets/perl6tests/input-output/printf.pl
 DIFF-OUT	./snippets/perl6tests/input-output/printf2.pl
 MATCH	./snippets/perl6tests/input-output/readchars.pl
@@ -1613,7 +1613,7 @@ MATCH	./snippets/perl6tests/operators/more-op.pl
 MATCH	./snippets/perl6tests/operators/not.pl
 MATCH	./snippets/perl6tests/operators/numcompare.pl
 MATCH	./snippets/perl6tests/operators/pair.pl
-DIFF-BOTH	./snippets/perl6tests/operators/pipe.pl
+MATCH	./snippets/perl6tests/operators/pipe.pl
 MATCH	./snippets/perl6tests/operators/plus.pl
 DIFF-OUT	./snippets/perl6tests/operators/q.pl
 MATCH	./snippets/perl6tests/operators/ranges.pl
@@ -1639,7 +1639,7 @@ MATCH	./snippets/perl6tests/parallel/channel5.pl
 MATCH	./snippets/perl6tests/parallel/channel6.pl
 MATCH	./snippets/perl6tests/parallel/channel7.pl
 DIFF-OUT	./snippets/perl6tests/parallel/channel8.pl
-MATCH	./snippets/perl6tests/parallel/channel9.pl
+DIFF-OUT	./snippets/perl6tests/parallel/channel9.pl
 DIFF-OUT	./snippets/perl6tests/parallel/junction.pl
 MATCH	./snippets/perl6tests/parallel/lock.pl
 MATCH	./snippets/perl6tests/parallel/new-thread.pl
@@ -1760,8 +1760,8 @@ MATCH	./snippets/perl6tests/subroutines/subset.pl
 MATCH	./snippets/perl6tests/subroutines/wh.pl
 MATCH	./snippets/perl6tests/unicode.pl
 MATCH	./snippets/perl6tests/whitespace.pl
-MATCH	./snippets/raku-test/004/calc1.raku
-DIFF-EXIT	./snippets/raku-test/004/calc2.raku
+DIFF-BOTH	./snippets/raku-test/004/calc1.raku
+MATCH	./snippets/raku-test/004/calc2.raku
 MATCH	./snippets/raku-test/004/round.raku
 MATCH	./snippets/raku-test/005/where-a-b-2.raku
 MATCH	./snippets/raku-test/005/where-a-b.raku

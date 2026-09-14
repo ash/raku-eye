@@ -1,4 +1,4 @@
-# run=5 commit=af6c0a01a2483bfc13eeb685f0ad01d6539df0b4 date=2026-09-07
+# run=6 commit=44b12e3ca094cb62800119d0f7e568163a7e3954 date=2026-09-14
 match	challenge-131/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-131/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-371/0rir/raku/ch-1.raku
@@ -216,6 +216,9 @@ match	challenge-380/athanasius/raku/ch-1.raku
 match	challenge-380/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-380/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-380/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-380/feng-chang/raku/ch-1.raku
+skip-rakudo-fails	challenge-380/feng-chang/raku/ch-2.raku
+match	challenge-380/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-380/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-380/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-380/mark-anderson/raku/ch-1.raku
@@ -239,6 +242,9 @@ match	challenge-381/athanasius/raku/ch-1.raku
 match	challenge-381/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-381/davidsmith3/raku/ch-1.raku
 match	challenge-381/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-381/feng-chang/raku/ch-1.raku
+mismatch	challenge-381/feng-chang/raku/ch-2.raku
+match	challenge-381/feng-chang/raku/test.raku
 match	challenge-381/jaldhar-h-vyas/raku/ch-1.raku
 match	challenge-381/mark-anderson/raku/ch-1.raku
 match	challenge-381/mark-anderson/raku/ch-2.raku
@@ -260,6 +266,9 @@ mismatch	challenge-382/athanasius/raku/ch-1.raku
 match	challenge-382/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-382/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-382/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-382/feng-chang/raku/ch-1.raku
+match	challenge-382/feng-chang/raku/ch-2.raku
+match	challenge-382/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-382/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-382/jaldhar-h-vyas/raku/ch-2.raku
 mismatch	challenge-382/mark-anderson/raku/ch-1.raku
@@ -279,6 +288,9 @@ match	challenge-383/athanasius/raku/ch-1.raku
 match	challenge-383/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-383/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-383/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-383/feng-chang/raku/ch-1.raku
+skip-rakudo-fails	challenge-383/feng-chang/raku/ch-2.raku
+mismatch	challenge-383/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-383/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-383/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-383/mark-anderson/raku/ch-1.raku
@@ -300,6 +312,9 @@ match	challenge-384/athanasius/raku/ch-1.raku
 match	challenge-384/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-384/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-384/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-384/feng-chang/raku/ch-1.raku
+skip-rakudo-fails	challenge-384/feng-chang/raku/ch-2.raku
+match	challenge-384/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-384/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-384/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-384/mark-anderson/raku/ch-1.raku
@@ -323,6 +338,9 @@ match	challenge-385/athanasius/raku/ch-1.raku
 match	challenge-385/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-385/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-385/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-385/feng-chang/raku/ch-1.raku
+skip-rakudo-fails	challenge-385/feng-chang/raku/ch-2.raku
+match	challenge-385/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-385/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-385/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-385/mark-anderson/raku/ch-1.raku
@@ -343,6 +361,9 @@ match	challenge-386/athanasius/raku/ch-1.raku
 match	challenge-386/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-386/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-386/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-386/feng-chang/raku/ch-1.raku
+skip-rakudo-fails	challenge-386/feng-chang/raku/ch-2.raku
+match	challenge-386/feng-chang/raku/test.raku
 skip-rakudo-fails	challenge-386/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-386/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-386/mark-anderson/raku/ch-1.raku
@@ -406,3 +427,18 @@ match	challenge-389/roger-bell-west/raku/ch-2.p6
 match	challenge-389/ulrich-rieke/raku/ch-2.raku
 match	challenge-389/zapwai/raku/ch-1.raku
 match	challenge-389/zapwai/raku/ch-2.raku
+skip-rakudo-fails	challenge-390/arne-sommer/raku/ch-1.raku
+skip-rakudo-fails	challenge-390/arne-sommer/raku/ch-2.raku
+match	challenge-390/athanasius/raku/ch-1.raku
+skip-rakudo-fails	challenge-390/davidsmith3/raku/ch-1.raku
+skip-rakudo-fails	challenge-390/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-390/jaldhar-h-vyas/raku/ch-1.raku
+skip-rakudo-fails	challenge-390/jaldhar-h-vyas/raku/ch-2.raku
+match	challenge-390/mark-anderson/raku/ch-1.raku
+match	challenge-390/mark-anderson/raku/ch-2.raku
+match	challenge-390/mohammad-anwar/raku/ch-1.raku
+match	challenge-390/packy-anderson/raku/ch-1.raku
+mismatch	challenge-390/packy-anderson/raku/ch-2.raku
+match	challenge-390/ulrich-rieke/raku/ch-1.raku
+match	challenge-390/zapwai/raku/ch-1.raku
+match	challenge-390/zapwai/raku/ch-2.raku

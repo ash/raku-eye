@@ -1,0 +1,10 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./books/using-raku/polar.pl	DIFF-BOTH	MATCH						
+fix	./challenges/perl-weekly-challenge/338/ch-1.raku	DIFF-OUT	MATCH						
+fix	./snippets/perl5to6/return_rw-6.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6-play/1/bool.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/input-output/path.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/operators/pipe.pl	DIFF-BOTH	MATCH						
+regression	./snippets/perl6tests/parallel/channel9.pl	MATCH	DIFF-OUT	0	0	2	1² = 1	2² = 4	
+regression	./snippets/raku-test/004/calc1.raku	MATCH	DIFF-BOTH	0	1	1	(no more output)	False	
+fix	./snippets/raku-test/004/calc2.raku	DIFF-EXIT	MATCH						
