@@ -74,3 +74,21 @@ date	rakupp_commit	rakudo	cxx	cpu	kernel	interp_min	interp_med	native_min	native
 2026-09-14	dda1ffbb6e749d7a4e34e2dbf7d18d7fa2f397b7	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	textsplit	141.9	147.9	85.8	88.0	382.1	387.3	21.5	21.6	ok
 2026-09-14	dda1ffbb6e749d7a4e34e2dbf7d18d7fa2f397b7	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	rats	516.0	524.4	228.2	230.3	413.3	417.5			ok
 2026-09-14	dda1ffbb6e749d7a4e34e2dbf7d18d7fa2f397b7	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	objects	790.2	810.6	413.8	415.6	372.7	384.1			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	startup	4.1	4.7	3.6	3.8	159.8	163.7			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	loopsum	176.5	180.7	24.0	24.3	317.6	324.2			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	fib	800.6	814.6	100.5	105.9	533.0	541.9			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	strcat	17.6	17.9	5.4	5.8	189.0	201.9			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	arrayops	120.0	122.1	118.2	119.4	325.7	330.0			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	arraypush	369.3	378.7	148.5	155.9	465.2	477.8			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	sortnums	61.2	63.6	31.3	32.6	310.1	314.3			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	sortby	77.0	81.9	49.2	50.2	355.9	362.1			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	regex	110.9	115.7	59.1	60.1	315.7	317.5			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	hash	68.3	69.3	15.9	16.8	246.8	249.5			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	hashfill	320.8	327.7	122.4	133.3	612.1	627.2	111.6	114.6	ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	bigint	11.7	11.8	9.3	9.5	246.9	252.6			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	streq	723.2	753.1	40.9	48.3	371.5	385.5			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	textsplit	140.9	145.4	89.1	95.0	362.2	372.6	21.2	21.5	ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	rats	534.9	551.1	234.8	237.5	412.3	414.7			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	multiwhere	1532.1	1544.4	1550.0	1589.6	381.9	392.2			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	objects	819.0	833.5	428.9	435.9	379.5	382.7			ok
+2026-09-23	c6f99fee830ac9a57af05c5c5370c7a58f93d959	v2026.07	clang++: Ubuntu clang version 18.1.3 (1ubuntu1)	AMD EPYC 7763 64-Core Processor	mainwhen	218.3	224.9	70.5	71.5	473.3	475.8			ok

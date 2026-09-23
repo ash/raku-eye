@@ -1,4 +1,4 @@
-# run=6 commit=44b12e3ca094cb62800119d0f7e568163a7e3954 date=2026-09-14
+# run=7 commit=909a4c45fc435158d53ec1871eb711f6cc253ef5 date=2026-09-23
 match	challenge-131/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-131/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-371/0rir/raku/ch-1.raku
@@ -233,7 +233,7 @@ match	challenge-380/ulrich-rieke/raku/ch-2.raku
 match	challenge-380/zapwai/raku/ch-1.raku
 match	challenge-380/zapwai/raku/ch-2.raku
 match	challenge-381/0rir/raku/ch-1.raku
-mismatch	challenge-381/0rir/raku/ch-2.raku
+match	challenge-381/0rir/raku/ch-2.raku
 match	challenge-381/arne-sommer/raku/ch-1.raku
 skip-rakudo-fails	challenge-381/arne-sommer/raku/ch-2.raku
 match	challenge-381/asherbhs/raku/ch-1.raku
@@ -243,7 +243,7 @@ match	challenge-381/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-381/davidsmith3/raku/ch-1.raku
 match	challenge-381/davidsmith3/raku/ch-2.raku
 skip-rakudo-fails	challenge-381/feng-chang/raku/ch-1.raku
-mismatch	challenge-381/feng-chang/raku/ch-2.raku
+match	challenge-381/feng-chang/raku/ch-2.raku
 match	challenge-381/feng-chang/raku/test.raku
 match	challenge-381/jaldhar-h-vyas/raku/ch-1.raku
 match	challenge-381/mark-anderson/raku/ch-1.raku
@@ -262,7 +262,7 @@ skip-rakudo-fails	challenge-382/arne-sommer/raku/ch-1.raku
 skip-rakudo-fails	challenge-382/arne-sommer/raku/ch-2.raku
 skip-nondeterministic	challenge-382/asherbhs/raku/ch-1.raku
 match	challenge-382/asherbhs/raku/ch-2.raku
-mismatch	challenge-382/athanasius/raku/ch-1.raku
+skip-nondeterministic	challenge-382/athanasius/raku/ch-1.raku
 match	challenge-382/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-382/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-382/davidsmith3/raku/ch-2.raku
@@ -305,7 +305,7 @@ match	challenge-383/ulrich-rieke/raku/ch-2.raku
 match	challenge-383/zapwai/raku/ch-1.raku
 match	challenge-383/zapwai/raku/ch-2.raku
 match	challenge-384/0rir/raku/ch-1.raku
-mismatch	challenge-384/0rir/raku/ch-2.raku
+match	challenge-384/0rir/raku/ch-2.raku
 skip-rakudo-fails	challenge-384/arne-sommer/raku/ch-1.raku
 skip-rakudo-fails	challenge-384/arne-sommer/raku/ch-2.raku
 match	challenge-384/athanasius/raku/ch-1.raku
@@ -427,6 +427,7 @@ match	challenge-389/roger-bell-west/raku/ch-2.p6
 match	challenge-389/ulrich-rieke/raku/ch-2.raku
 match	challenge-389/zapwai/raku/ch-1.raku
 match	challenge-389/zapwai/raku/ch-2.raku
+match	challenge-390/0rir/raku/ch-1.raku
 skip-rakudo-fails	challenge-390/arne-sommer/raku/ch-1.raku
 skip-rakudo-fails	challenge-390/arne-sommer/raku/ch-2.raku
 match	challenge-390/athanasius/raku/ch-1.raku
@@ -442,3 +443,30 @@ mismatch	challenge-390/packy-anderson/raku/ch-2.raku
 match	challenge-390/ulrich-rieke/raku/ch-1.raku
 match	challenge-390/zapwai/raku/ch-1.raku
 match	challenge-390/zapwai/raku/ch-2.raku
+match	challenge-391/0rir/raku/ch-1.raku
+match	challenge-391/0rir/raku/ch-2.raku
+skip-rakudo-fails	challenge-391/arne-sommer/raku/ch-1.raku
+skip-rakudo-fails	challenge-391/arne-sommer/raku/ch-2.raku
+match	challenge-391/athanasius/raku/ch-1.raku
+mismatch	challenge-391/athanasius/raku/ch-2.raku
+skip-rakudo-fails	challenge-391/davidsmith3/raku/ch-1.raku
+skip-rakudo-fails	challenge-391/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-391/jaldhar-h-vyas/raku/ch-1.raku
+match	challenge-391/jaldhar-h-vyas/raku/ch-2.raku
+match	challenge-391/mark-anderson/raku/ch-1.raku
+match	challenge-391/mohammad-anwar/raku/ch-1.raku
+match	challenge-391/packy-anderson/raku/ch-1.raku
+match	challenge-391/packy-anderson/raku/ch-2.raku
+match	challenge-391/roger-bell-west/raku/ch-1.p6
+match	challenge-391/roger-bell-west/raku/ch-2.p6
+match	challenge-391/ulrich-rieke/raku/ch-1.raku
+match	challenge-391/ulrich-rieke/raku/ch-2.raku
+match	challenge-391/zapwai/raku/ch-1.raku
+skip-nondeterministic	challenge-391/zapwai/raku/ch-2.raku
+skip-rakudo-fails	challenge-392/davidsmith3/raku/ch-1.raku
+match	challenge-392/davidsmith3/raku/ch-2.raku
+match	challenge-392/mark-anderson/raku/ch-1.raku
+mismatch	challenge-392/mark-anderson/raku/ch-2.raku
+match	challenge-392/mohammad-anwar/raku/ch-1.raku
+match	challenge-392/zapwai/raku/ch-1.raku
+match	challenge-392/zapwai/raku/ch-2.raku

@@ -1,0 +1,27 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./books/perl6-at-a-glance/op51.pl	DIFF-BOTH	MATCH						
+fix	./books/using-raku/approx.pl	DIFF-OUT	MATCH						
+fix	./books/using-raku/distance.pl	DIFF-OUT	MATCH						
+regression	./challenges/perl-weekly-challenge/354/ch-1.raku	MATCH	DIFF-OUT	0	0	1	[(4 3) (2 1) (2 3)]	(Any)	
+fix	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku	DIFF-OUT	MATCH						
+fix	./course/exercises/essentials/positionals/spell-a-number.raku	DIFF-BOTH	MATCH						
+fix	./course/exercises/positionals/spell-a-number.raku	DIFF-BOTH	MATCH						
+fix	./programs/perl6-grammar-play/test3/1.pl	DIFF-OUT	MATCH						
+fix	./programs/perl6-grammar-play/test3/2.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6-assorti/09-compare.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6-play/2/channel-list-context.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6-play/2/channel-list-context1.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/add.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/comment2.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/exceptions/18.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/input-output/open.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/input-output/open6.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/input-output/split.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/operators/smartmatch.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/regex/36.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/38.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/63.pl	DIFF-OUT	MATCH						
+fix	./snippets/raku-test/008/empty-min-max.raku	DIFF-OUT	MATCH						
+fix	./snippets/raku-test/012/any-2.raku	DIFF-BOTH	MATCH						
+fix	./snippets/yr2017-perl6/05-pi.pl	DIFF-BOTH	MATCH						
+fix	./snippets/yr2017-perl6/12-approx.pl	DIFF-OUT	MATCH						
