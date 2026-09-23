@@ -188,13 +188,17 @@ sub do-measure(%c) {
        "'{%c<corpus>.add('harness/diff-rakupp.sh')}' < '$list'";
     my %ctally;
     my %cver;
+    my @csignalled;
     for run('find', ~$results, '-name', '*.verdict', :out).out.slurp(:close).lines -> $vf {
         my @f = $vf.IO.slurp.trim.split("\t");
         next unless @f >= 5;
         %ctally{@f[0]}++;
         %cver{@f[4]} = @f[0];
+        # killed by a signal other than our own alarm (142): 139 is SIGSEGV
+        @csignalled.push("{@f[4]} (exit {@f[1]})") if @f[1] ~~ /^\d+$/ && @f[1] > 128 && @f[1] != 142;
     }
     note "corpus verdicts: " ~ %ctally.keys.sort.map({ "$_={%ctally{$_}}" }).join(' ');
+    note "  CORPUS CRASH $_" for @csignalled.sort;
     # per-file verdicts + regressions against last week's corpus state
     my $corpus-state = %c<state>.add('corpus-state.tsv');
     my %cprev;

@@ -23,19 +23,19 @@ concurrency:
 
 jobs:
   sweep:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to 26 from 2026-10-19
     timeout-minutes: 300
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Checkout raku-eye
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           persist-credentials: false
 
       - name: Checkout rakupp (main)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: ash/rakupp
           path: rakupp
@@ -45,7 +45,7 @@ jobs:
         run: sudo apt-get update -q && sudo apt-get install -y -q ninja-build ccache
 
       - name: ccache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.ccache
           key: ccache-${{ runner.os }}-${{ hashFiles('rakupp/src/**', 'rakupp/include/**', 'rakupp/CMakeLists.txt') }}
@@ -80,7 +80,7 @@ jobs:
 
       - name: Rakudo cache
         id: rakudo-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/rakudo
           key: ${{ steps.rakudo.outputs.key }}
@@ -109,6 +109,7 @@ jobs:
 
       - name: Measure (network unshared)
         run: |
+          ulimit -c 0            # a crashing corpus program must not leave cores on the runner
           sudo unshare -n true   # preflight: fail loudly if unshare is unavailable
           # loopback up inside the namespace, then drop back to the runner user
           sudo unshare -n -- sh -c "ip link set lo up; exec sudo -u '$(id -un)' -- env 'PATH=$PATH' 'HOME=$HOME' rakupp/build/rakupp tools/eye-run.raku measure"
