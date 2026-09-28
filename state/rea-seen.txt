@@ -830,6 +830,7 @@ App::MoarVM::Debug:ver<0.1.2>:auth<zef:raku-community-modules>
 App::MoarVM::Debug:ver<0.1.3>:auth<zef:raku-community-modules>
 App::MoarVM::Debug:ver<0.2>:auth<zef:raku-community-modules>
 App::MoarVM::Debug:ver<0.3>:auth<zef:raku-community-modules>
+App::MoarVM::Debug:ver<0.4>:auth<zef:raku-community-modules>
 App::MoarVM::HeapAnalyzer::Model:ver<0.2>:auth<zef:raku-community-modules>
 App::MoarVM::HeapAnalyzer:ver<0.1>:auth<github:jnthn>
 App::ModuleSnap:ver<0.0.12>:auth<cpan:JSTOWE>:api<1.0>
@@ -2249,6 +2250,7 @@ Code::Coverable:ver<0.0.10>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.11>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.12>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.13>:auth<zef:lizmat>
+Code::Coverable:ver<0.0.14>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.1>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.2>:auth<zef:lizmat>
 Code::Coverable:ver<0.0.3>:auth<zef:lizmat>
@@ -2265,6 +2267,7 @@ Code::Coverage:ver<0.0.5>:auth<zef:lizmat>
 Code::Coverage:ver<0.0.6>:auth<zef:lizmat>
 Code::Coverage:ver<0.0.7>:auth<zef:lizmat>
 Code::Coverage:ver<0.0.8>:auth<zef:lizmat>
+Code::Coverage:ver<0.0.9>:auth<zef:lizmat>
 CodeUnit:ver<0.0.10>:auth<zef:lizmat>
 CodeUnit:ver<0.0.11>:auth<zef:lizmat>
 CodeUnit:ver<0.0.1>:auth<zef:lizmat>
@@ -3005,6 +3008,7 @@ DBIish:ver<0.6.5>:auth<zef:raku-community-modules>:api<1>
 DBIish:ver<0.6.6>:auth<zef:raku-community-modules>:api<1>
 DBIish:ver<0.6.7>:auth<zef:raku-community-modules>:api<1>
 DBIish:ver<0.6.8>:auth<zef:raku-community-modules>:api<1>
+DBIish:ver<0.6.9>:auth<zef:raku-community-modules>:api<1>
 DBIx::NamedQueries:ver<0.0.3>:auth<cpan:MZIESCHA>
 DEBUG:ver<*>:auth<github:cygx>
 DFM::Parser:ver<0.0.1>:auth<zef:massa>
@@ -3674,6 +3678,7 @@ Digest:ver<0.8.2>:auth<github:grondilu>
 Digest:ver<0.9.0>:auth<github:grondilu>
 Digest:ver<1.0.1>:auth<zef:grondilu>
 Digest:ver<1.1.0>:auth<zef:grondilu>
+DirHandle:ver<0.0.10>:auth<zef:lizmat>
 DirHandle:ver<0.0.1>:auth<cpan:ELIZABETH>
 DirHandle:ver<0.0.2>:auth<cpan:ELIZABETH>
 DirHandle:ver<0.0.3>:auth<cpan:ELIZABETH>
@@ -5066,6 +5071,7 @@ Grammar::Modelica:ver<0.0.1>:auth<github:albastev>
 Grammar::Modelica:ver<0.1.1>:auth<github:albastev>
 Grammar::Modelica:ver<0.1.2>:auth<github:albastev>
 Grammar::Modelica:ver<0.1.3>:auth<zef:raku-community-modules>
+Grammar::Modelica:ver<0.1.4>:auth<zef:raku-community-modules>
 Grammar::PrettyErrors:ver<0.0.1>:auth<cpan:BDUGGAN>
 Grammar::PrettyErrors:ver<0.0.1>:auth<github:bduggan>
 Grammar::PrettyErrors:ver<0.0.2>:auth<cpan:BDUGGAN>
@@ -5400,6 +5406,7 @@ HTTP::Tinyish:ver<0.2.0>:auth<cpan:SKAJI>
 HTTP::Tinyish:ver<0.3.0>:auth<cpan:SKAJI>
 HTTP::Tinyish:ver<0.4.0>:auth<zef:skaji>
 HTTP::Tinyish:ver<0.4.1>:auth<zef:skaji>
+HTTP::Tinyish:ver<0.4.2>:auth<zef:skaji>
 HTTP::UserAgent::Strict:ver<0.9.0>:auth<zef:zjmarlow>
 HTTP::UserAgent::Strict:ver<0.9.2>:auth<zef:zjmarlow>
 HTTP::UserAgent:ver<0.0.1>:auth<github:sergot>
@@ -5768,6 +5775,8 @@ IO::Dir:ver<1.001001>:auth<github:raku-community-modules>
 IO::Dir:ver<1.001002>:auth<github:raku-community-modules>
 IO::Dir:ver<1.001003>:auth<github:raku-community-modules>
 IO::Dir:ver<1.001004>:auth<zef:raku-community-modules>
+IO::Directory::Watcher:ver<0.0.1>:auth<zef:Scimon>
+IO::Directory::Watcher:ver<0.0.2>:auth<zef:Scimon>
 IO::Glob:ver<0.1>:auth<cpan:HANENKAMP>
 IO::Glob:ver<0.4>:auth<cpan:HANENKAMP>
 IO::Glob:ver<0.5>:auth<cpan:HANENKAMP>
@@ -6246,6 +6255,7 @@ Inline::Perl5:ver<0.58>:auth<cpan:NINE>
 Inline::Perl5:ver<0.59>:auth<cpan:NINE>
 Inline::Perl5:ver<0.60>:auth<cpan:NINE>
 Inline::Perl5:ver<0.61>:auth<cpan:NINE>
+Inline::Perl5:ver<0.62>:auth<cpan:NINE>
 Inline::Python3:ver<0.0.1>:auth<zef:slavenskoj>:api<1>
 Inline::Python:ver<0.5>:auth<cpan:NINE>
 Inline::Ruby:ver<0.0.3>:auth<github:awwaiid>
@@ -6779,6 +6789,7 @@ L10N::CY:ver<0.0.7>:auth<zef:l10n>
 L10N::Complete:ver<0.0.1>:auth<zef:l10n>
 L10N::Complete:ver<0.0.2>:auth<zef:l10n>
 L10N::Complete:ver<0.0.3>:auth<zef:l10n>
+L10N::Complete:ver<0.0.4>:auth<zef:l10n>
 L10N::DE:ver<0.0.1>:auth<zef:l10n>
 L10N::DE:ver<0.0.2>:auth<zef:l10n>
 L10N::DE:ver<0.0.3>:auth<zef:l10n>
@@ -6787,21 +6798,29 @@ L10N::EN:ver<0.0.1>:auth<zef:l10n>
 L10N::EN:ver<0.0.2>:auth<zef:l10n>
 L10N::EN:ver<0.0.3>:auth<zef:l10n>
 L10N::EN:ver<0.0.4>:auth<zef:l10n>
+L10N::EN:ver<0.0.5>:auth<zef:l10n>
 L10N::EO:ver<0.0.1>:auth<zef:l10n>
 L10N::EO:ver<0.0.2>:auth<zef:l10n>
 L10N::EO:ver<0.0.3>:auth<zef:l10n>
+L10N::ES:ver<0.0.1>:auth<zef:l10n>
+L10N::ES:ver<0.0.2>:auth<zef:l10n>
 L10N::FR:ver<0.0.1>:auth<zef:l10n>
 L10N::FR:ver<0.0.2>:auth<zef:l10n>
 L10N::FR:ver<0.0.3>:auth<zef:l10n>
+L10N::FR:ver<0.0.4>:auth<zef:l10n>
+L10N::FR:ver<0.0.5>:auth<zef:l10n>
 L10N::HU:ver<0.0.1>:auth<zef:l10n>
 L10N::HU:ver<0.0.2>:auth<zef:l10n>
 L10N::HU:ver<0.0.3>:auth<zef:l10n>
+L10N::HU:ver<0.0.4>:auth<zef:l10n>
 L10N::IT:ver<0.0.1>:auth<zef:l10n>
 L10N::IT:ver<0.0.2>:auth<zef:l10n>
 L10N::IT:ver<0.0.3>:auth<zef:l10n>
+L10N::IT:ver<0.0.4>:auth<zef:l10n>
 L10N::JA:ver<0.0.1>:auth<zef:l10n>
 L10N::JA:ver<0.0.2>:auth<zef:l10n>
 L10N::JA:ver<0.0.3>:auth<zef:l10n>
+L10N::JA:ver<0.0.4>:auth<zef:l10n>
 L10N::LV:ver<0.0.1>:auth<zef:ash>
 L10N::NL:ver<0.0.1>:auth<zef:l10n>
 L10N::NL:ver<0.0.2>:auth<zef:l10n>
@@ -6809,9 +6828,11 @@ L10N::NL:ver<0.0.3>:auth<zef:l10n>
 L10N::NL:ver<0.0.4>:auth<zef:l10n>
 L10N::NL:ver<0.0.5>:auth<zef:l10n>
 L10N::NL:ver<0.0.6>:auth<zef:l10n>
+L10N::NL:ver<0.0.7>:auth<zef:l10n>
 L10N::PT:ver<0.0.1>:auth<zef:l10n>
 L10N::PT:ver<0.0.2>:auth<zef:l10n>
 L10N::PT:ver<0.0.3>:auth<zef:l10n>
+L10N::PT:ver<0.0.4>:auth<zef:l10n>
 L10N::RU:ver<0.0.1>:auth<zef:ash>
 L10N::TLH:ver<0.0.1>:auth<zef:lizmat>
 L10N::TLH:ver<0.0.2>:auth<zef:lizmat>
@@ -6820,11 +6841,13 @@ L10N::UK:ver<0.0.1>:auth<zef:ash>
 L10N::ZH:ver<0.0.1>:auth<zef:l10n>
 L10N::ZH:ver<0.0.2>:auth<zef:l10n>
 L10N::ZH:ver<0.0.3>:auth<zef:l10n>
+L10N::ZH:ver<0.0.4>:auth<zef:l10n>
 L10N:ver<0.0.1>:auth<zef:l10n>
 L10N:ver<0.0.2>:auth<zef:l10n>
 L10N:ver<0.0.3>:auth<zef:l10n>
 L10N:ver<0.0.4>:auth<zef:l10n>
 L10N:ver<0.1.0>:auth<zef:l10n>
+L10N:ver<0.1.10>:auth<zef:l10n>
 L10N:ver<0.1.1>:auth<zef:l10n>
 L10N:ver<0.1.2>:auth<zef:l10n>
 L10N:ver<0.1.3>:auth<zef:l10n>
@@ -6832,6 +6855,8 @@ L10N:ver<0.1.4>:auth<zef:l10n>
 L10N:ver<0.1.5>:auth<zef:l10n>
 L10N:ver<0.1.6>:auth<zef:l10n>
 L10N:ver<0.1.7>:auth<zef:l10n>
+L10N:ver<0.1.8>:auth<zef:l10n>
+L10N:ver<0.1.9>:auth<zef:l10n>
 LCS::All:ver<0.1.0>:auth<github:wollmers>
 LCS::All:ver<0.1.1>:auth<github:wollmers>
 LCS::All:ver<0.2.0>:auth<github:wollmers>
@@ -6858,6 +6883,7 @@ LLM::Character:ver<0.2.0>:auth<zef:apogee>
 LLM::Character:ver<0.2.1>:auth<zef:apogee>
 LLM::Character:ver<0.2.2>:auth<zef:apogee>
 LLM::Character:ver<0.2.3>:auth<zef:apogee>
+LLM::Character:ver<0.3.0>:auth<zef:apogee>
 LLM::Chat::Backend:ver<0.2.1>:auth<zef:apogee>
 LLM::Chat:ver<0.1.0>:auth<zef:apogee>
 LLM::Chat:ver<0.10.0>:auth<zef:apogee>
@@ -7275,6 +7301,8 @@ License::Software:ver<0.1.1>:auth<github:kalkin>
 License::Software:ver<0.2.0>:auth<github:kalkin>
 License::Software:ver<0.3.0>:auth<github:kalkin>
 License::Software:ver<0.3.1>:auth<github:kalkin>
+Life::Mathematics:ver<0.0.1>:auth<zef:lizmat>
+Life::Mathematics:ver<0.0.2>:auth<zef:lizmat>
 Linenoise:ver<0.1.0>:auth<github:raku-community-modules>
 Linenoise:ver<0.1.1>:auth<github:raku-community-modules>
 Linenoise:ver<0.1.2>:auth<zef:raku-community-modules>
@@ -7619,6 +7647,7 @@ MCP::Server:ver<0.3.0>:auth<zef:apogee>
 MCP::Server:ver<0.4.0>:auth<zef:apogee>
 MCP::Server:ver<0.5.0>:auth<zef:apogee>
 MCP::Server:ver<0.6.0>:auth<zef:apogee>
+MCP::Server:ver<0.7.0>:auth<zef:apogee>
 MCP:ver<0.28.0>:auth<zef:wkusnierczyk>:api<1>
 MCP:ver<0.28.3>:auth<zef:wkusnierczyk>:api<1>
 MCP:ver<0.32.0>:auth<zef:wkusnierczyk>:api<1>
@@ -8255,6 +8284,7 @@ Math::SpecialFunctions:ver<0.1.1>:auth<zef:antononcube>:api<1>
 Math::Splines:ver<0.0.1>:auth<zef:antononcube>
 Math::Symbolic:ver<*>:auth<github:raydiak>
 Math::Symbolic:ver<0.1>:auth<zef:raku-community-modules>
+Math::Symbolic:ver<0.2>:auth<zef:raku-community-modules>
 Math::ThreeD:ver<*>:auth<github:raydiak>
 Math::Trig:ver<0.0.2>:auth<github:raku-community-modules>
 Math::Trig:ver<0.0.3>:auth<zef:raku-community-modules>
@@ -8474,6 +8504,7 @@ MoarVM::Profile:ver<0.0.5>:auth<zef:lizmat>
 MoarVM::Profile:ver<0.0.6>:auth<zef:lizmat>
 MoarVM::Profile:ver<0.0.7>:auth<zef:lizmat>
 MoarVM::Profile:ver<0.0.8>:auth<zef:lizmat>
+MoarVM::Profile:ver<0.0.9>:auth<zef:lizmat>
 MoarVM::Remote:ver<0.0.1>:auth<github:edumentab>
 MoarVM::Remote:ver<0.0.2>:auth<github:edumentab>
 MoarVM::Remote:ver<0.0.2>:auth<zef:raku-community-modules>
@@ -8981,6 +9012,7 @@ NotoFonts-OT:ver<0.2.1>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.0>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.1>:auth<zef:tbrowder>:api<2>
 NotoFonts-OT:ver<0.3.2>:auth<zef:tbrowder>:api<2>
+NotoFonts-OT:ver<0.3.3>:auth<zef:tbrowder>:api<2>
 November:ver<*>:auth<github:viklund>
 Num::HexFloat:ver<0.1.0>:auth<github:dankogai>
 Num::HexFloat:ver<0.1.1>:auth<github:dankogai>
@@ -9284,6 +9316,7 @@ P5getgrnam:ver<0.0.6>:auth<cpan:ELIZABETH>
 P5getgrnam:ver<0.0.7>:auth<cpan:ELIZABETH>
 P5getgrnam:ver<0.0.8>:auth<cpan:ELIZABETH>
 P5getgrnam:ver<0.0.9>:auth<zef:lizmat>
+P5getnetbyname:ver<0.0.10>:auth<zef:lizmat>
 P5getnetbyname:ver<0.0.3>:auth<cpan:ELIZABETH>
 P5getnetbyname:ver<0.0.4>:auth<cpan:ELIZABETH>
 P5getnetbyname:ver<0.0.5>:auth<cpan:ELIZABETH>
@@ -10435,6 +10468,7 @@ Pod::TreeWalker:ver<0.0.3>:auth<github:raku-community-modules>
 Pod::TreeWalker:ver<0.0.4>:auth<zef:raku-community-modules>
 Pod::TreeWalker:ver<0.0.5>:auth<zef:raku-community-modules>
 Pod::TreeWalker:ver<0.0.6>:auth<zef:raku-community-modules>
+Pod::TreeWalker:ver<0.0.7>:auth<zef:raku-community-modules>
 Pod::Usage:ver<0.0.1>:auth<zef:leont>
 Pod::Utilities:ver<0.0.1>:auth<github:antoniogamiz>
 Pod::Utils:ver<0.0.2>:auth<github:antoniogamiz>
@@ -10973,6 +11007,9 @@ RakuPM:ver<0.76.0>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<0.77.0>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<0.78.0>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<0.79.0>:auth<zef:skyter10086>:api<1>
+RakuPM:ver<1.0.0>:auth<zef:skyter10086>:api<1>
+RakuPM:ver<1.0.1>:auth<zef:skyter10086>:api<1>
+RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1>
 RakuPMVerifyTmp:ver<0.1.0>:auth<zef:skyter10086>:api<1>
 RakuPMVerifyTmp:ver<0.1.1>:auth<zef:skyter10086>:api<1>
 RakuRename:ver<0.1>:auth<zef:stuart-little>
@@ -11036,6 +11073,8 @@ Rakuast::RakuDoc::Render:ver<1.0.9>:auth<zef:finanalyst>
 Rakuast::RakuDoc::Render:ver<1.1.0>:auth<zef:finanalyst>
 Rakuast::RakuDoc::Render:ver<1.1.1>:auth<zef:finanalyst>
 Rakuast::RakuDoc::Render:ver<1.1.2>:auth<zef:finanalyst>
+Rakuast::RakuDoc::Render:ver<1.1.3>:auth<zef:finanalyst>
+Rakuast::RakuDoc::Render:ver<1.1.4>:auth<zef:finanalyst>
 Rakudo-Type-Introspection:ver<0.0.1>:auth<zef:lizmat>
 Rakudo-Type-Introspection:ver<0.0.2>:auth<zef:lizmat>
 Rakudo-Type-Introspection:ver<0.0.3>:auth<zef:lizmat>
@@ -11277,6 +11316,7 @@ Redis:ver<0.1.2>:auth<zef:raku-community-modules>
 Redis:ver<0.1.3>:auth<zef:raku-community-modules>
 Redis:ver<0.1.4>:auth<zef:raku-community-modules>
 Redis:ver<0.1.5>:auth<zef:raku-community-modules>
+Redis:ver<0.1.6>:auth<zef:raku-community-modules>
 Regex::FuzzyToken:ver<0.5.1>:auth<github:alabamenhu>
 Regex::FuzzyToken:ver<0.5>:auth<github:alabamenhu>
 RegexUtils:ver<0.1.0>:auth<zef:grizzlysmit>
@@ -11770,6 +11810,7 @@ Sparky-Job-Api:ver<0.0.8>:auth<zef:melezhik>
 Sparky-Job-Api:ver<0.0.9>:auth<zef:melezhik>
 Sparky::Minimal:ver<0.0.1>:auth<zef:sp1983>
 Sparky::Minimal:ver<0.0.2>:auth<zef:sp1983>
+Sparky::Minimal:ver<0.0.3>:auth<zef:sp1983>
 Sparky::Plugin::Hello:ver<0.0.1>:auth<cpan:MELEZHIK>
 Sparky::Plugin::Hello:ver<0.0.2>:auth<cpan:MELEZHIK>
 Sparky::Plugin::Notify::Email:ver<0.0.1>:auth<cpan:MELEZHIK>
@@ -11928,6 +11969,7 @@ Sparrow6:ver<0.0.92>:auth<zef:sp1983>
 Sparrow6:ver<0.0.93>:auth<zef:sp1983>
 Sparrow6:ver<0.0.94>:auth<zef:sp1983>
 Sparrow6:ver<0.0.95>:auth<zef:sp1983>
+Sparrow6:ver<0.0.96>:auth<zef:sp1983>
 Sparrow6:ver<0.0.9>:auth<cpan:MELEZHIK>
 SparrowCI - super fun and flexible CI system with many programming languages support:ver<0.0.1>:auth<zef:melezhik>
 SparrowCI - super fun and flexible CI system with many programming languages support:ver<0.0.2>:auth<zef:melezhik>
@@ -12330,6 +12372,7 @@ Subsets::IO:ver<1.001001>:auth<github:raku-community-modules>
 Subsets::IO:ver<1.001002>:auth<github:raku-community-modules>
 Subsets::IO:ver<1.001003>:auth<github:raku-community-modules>
 Subsets::IO:ver<1.1>:auth<zef:raku-community-modules>
+Subsets::IO:ver<1.2>:auth<zef:raku-community-modules>
 Sum:ver<0.0.1>:auth<github:skids>
 Sum:ver<0.0.2>:auth<github:skids>
 Sum:ver<v0.0.2>:auth<github:skids>
@@ -13094,6 +13137,7 @@ Test::Selector:ver<0.4.2>:auth<zef:lucs>
 Test::SourceFiles:ver<0.0.1>:auth<cpan:SAMGWISE>
 Test::Stream:ver<0.0.2>:auth<zef:raku-community-modules>
 Test::Stream:ver<0.1>:auth<zef:raku-community-modules>
+Test::Stream:ver<0.2>:auth<zef:raku-community-modules>
 Test::Time:ver<0.0.1>:auth<github:FCO>
 Test::Time:ver<0.0.2>:auth<zef:FCO>
 Test::Util::ServerPort:ver<0.0.2>:auth<cpan:JSTOWE>:api<1.0>
@@ -13678,6 +13722,7 @@ Tree::Binary:ver<0.0.4>:auth<zef:Scimon>
 Tree::Binary:ver<0.0.5>:auth<zef:Scimon>
 Tree::Binary:ver<0.0.6>:auth<zef:Scimon>
 Tree::Binary:ver<0.0.7>:auth<zef:Scimon>
+Tree::Binary:ver<0.0.8>:auth<zef:Scimon>
 TreeSitter::Native:ver<0.1.0>:auth<zef:apogee>
 Trie:ver<0.0.1>:auth<github:FCO>
 Trie:ver<0.0.1>:auth<zef:FCO>

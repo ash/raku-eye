@@ -1,4 +1,4 @@
-# run=7 commit=909a4c45fc435158d53ec1871eb711f6cc253ef5 date=2026-09-23
+# run=8 commit=68cdc81104cfa222ffdcab8e24dd95b378dd5b80 date=2026-09-28
 match	challenge-131/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-131/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-371/0rir/raku/ch-1.raku
@@ -463,10 +463,24 @@ match	challenge-391/ulrich-rieke/raku/ch-1.raku
 match	challenge-391/ulrich-rieke/raku/ch-2.raku
 match	challenge-391/zapwai/raku/ch-1.raku
 skip-nondeterministic	challenge-391/zapwai/raku/ch-2.raku
+match	challenge-392/0rir/raku/ch-1.raku
+match	challenge-392/0rir/raku/ch-2.raku
+skip-rakudo-fails	challenge-392/arne-sommer/raku/ch-1.raku
+match	challenge-392/arne-sommer/raku/ch-2.raku
+mismatch	challenge-392/athanasius/raku/ch-1.raku
+match	challenge-392/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-392/davidsmith3/raku/ch-1.raku
 match	challenge-392/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-392/jaldhar-h-vyas/raku/ch-1.raku
+match	challenge-392/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-392/mark-anderson/raku/ch-1.raku
 mismatch	challenge-392/mark-anderson/raku/ch-2.raku
 match	challenge-392/mohammad-anwar/raku/ch-1.raku
+match	challenge-392/packy-anderson/raku/ch-1.raku
+match	challenge-392/packy-anderson/raku/ch-2.raku
+match	challenge-392/roger-bell-west/raku/ch-1.p6
+match	challenge-392/roger-bell-west/raku/ch-2.p6
+match	challenge-392/ulrich-rieke/raku/ch-1.raku
+match	challenge-392/ulrich-rieke/raku/ch-2.raku
 match	challenge-392/zapwai/raku/ch-1.raku
 match	challenge-392/zapwai/raku/ch-2.raku

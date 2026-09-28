@@ -1,0 +1,30 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./books/perl6-at-a-glance/metaop3.pl	DIFF-BOTH	MATCH						
+fix	./books/perl6-at-a-glance/mod6.pl	DIFF-BOTH	MATCH						
+fix	./books/perl6-at-a-glance/op23.pl	DIFF-OUT	MATCH						
+fix	./books/perl6-at-a-glance/op48.pl	DIFF-OUT	MATCH						
+fix	./books/perl6-at-a-glance/plus_m.pl	DIFF-OUT	MATCH						
+regression	./books/perl6-calendar-2019/04-apr-sleep-sort.raku	MATCH	DIFF-OUT	0	0	1	1	(no more output)	
+fix	./books/raku-one-liners/12-renaming-files.raku	DIFF-EXIT	MATCH						
+fix	./books/raku-one-liners/55g-golf-fibonacci.raku	DIFF-OUT	MATCH						
+fix	./books/using-raku/firstodd2.pl	DIFF-OUT	MATCH						
+fix	./books/using-raku/templating.pl	DIFF-OUT	MATCH						
+fix	./books/using-raku/vowels.pl	DIFF-OUT	MATCH						
+fix	./challenges/perl-weekly-challenge/354/ch-1.raku	DIFF-OUT	MATCH						
+regression	./programs/factorial/17-div-factorials.raku	MATCH	DIFF-EXIT	1	2				===SORRY!=== Parse error at line 20: Unrecognized regex metacharacter ! (must be quoted to match literally)
+fix	./snippets/perl5to6/heredocs-sub-tab-6.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6-assorti/05-emoji.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6-play/promise/sleep-sort.pl	DIFF-EXIT	MATCH						
+fix	./snippets/perl6tests/input-output/enc2.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/input-output/eof.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/oop/26.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/oop/6.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/oop/methods2.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/operators/q.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/operators/{}.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/49.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/55.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/56.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/62.pl	DIFF-BOTH	MATCH						
+fix	./snippets/perl6tests/subroutines/block3.pl	DIFF-BOTH	MATCH						
+fix	./snippets/raku-test/010/substr-rw.raku	DIFF-OUT	MATCH						
