@@ -1,0 +1,30 @@
+name	version	released	verdict	detail	seconds	exit	first-error
+JobQueue	0.1.2	2026-10-05	pass		6	0	
+LLM::Character	0.3.1	2026-10-05	dep-fail	LibraryMake	2.9	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Server	0.7.1	2026-10-05	timeout		180	142	
+Monad	0.3.0	2026-10-05	self-fail		0.6	1	FAILED: 01_maybe.t | ===SORRY!=== Parse error at line 60: unexpected operator in term position (got '>>=')
+ONNX::Native	0.2.1	2026-10-05	self-fail		1.3	1	FAILED: 01-ffi.rakutest | # Failed test 'no error set for cpu provider'
+Roaring::Tags	0.3.0	2026-10-05	dep-fail	CRoaring	1	1	FAILED: 02-bitmap.rakutest | # Undefined routine 'from-handle'
+Template::Jinja2	0.3.1	2026-10-05	timeout		180	142	
+ComfyUI::API	0.3.0	2026-10-04	timeout		180	142	
+JSONL	0.1.7	2026-10-04	timeout		180	142	
+Notcurses::Native	0.7.0	2026-10-04	self-fail		1.6	1	FAILED: 22-windows-load-contract.rakutest | No such method 'find_private_method' for invocant of type 'Metamodel::ClassHOW'
+OpenRouter::API	0.2.0	2026-10-04	timeout		180	142	
+Elucid8::Build	0.12.13	2026-10-03	timeout		180	142	
+GOTO	0.1.8	2026-10-03	timeout		180	142	
+Math::NIntegrate	0.0.3	2026-10-02	timeout		180	142	
+KeyNub::LicDongle	1.1.1	2026-10-01	self-fail		0.8	1	FAILED: 01-basic.rakutest | # Could not find symbol '&Ok' in 'GLOBAL::Status'
+L10N::LV	0.0.2	2026-10-01	self-fail		0.7	1	FAILED: 01-latvian.t | Two terms in a row across lines (missing semicolon or comma?)
+L10N::RU	0.0.2	2026-10-01	self-fail		0.6	1	FAILED: 01-russian.t | Two terms in a row across lines (missing semicolon or comma?)
+L10N::UK	0.0.2	2026-10-01	self-fail		0.5	1	FAILED: 01-ukrainian.t | Two terms in a row across lines (missing semicolon or comma?)
+Math::NIntegrate	0.0.2	2026-10-01	timeout		180	142	
+Router::Right	0.0.64	2026-10-01	dep-fail	P5quotemeta	1	1	FAILED: 01-basic.rakutest | # Failed test 'Codepoint 0 [0] # using $_'
+Router::Right	0.0.63	2026-10-01	dep-fail	P5quotemeta	0.7	1	FAILED: 01-basic.rakutest | # Failed test 'Codepoint 0 [0] # using $_'
+Data::Transformers	0.0.3	2026-09-30	pass		0.7	0	
+Map::Leaflet	0.0.13	2026-09-30	timeout		180	142	
+WWW::Ollama	0.0.8	2026-09-30	timeout		180	142	
+Image::PNG::Portable	0.3.3	2026-09-29	dep-fail	Compress::Zlib::Raw	1.3	1	FAILED: 01-basic.t | Invalid typename 'OpaquePointer' in parameter declaration.
+Net::Ethereum	0.0.186	2026-09-29	dep-fail	LibraryMake	2.5	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+RakuPM	1.0.4	2026-09-29	timeout		180	142	
+Router::Right	0.0.62	2026-09-29	dep-fail	P5quotemeta	1	1	FAILED: 01-basic.rakutest | # Failed test 'Codepoint 0 [0] # using $_'
+Math::NIntegrate	0.0.1	2026-09-28	timeout		180	142	

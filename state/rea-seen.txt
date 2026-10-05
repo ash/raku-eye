@@ -2417,6 +2417,7 @@ ComfyUI::API:ver<0.1.1>:auth<zef:apogee>
 ComfyUI::API:ver<0.2.0>:auth<zef:apogee>
 ComfyUI::API:ver<0.2.1>:auth<zef:apogee>
 ComfyUI::API:ver<0.2.2>:auth<zef:apogee>
+ComfyUI::API:ver<0.3.0>:auth<zef:apogee>
 Command::Despatch:ver<0.0.1>:auth<github:shuppet>
 Command::Despatch:ver<0.2>:auth<github:shuppet>
 CommandLine::Usage:ver<0.1>:auth<github:7ojo>
@@ -3262,6 +3263,7 @@ Data::TextOrBinary:ver<1.4>:auth<zef:raku-community-modules>
 Data::TextOrBinary:ver<1.5>:auth<zef:raku-community-modules>
 Data::Transformers:ver<0.0.1>:auth<zef:antononcube>
 Data::Transformers:ver<0.0.2>:auth<zef:antononcube>
+Data::Transformers:ver<0.0.3>:auth<zef:antononcube>
 Data::Translators:ver<0.1.0>:auth<zef:antononcube>:api<1>
 Data::Translators:ver<0.1.10>:auth<zef:antononcube>:api<1>
 Data::Translators:ver<0.1.11>:auth<zef:antononcube>:api<1>
@@ -3957,6 +3959,7 @@ Elucid8::Build:ver<0.11.0>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.0>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.10>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.11>:auth<zef:finanalyst>
+Elucid8::Build:ver<0.12.13>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.1>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.2>:auth<zef:finanalyst>
 Elucid8::Build:ver<0.12.3>:auth<zef:finanalyst>
@@ -4456,6 +4459,7 @@ GOTO:ver<0.1.4>:auth<zef:grizzlysmit>
 GOTO:ver<0.1.5>:auth<zef:grizzlysmit>
 GOTO:ver<0.1.6>:auth<zef:grizzlysmit>
 GOTO:ver<0.1.7>:auth<zef:grizzlysmit>
+GOTO:ver<0.1.8>:auth<zef:grizzlysmit>
 GPGME:ver<0.1>:auth<cpan:CTILMES>:api<1>
 GPGME:ver<0.2>:auth<cpan:CTILMES>:api<1>
 GTK::Scintilla:ver<0.0.1>:auth<github:azawawi>
@@ -6173,6 +6177,7 @@ Image::PNG::Portable:ver<0.1>:auth<zef:raku-community-modules>
 Image::PNG::Portable:ver<0.2>:auth<zef:raku-community-modules>
 Image::PNG::Portable:ver<0.3.1>:auth<zef:apogee>
 Image::PNG::Portable:ver<0.3.2>:auth<zef:apogee>
+Image::PNG::Portable:ver<0.3.3>:auth<zef:apogee>
 Image::PNG::Portable:ver<0.3>:auth<zef:apogee>
 Image::QRCode:ver<0.0.3>:auth<zef:FRITH>:api<1>
 Image::QRCode:ver<0.0.5>:auth<cpan:FRITH>:api<1>
@@ -6589,6 +6594,7 @@ JSONL:ver<0.1.3>:auth<zef:apogee>
 JSONL:ver<0.1.4>:auth<zef:apogee>
 JSONL:ver<0.1.5>:auth<zef:apogee>
 JSONL:ver<0.1.6>:auth<zef:apogee>
+JSONL:ver<0.1.7>:auth<zef:apogee>
 Japanese:ver<0.0.1>:auth<zef:slavenskoj>:api<1>
 Java::Generate:ver<1.0.0>:auth<zef:Altai-man>
 JavaScript::D3:ver<0.1.0>:auth<zef:antononcube>:api<1>
@@ -6663,6 +6669,7 @@ JavaScript::Google::Charts:ver<0.0.9>:auth<zef:antononcube>
 JavaScript::SpiderMonkey:ver<0.0.1>:auth<github:hartenfels>
 JobQueue:ver<0.1.0>:auth<zef:apogee>
 JobQueue:ver<0.1.1>:auth<zef:apogee>
+JobQueue:ver<0.1.2>:auth<zef:apogee>
 JsonC:ver<0.0.1>:auth<github:salortiz>
 JsonC:ver<0.0.2>:auth<github:salortiz>
 JsonC:ver<0.0.3>:auth<github:salortiz>
@@ -6754,6 +6761,7 @@ Karabiner::CompModGenerator:ver<0.0.6>:auth<zef:sdondley>
 Karabiner::CompModGenerator:ver<0.0.7>:auth<zef:sdondley>
 Karabiner::CompModGenerator:ver<0.0.8>:auth<zef:sdondley>
 Karabiner::CompModGenerator:ver<0.0.9>:auth<zef:sdondley>
+KeyNub::LicDongle:ver<1.1.1>:auth<zef:ab-tools>:api<1>
 Keyring:ver<0.1.0>:auth<cpan:JMASLAK>
 Keyring:ver<0.2.0>:auth<zef:jmaslak>
 Kind::Subset::Parametric:ver<0.0.4>:auth<cpan:KAIEPI>
@@ -6822,6 +6830,7 @@ L10N::JA:ver<0.0.2>:auth<zef:l10n>
 L10N::JA:ver<0.0.3>:auth<zef:l10n>
 L10N::JA:ver<0.0.4>:auth<zef:l10n>
 L10N::LV:ver<0.0.1>:auth<zef:ash>
+L10N::LV:ver<0.0.2>:auth<zef:ash>
 L10N::NL:ver<0.0.1>:auth<zef:l10n>
 L10N::NL:ver<0.0.2>:auth<zef:l10n>
 L10N::NL:ver<0.0.3>:auth<zef:l10n>
@@ -6834,10 +6843,12 @@ L10N::PT:ver<0.0.2>:auth<zef:l10n>
 L10N::PT:ver<0.0.3>:auth<zef:l10n>
 L10N::PT:ver<0.0.4>:auth<zef:l10n>
 L10N::RU:ver<0.0.1>:auth<zef:ash>
+L10N::RU:ver<0.0.2>:auth<zef:ash>
 L10N::TLH:ver<0.0.1>:auth<zef:lizmat>
 L10N::TLH:ver<0.0.2>:auth<zef:lizmat>
 L10N::TLH:ver<0.0.3>:auth<zef:lizmat>
 L10N::UK:ver<0.0.1>:auth<zef:ash>
+L10N::UK:ver<0.0.2>:auth<zef:ash>
 L10N::ZH:ver<0.0.1>:auth<zef:l10n>
 L10N::ZH:ver<0.0.2>:auth<zef:l10n>
 L10N::ZH:ver<0.0.3>:auth<zef:l10n>
@@ -6884,6 +6895,7 @@ LLM::Character:ver<0.2.1>:auth<zef:apogee>
 LLM::Character:ver<0.2.2>:auth<zef:apogee>
 LLM::Character:ver<0.2.3>:auth<zef:apogee>
 LLM::Character:ver<0.3.0>:auth<zef:apogee>
+LLM::Character:ver<0.3.1>:auth<zef:apogee>
 LLM::Chat::Backend:ver<0.2.1>:auth<zef:apogee>
 LLM::Chat:ver<0.1.0>:auth<zef:apogee>
 LLM::Chat:ver<0.10.0>:auth<zef:apogee>
@@ -7648,6 +7660,7 @@ MCP::Server:ver<0.4.0>:auth<zef:apogee>
 MCP::Server:ver<0.5.0>:auth<zef:apogee>
 MCP::Server:ver<0.6.0>:auth<zef:apogee>
 MCP::Server:ver<0.7.0>:auth<zef:apogee>
+MCP::Server:ver<0.7.1>:auth<zef:apogee>
 MCP:ver<0.28.0>:auth<zef:wkusnierczyk>:api<1>
 MCP:ver<0.28.3>:auth<zef:wkusnierczyk>:api<1>
 MCP:ver<0.32.0>:auth<zef:wkusnierczyk>:api<1>
@@ -7921,6 +7934,7 @@ Map::DeckGL:ver<0.0.4>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.10>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.11>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.12>:auth<zef:bduggan>
+Map::Leaflet:ver<0.0.13>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.1>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.2>:auth<zef:bduggan>
 Map::Leaflet:ver<0.0.3>:auth<zef:bduggan>
@@ -8171,6 +8185,9 @@ Math::Matrix:ver<0.4.2>:auth<zef:lichtkind>
 Math::Model:ver<0.1>:auth<github:moritz>
 Math::Model:ver<0.3>:auth<cpan:MORITZ>
 Math::Model:ver<0.3>:auth<github:moritz>
+Math::NIntegrate:ver<0.0.1>:auth<zef:antononcube>
+Math::NIntegrate:ver<0.0.2>:auth<zef:antononcube>
+Math::NIntegrate:ver<0.0.3>:auth<zef:antononcube>
 Math::Nearest:ver<0.0.1>:auth<zef:antononcube>
 Math::Nearest:ver<0.0.2>:auth<zef:antononcube>
 Math::Nearest:ver<0.0.4>:auth<zef:antononcube>
@@ -8555,6 +8572,7 @@ Monad:ver<0.1.1>:auth<zef:apogee>
 Monad:ver<0.1.2>:auth<zef:apogee>
 Monad:ver<0.2.0>:auth<zef:apogee>
 Monad:ver<0.2.1>:auth<zef:apogee>
+Monad:ver<0.3.0>:auth<zef:apogee>
 Moneys:ver<0.0.1>:auth<zef:arunvickram>
 Moneys:ver<0.0.2>:auth<zef:arunvickram>
 Moneys:ver<0.0.3>:auth<zef:arunvickram>
@@ -8755,6 +8773,7 @@ Net::Ethereum:ver<0.0.173>:auth<zef:knarkhov>
 Net::Ethereum:ver<0.0.175>:auth<zef:knarkhov>
 Net::Ethereum:ver<0.0.179>:auth<zef:knarkhov>
 Net::Ethereum:ver<0.0.185>:auth<zef:knarkhov>
+Net::Ethereum:ver<0.0.186>:auth<zef:knarkhov>
 Net::Ethereum:ver<0.0.27>:auth<gitlab:pheix>
 Net::Ethereum:ver<0.0.28>:auth<gitlab:pheix>
 Net::Ethereum:ver<0.0.32>:auth<gitlab:pheix>
@@ -9002,6 +9021,7 @@ Notcurses::Native:ver<0.6.3>:auth<zef:apogee>
 Notcurses::Native:ver<0.6.4>:auth<zef:apogee>
 Notcurses::Native:ver<0.6.5>:auth<zef:apogee>
 Notcurses::Native:ver<0.6.6>:auth<zef:apogee>
+Notcurses::Native:ver<0.7.0>:auth<zef:apogee>
 Notify:ver<0.0.5>:auth<zef:ohmycloudy>
 Notify:ver<0.0.6>:auth<zef:ohmycloudy>
 NotoFonts-OT:ver<0.0.1>:auth<zef:tbrowder>
@@ -9060,6 +9080,7 @@ OLE::Storage_Lite:ver<0.0.2>:auth<cpan:JGOFF>
 ONNX::Native:ver<0.1.0>:auth<zef:apogee>
 ONNX::Native:ver<0.1.1>:auth<zef:apogee>
 ONNX::Native:ver<0.2.0>:auth<zef:apogee>
+ONNX::Native:ver<0.2.1>:auth<zef:apogee>
 ONNX::Runtime:ver<0.0.1>:auth<zef:slavenskoj>:api<1>
 ONNX::Runtime:ver<0.0.2>:auth<zef:slavenskoj>:api<1>
 ONNX::Runtime:ver<0.0.6>:auth<zef:slavenskoj>:api<1>
@@ -9160,6 +9181,7 @@ OpenMPT::Bindings:ver<0.0.2>:auth<zef:sasha>
 OpenMPT::Bindings:ver<0.0.3>:auth<zef:sasha>
 OpenRouter::API:ver<0.1.0>:auth<zef:apogee>
 OpenRouter::API:ver<0.1.1>:auth<zef:apogee>
+OpenRouter::API:ver<0.2.0>:auth<zef:apogee>
 OpenSSL:ver<0.0.1>:auth<github:sergot>
 OpenSSL:ver<0.0.2>:auth<github:sergot>
 OpenSSL:ver<0.0.3>:auth<github:sergot>
@@ -11010,6 +11032,7 @@ RakuPM:ver<0.79.0>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<1.0.0>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<1.0.1>:auth<zef:skyter10086>:api<1>
 RakuPM:ver<1.0.3>:auth<zef:skyter10086>:api<1>
+RakuPM:ver<1.0.4>:auth<zef:skyter10086>:api<1>
 RakuPMVerifyTmp:ver<0.1.0>:auth<zef:skyter10086>:api<1>
 RakuPMVerifyTmp:ver<0.1.1>:auth<zef:skyter10086>:api<1>
 RakuRename:ver<0.1>:auth<zef:stuart-little>
@@ -11369,6 +11392,7 @@ Roaring::Tags:ver<0.2.0>:auth<zef:apogee>
 Roaring::Tags:ver<0.2.1>:auth<zef:apogee>
 Roaring::Tags:ver<0.2.2>:auth<zef:apogee>
 Roaring::Tags:ver<0.2.3>:auth<zef:apogee>
+Roaring::Tags:ver<0.3.0>:auth<zef:apogee>
 Router::Boost:ver<0.0.1>:auth<cpan:MOZNION>
 Router::Boost:ver<0.0.1>:auth<github:moznion>
 Router::Right:ver<0.0.40>:auth<gitlab:pheix>
@@ -11390,6 +11414,9 @@ Router::Right:ver<0.0.55>:auth<gitlab:pheix>
 Router::Right:ver<0.0.57>:auth<gitlab:pheix>
 Router::Right:ver<0.0.60>:auth<gitlab:pheix>
 Router::Right:ver<0.0.61>:auth<zef:knarkhov>
+Router::Right:ver<0.0.62>:auth<zef:knarkhov>
+Router::Right:ver<0.0.63>:auth<zef:knarkhov>
+Router::Right:ver<0.0.64>:auth<zef:knarkhov>
 Russian:ver<0.0.1>:auth<zef:slavenskoj>:api<1>
 Ryml:ver<0.0.1>:auth<zef:tony-o>
 SAT::Solver::MiniSAT:ver<0.0.1>:auth<github:taboege>
@@ -12576,6 +12603,7 @@ Template::Jinja2:ver<0.1.0>:auth<zef:apogee>
 Template::Jinja2:ver<0.1.1>:auth<zef:apogee>
 Template::Jinja2:ver<0.2.0>:auth<zef:apogee>
 Template::Jinja2:ver<0.3.0>:auth<zef:apogee>
+Template::Jinja2:ver<0.3.1>:auth<zef:apogee>
 Template::Mojo:ver<0.2.1>:auth<zef:raku-community-modules>
 Template::Mojo:ver<0.2.2>:auth<zef:raku-community-modules>
 Template::Mojo:ver<0.2>:auth<zef:raku-community-modules>
@@ -14102,6 +14130,7 @@ WWW::Ollama:ver<0.0.4>:auth<zef:antononcube>
 WWW::Ollama:ver<0.0.5>:auth<zef:antononcube>
 WWW::Ollama:ver<0.0.6>:auth<zef:antononcube>
 WWW::Ollama:ver<0.0.7>:auth<zef:antononcube>
+WWW::Ollama:ver<0.0.8>:auth<zef:antononcube>
 WWW::OpenAI:ver<0.1.0>:auth<zef:antononcube>:api<1>
 WWW::OpenAI:ver<0.1.1>:auth<zef:antononcube>:api<1>
 WWW::OpenAI:ver<0.1.3>:auth<zef:antononcube>:api<1>

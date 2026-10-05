@@ -1,0 +1,9 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./challenges/perl-weekly-challenge/021/ch-1.raku	DIFF-BOTH	MATCH						
+fix	./programs/lingua/misc/calc.raku	DIFF-BOTH	MATCH						
+regression	./snippets/perl6-play/1/bool.pl	MATCH	DIFF-OUT	0	0	4	False	True	
+fix	./snippets/perl6tests/exceptions/09-2.pl	DIFF-EXIT	MATCH						
+fix	./snippets/perl6tests/regex/24.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/25.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/27.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/subroutines/operator.pl	DIFF-BOTH	MATCH						
