@@ -1,0 +1,13 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./books/perl6-at-a-glance/sub12.pl	DIFF-BOTH	MATCH						
+fix	./challenges/perl-weekly-challenge/092/ch-1a.raku	DIFF-OUT	MATCH						
+fix	./challenges/perl-weekly-challenge/354/ch-2.raku	DIFF-OUT	MATCH						
+fix	./snippets/perl6-play/1/bool.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/grammars/10.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/grammars/12.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/grammars/13.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/grammars/7.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/parallel/channel9.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/subroutines/add4.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/subroutines/add5.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/subroutines/add7.pl	DIFF-OUT	MATCH						

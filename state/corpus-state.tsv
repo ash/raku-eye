@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-05
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-12
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -164,7 +164,7 @@ MATCH	./books/perl6-at-a-glance/str3.pl
 MATCH	./books/perl6-at-a-glance/sub1.pl
 MATCH	./books/perl6-at-a-glance/sub10.pl
 MATCH	./books/perl6-at-a-glance/sub11.pl
-DIFF-BOTH	./books/perl6-at-a-glance/sub12.pl
+MATCH	./books/perl6-at-a-glance/sub12.pl
 MATCH	./books/perl6-at-a-glance/sub13.pl
 MATCH	./books/perl6-at-a-glance/sub14.pl
 MATCH	./books/perl6-at-a-glance/sub15.pl
@@ -617,7 +617,7 @@ MATCH	./challenges/perl-weekly-challenge/091/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/091/ch-1a.raku
 MATCH	./challenges/perl-weekly-challenge/091/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/092/ch-1.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/092/ch-1a.raku
+MATCH	./challenges/perl-weekly-challenge/092/ch-1a.raku
 MATCH	./challenges/perl-weekly-challenge/095/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/096/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/126/ch-1.raku
@@ -714,7 +714,7 @@ MATCH	./challenges/perl-weekly-challenge/349/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/351/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/351/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/354/ch-1.raku
-DIFF-OUT	./challenges/perl-weekly-challenge/354/ch-2.raku
+MATCH	./challenges/perl-weekly-challenge/354/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/355/ch-1.raku
 MATCH	./challenges/perl-weekly-challenge/355/ch-2.raku
 MATCH	./challenges/perl-weekly-challenge/356/ch-1.raku
@@ -1345,7 +1345,7 @@ MATCH	./snippets/perl6-assorti/27-power.pl
 MATCH	./snippets/perl6-play/1/args.pl
 MATCH	./snippets/perl6-play/1/array.pl
 MATCH	./snippets/perl6-play/1/bare-sigil.pl
-DIFF-OUT	./snippets/perl6-play/1/bool.pl
+MATCH	./snippets/perl6-play/1/bool.pl
 MATCH	./snippets/perl6-play/1/catch-var.pl
 MATCH	./snippets/perl6-play/1/class-assign.pl
 MATCH	./snippets/perl6-play/1/class-build.pl
@@ -1450,10 +1450,10 @@ MATCH	./snippets/perl6tests/exceptions/Module.pm
 MATCH	./snippets/perl6tests/exceptions/lift.pl
 DIFF-BOTH	./snippets/perl6tests/exceptions/module.pl
 MATCH	./snippets/perl6tests/grammars/1.pl
-DIFF-OUT	./snippets/perl6tests/grammars/10.pl
+MATCH	./snippets/perl6tests/grammars/10.pl
 DIFF-OUT	./snippets/perl6tests/grammars/11.pl
-DIFF-OUT	./snippets/perl6tests/grammars/12.pl
-DIFF-OUT	./snippets/perl6tests/grammars/13.pl
+MATCH	./snippets/perl6tests/grammars/12.pl
+MATCH	./snippets/perl6tests/grammars/13.pl
 DIFF-OUT	./snippets/perl6tests/grammars/14.pl
 DIFF-OUT	./snippets/perl6tests/grammars/15.pl
 DIFF-OUT	./snippets/perl6tests/grammars/16.pl
@@ -1468,7 +1468,7 @@ MATCH	./snippets/perl6tests/grammars/3.pl
 MATCH	./snippets/perl6tests/grammars/4.pl
 MATCH	./snippets/perl6tests/grammars/5.pl
 MATCH	./snippets/perl6tests/grammars/6.pl
-DIFF-OUT	./snippets/perl6tests/grammars/7.pl
+MATCH	./snippets/perl6tests/grammars/7.pl
 DIFF-OUT	./snippets/perl6tests/grammars/8.pl
 DIFF-OUT	./snippets/perl6tests/grammars/9.pl
 MATCH	./snippets/perl6tests/grammars/g.pl
@@ -1639,7 +1639,7 @@ MATCH	./snippets/perl6tests/parallel/channel5.pl
 MATCH	./snippets/perl6tests/parallel/channel6.pl
 MATCH	./snippets/perl6tests/parallel/channel7.pl
 DIFF-OUT	./snippets/perl6tests/parallel/channel8.pl
-DIFF-OUT	./snippets/perl6tests/parallel/channel9.pl
+MATCH	./snippets/perl6tests/parallel/channel9.pl
 DIFF-OUT	./snippets/perl6tests/parallel/junction.pl
 MATCH	./snippets/perl6tests/parallel/lock.pl
 MATCH	./snippets/perl6tests/parallel/new-thread.pl
@@ -1721,10 +1721,10 @@ MATCH	./snippets/perl6tests/str-bit.pl
 MATCH	./snippets/perl6tests/subroutines/add.pl
 MATCH	./snippets/perl6tests/subroutines/add2.pl
 MATCH	./snippets/perl6tests/subroutines/add3.pl
-DIFF-OUT	./snippets/perl6tests/subroutines/add4.pl
-DIFF-OUT	./snippets/perl6tests/subroutines/add5.pl
+MATCH	./snippets/perl6tests/subroutines/add4.pl
+MATCH	./snippets/perl6tests/subroutines/add5.pl
 MATCH	./snippets/perl6tests/subroutines/add6.pl
-DIFF-OUT	./snippets/perl6tests/subroutines/add7.pl
+MATCH	./snippets/perl6tests/subroutines/add7.pl
 MATCH	./snippets/perl6tests/subroutines/anon.pl
 DIFF-BOTH	./snippets/perl6tests/subroutines/anon2.pl
 MATCH	./snippets/perl6tests/subroutines/block-vs-sub.pl
