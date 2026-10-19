@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-12
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-19
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -1337,7 +1337,7 @@ MATCH	./snippets/perl6-assorti/19-roman.pl
 MATCH	./snippets/perl6-assorti/20-roman-test.pl
 MATCH	./snippets/perl6-assorti/21-main.pl
 MATCH	./snippets/perl6-assorti/22-main-multi.pl
-DIFF-OUT	./snippets/perl6-assorti/23-newton.pl
+MATCH	./snippets/perl6-assorti/23-newton.pl
 MATCH	./snippets/perl6-assorti/24-cross-x.pl
 MATCH	./snippets/perl6-assorti/25-gist.pl
 MATCH	./snippets/perl6-assorti/26-gist-and-str.pl
@@ -1674,7 +1674,7 @@ MATCH	./snippets/perl6tests/regex/2.pl
 MATCH	./snippets/perl6tests/regex/20.pl
 MATCH	./snippets/perl6tests/regex/21.pl
 MATCH	./snippets/perl6tests/regex/22.pl
-DIFF-OUT	./snippets/perl6tests/regex/23.pl
+MATCH	./snippets/perl6tests/regex/23.pl
 MATCH	./snippets/perl6tests/regex/24.pl
 MATCH	./snippets/perl6tests/regex/25.pl
 MATCH	./snippets/perl6tests/regex/26.pl
@@ -1726,7 +1726,7 @@ MATCH	./snippets/perl6tests/subroutines/add5.pl
 MATCH	./snippets/perl6tests/subroutines/add6.pl
 MATCH	./snippets/perl6tests/subroutines/add7.pl
 MATCH	./snippets/perl6tests/subroutines/anon.pl
-DIFF-BOTH	./snippets/perl6tests/subroutines/anon2.pl
+MATCH	./snippets/perl6tests/subroutines/anon2.pl
 MATCH	./snippets/perl6tests/subroutines/block-vs-sub.pl
 MATCH	./snippets/perl6tests/subroutines/block.pl
 MATCH	./snippets/perl6tests/subroutines/block2.pl

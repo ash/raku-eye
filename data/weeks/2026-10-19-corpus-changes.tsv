@@ -1,0 +1,4 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./snippets/perl6-assorti/23-newton.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/regex/23.pl	DIFF-OUT	MATCH						
+fix	./snippets/perl6tests/subroutines/anon2.pl	DIFF-BOTH	MATCH						
