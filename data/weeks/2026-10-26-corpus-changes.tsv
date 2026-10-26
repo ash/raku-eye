@@ -1,0 +1,3 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+regression	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku	MATCH	DIFF-OUT	0	0	1	3.14	(Any)	
+regression	./snippets/perl6-play/1/bool.pl	MATCH	DIFF-OUT	0	0	4	False	True	

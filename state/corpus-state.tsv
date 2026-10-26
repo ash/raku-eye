@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-19
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-26
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -782,7 +782,7 @@ MATCH	./course/exercises/advanced/metaoperators/sum-of-array.raku
 MATCH	./course/exercises/advanced/module-introspection/list-the-symbols/Circle.rakumod
 DIFF-OUT	./course/exercises/advanced/module-introspection/list-the-symbols/list.raku
 MATCH	./course/exercises/advanced/module-introspection/lookup-symbol/Circle.rakumod
-MATCH	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku
+DIFF-OUT	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku
 MATCH	./course/exercises/advanced/modules-basics/maths-module/Maths.rakumod
 MATCH	./course/exercises/advanced/modules-basics/maths-module/maths.raku
 MATCH	./course/exercises/advanced/modules-basics/read-the-constant/Circle.rakumod
@@ -1345,7 +1345,7 @@ MATCH	./snippets/perl6-assorti/27-power.pl
 MATCH	./snippets/perl6-play/1/args.pl
 MATCH	./snippets/perl6-play/1/array.pl
 MATCH	./snippets/perl6-play/1/bare-sigil.pl
-MATCH	./snippets/perl6-play/1/bool.pl
+DIFF-OUT	./snippets/perl6-play/1/bool.pl
 MATCH	./snippets/perl6-play/1/catch-var.pl
 MATCH	./snippets/perl6-play/1/class-assign.pl
 MATCH	./snippets/perl6-play/1/class-build.pl

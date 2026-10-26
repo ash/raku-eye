@@ -1,0 +1,139 @@
+name	version	released	verdict	detail	seconds	exit	first-error
+Alien::Libduckdb	1.1.0	2026-10-26	pass		2.1	0	
+Alien::Libduckdb	1.0.0	2026-10-26	pass		0.5	0	
+DB::DuckDB	0.3.1	2026-10-26	dep-fail	Concurrent::Stack	9.3	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+DB::DuckDB	0.3.0	2026-10-26	dep-fail	Concurrent::Stack	7.8	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Distribution::Builder::Cmake-alt	0.0.7	2026-10-26	pass		1.1	0	
+Distribution::Builder::Cmake-alt	0.0.6	2026-10-26	pass		0.7	0	
+Distribution::Builder::Cmake-alt	0.0.4	2026-10-26	pass		0.8	0	
+Distribution::Builder::Cmake-alt	0.0.3	2026-10-26	pass		0.7	0	
+Gzz::Readline	0.1.28	2026-10-26	dep-fail	Template::Mustache	8.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.27	2026-10-26	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Math::QuantileRegression	0.0.2	2026-10-26	dep-fail	AttrX::Lazy	5	1	FAILED: 020-basic.t | A method 'bar' already exists, can't create lazy accessor $.bar'
+App::Ariza	0.3.1	2026-10-25	dep-fail	Crane	1.1	1	FAILED: add.rakutest | # Failed test 'Is expected value'
+App::Urls	0.1.25	2026-10-25	dep-fail	IO::Prompt	5.8	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.24	2026-10-25	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.23	2026-10-25	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.22	2026-10-25	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.21	2026-10-25	dep-fail	IO::Prompt	4.3	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+BinaryHeap	2.0.6	2026-10-25	self-fail		0.6	1	FAILED: 01-binaryheap.rakutest | # Failed test 'the heap is not modified if the Seq did not generate any values'
+ClickHouse	0.2.0	2026-10-25	self-fail		0.7	1	FAILED: 01-coerce.t | # Failed test 'Array of Nullable'
+Elucid8::Build	0.13.3	2026-10-25	dep-fail	Test::Deeply::Relaxed	10.7	1	FAILED: 05-cache.rakutest | # Failed test 'non-cached - did not preserve the sequence'
+Gzz::Text::Utils	0.1.38	2026-10-25	dep-fail	Terminal::Width	3.4	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.37	2026-10-25	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.36	2026-10-25	dep-fail	Terminal::Width	3.3	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.35	2026-10-25	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.34	2026-10-25	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.33	2026-10-25	dep-fail	Terminal::Width	3.3	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+JavaScript::Google::Charts	0.1.1	2026-10-25	pass		2.3	0	
+LLM::Agent	0.6.2	2026-10-25	dep-fail	LibraryMake	4.6	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+LLM::Chat	0.10.3	2026-10-25	dep-fail	IO::Socket::Async::SSL	5.6	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+LLM::Classifiers::Emotions	0.1.8	2026-10-25	dep-fail	ONNX::Native	3.2	1	FAILED: 01-ffi.rakutest | # Failed test 'no error set for cpu provider'
+LLM::Data::Inference	0.11.0	2026-10-25	dep-fail	IO::Socket::Async::SSL	6	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+MCP::Client	0.6.1	2026-10-25	dep-fail	IO::Socket::Async::SSL	4.8	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+Math::Splines	0.0.2	2026-10-25	pass		0.5	0	
+Notcurses::Native	0.8.0	2026-10-25	self-fail		1.5	1	FAILED: 10-channel-exhaustive.rakutest | ===SORRY!=== Parse error at line 36: Error while compiling module Notcurses::Native::Str (line 36): expected { (got ':')
+Vips::Native	0.7.1	2026-10-25	self-fail		3.1	1	FAILED: 02-low_level.rakutest | Type check failed in binding to parameter '$out'; expected CArray[VipsImage] but got CArray[Vips::Native::FFI::VipsImage] (NativeCall::Types::C...)
+Vips::Native	0.7.0	2026-10-25	self-fail		2.1	1	FAILED: 02-low_level.rakutest | Type check failed in binding to parameter '$out'; expected CArray[VipsImage] but got CArray[Vips::Native::FFI::VipsImage] (NativeCall::Types::C...)
+App::Ariza	0.3.0	2026-10-24	dep-fail	Crane	0.7	1	FAILED: add.rakutest | # Failed test 'Is expected value'
+App::Urls	0.1.20	2026-10-24	dep-fail	IO::Prompt	4.3	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.18	2026-10-24	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.16	2026-10-24	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+COIN-OR	0.0.3	2026-10-24	pass		0.4	0	
+ComfyUI::API	0.3.1	2026-10-24	dep-fail	IO::Socket::Async::SSL	6.5	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+Data::Transformers	0.0.4	2026-10-24	pass		1.2	0	
+Distribution::Builder::Cmake-alt	0.0.2	2026-10-24	pass		1	0	
+Distribution::Builder::Cmake-alt	0.0.1	2026-10-24	pass		0.8	0	
+Gzz::Readline	0.1.26	2026-10-24	dep-fail	Template::Mustache	2.9	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Text::Utils	0.1.32	2026-10-24	dep-fail	Terminal::Width	3.4	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.31	2026-10-24	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.30	2026-10-24	dep-fail	Terminal::Width	3.6	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.29	2026-10-24	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.28	2026-10-24	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+HuggingFace::API	0.2.4	2026-10-24	dep-fail	IO::Socket::Async::SSL	4.7	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+HuggingFace::API	0.2.3	2026-10-24	dep-fail	IO::Socket::Async::SSL	4.6	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+JobQueue	0.1.3	2026-10-24	pass		6.5	0	
+LLM::Chat	0.10.2	2026-10-24	dep-fail	IO::Socket::Async::SSL	5.5	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+LLM::Chat	0.10.1	2026-10-24	dep-fail	IO::Socket::Async::SSL	5.4	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+LLM::Data::Pipeline	0.8.0	2026-10-24	dep-fail	LibraryMake	1.8	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Client	0.6.0	2026-10-24	dep-fail	IO::Socket::Async::SSL	4.7	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+MCP::Server::Tool::Ask	0.1.3	2026-10-24	dep-fail	IO::Socket::Async::SSL	5	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+MCP::Server::Tool::FileSystem	0.3.0	2026-10-24	dep-fail	LibraryMake	3	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Server::Tool::FileSystem	0.2.5	2026-10-24	dep-fail	LibraryMake	2.6	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Server::Tool::FileSystem	0.2.4	2026-10-24	dep-fail	LibraryMake	2.6	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Server::Tool::FileSystem	0.2.3	2026-10-24	dep-fail	LibraryMake	3.3	1	FAILED: 01-basic.t | Unknown VM; don't know how to build
+MCP::Server::Tool::Shell	0.4.3	2026-10-24	dep-fail	IO::Socket::Async::SSL	5.1	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+MCP::Server::Tool::Shell	0.4.2	2026-10-24	dep-fail	IO::Socket::Async::SSL	4.9	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+MCP::Server::Tool::Web	0.1.2	2026-10-24	dep-fail	IO::Socket::Async::SSL	5.1	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+Math::Optimization	0.0.1	2026-10-24	dep-fail	AttrX::Lazy	2	1	FAILED: 020-basic.t | A method 'bar' already exists, can't create lazy accessor $.bar'
+Math::QuantileRegression	0.0.1	2026-10-24	dep-fail	AttrX::Lazy	2.4	1	FAILED: 020-basic.t | A method 'bar' already exists, can't create lazy accessor $.bar'
+OpenRouter::API	0.2.1	2026-10-24	dep-fail	IO::Socket::Async::SSL	5	1	FAILED: client-server.rakutest | # You planned 24 tests, but ran 23
+Qwiratry::Format::JSON	0.0.2	2026-10-24	dep-fail	Qwiratry::Test	1.2	1	FAILED: 00-use.rakutest | # Failed test 'The module can be use-d ok: Qwiratry::Test::Format'
+Qwiratry::Test	0.0.2	2026-10-24	self-fail		0.7	1	FAILED: 00-use.rakutest | # Failed test 'The module can be use-d ok: Qwiratry::Test::Format'
+BinaryHeap	2.0.5	2026-10-23	self-fail		0.7	1	FAILED: 01-binaryheap.rakutest | # Failed test 'the heap is not modified if the Seq did not generate any values'
+COIN-OR	0.0.2	2026-10-23	pass		0.7	0	
+DB::DuckDB	0.2.0	2026-10-23	dep-fail	Concurrent::Stack	8	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Gnome::Gio	0.1.27	2026-10-23	dep-fail	Gnome::Glib	3.7	1	FAILED: N-List.rakutest | Cannot locate symbol 'gtk_init_check' in native library ''
+Gnome::Gsk4	0.2.1	2026-10-23	dep-fail	Gnome::Glib	1.7	1	FAILED: N-List.rakutest | Cannot locate symbol 'gtk_init_check' in native library ''
+Gnome::Gtk4	0.2.13	2026-10-23	dep-fail	Cairo	3.7	1	FAILED: matrix.t | # Running cairo version: 1.18.0 (module 0.3.6, Raku 2026.09)
+Gzz::Readline	0.1.25	2026-10-23	dep-fail	Template::Mustache	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.24	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.23	2026-10-23	dep-fail	Template::Mustache	3	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.22	2026-10-23	dep-fail	Template::Mustache	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.21	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.20	2026-10-23	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.19	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.18	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.17	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.16	2026-10-23	dep-fail	Template::Mustache	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.15	2026-10-23	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.14	2026-10-23	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.13	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.12	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.11	2026-10-23	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.10	2026-10-23	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.9	2026-10-23	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Qwiratry	0.11.0	2026-10-23	pass		0.6	0	
+RakuPM	1.1.4	2026-10-23	self-fail		2.3	1	FAILED: author-refresh.t | # Failed test 'refresh 退出码 0'
+SEO::WebChecker	1.0.0	2026-10-23	pass		0.8	0	
+App::samaki	0.0.35	2026-10-22	dep-fail	Log::Async	9.4	1	FAILED: 12-context.rakutest | # Failed test 'Got context'
+COIN-OR	0.0.1	2026-10-22	pass		0.5	0	
+Gzz::Readline	0.1.8	2026-10-22	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.7	2026-10-22	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.6	2026-10-22	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.5	2026-10-22	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.4	2026-10-22	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.3	2026-10-22	dep-fail	Template::Mustache	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+Gzz::Readline	0.1.2	2026-10-22	dep-fail	Template::Mustache	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'Standalone interpolation should not alter surrounding whitesp'
+static	0.0.1	2026-10-22	self-fail		0.8	1	FAILED: 01-basic.rakutest | # Failed test 'warn-on-mismatch reports mismatches'
+App::Urls	0.1.15	2026-10-21	dep-fail	IO::Prompt	4.9	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.14	2026-10-21	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.13	2026-10-21	dep-fail	IO::Prompt	4.5	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.12	2026-10-21	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.11	2026-10-21	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.10	2026-10-21	dep-fail	IO::Prompt	4.5	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.9	2026-10-21	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+BinaryHeap	2.0.4	2026-10-21	self-fail		0.7	1	FAILED: 01-binaryheap.rakutest | # Failed test 'the heap is not modified if the Seq did not generate any values'
+Math::NIntegrate	0.0.11	2026-10-21	pass		15.8	0	
+Term::Choose	2.0.7	2026-10-21	pass		2	0	
+App::Urls	0.1.8	2026-10-20	dep-fail	IO::Prompt	4.6	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.7	2026-10-20	dep-fail	IO::Prompt	4.3	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.6	2026-10-20	dep-fail	IO::Prompt	4.3	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+Gzz::Text::Utils	0.1.27	2026-10-20	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.26	2026-10-20	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Gzz::Text::Utils	0.1.25	2026-10-20	dep-fail	Terminal::Width	3.2	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+WebService::CareJobs	1.0.0	2026-10-20	pass		0.7	0	
+YAMLStar	0.1.26	2026-10-20	self-fail		0.7	1	FAILED: 01-basic.rakutest | Shared library file 'libyamlstar.so' not found
+App::Doc-N-Save	0.1.16	2026-10-19	dep-fail	Terminal::Width	3.6	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+App::Urls	0.1.4	2026-10-19	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+App::Urls	0.1.3	2026-10-19	dep-fail	IO::Prompt	4.4	1	FAILED: 01-simple.rakutest | # Failed test 'call "ask_yn( 'da2?', Bool::False )" => "da2? [y/n] " expected "da2? [y/N] "'
+BinaryHeap	2.0.3	2026-10-19	self-fail		0.4	1	FAILED: 01-binaryheap.rakutest | # Failed test 'the heap is not modified if the Seq did not generate any values'
+Gnome::Glib	0.1.14	2026-10-19	self-fail		0.9	1	FAILED: N-List.rakutest | Cannot locate symbol 'gtk_init_check' in native library ''
+LIVR	2.2.1	2026-10-19	self-fail		1.2	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+LIVR	2.2.0	2026-10-19	self-fail		1.1	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+Usage::Utils	0.1.9	2026-10-19	dep-fail	Terminal::Width	4	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+YAMLScript	0.3.6	2026-10-19	self-fail		0.7	1	FAILED: 01-load.rakutest | Shared library file 'libys.so.0.3.6' not found
+App::Doc-N-Save	0.1.15	2026-10-18	dep-fail	Terminal::Width	3.4	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+HTTP::RequestTarget::Raw	0.1.0	2026-10-18	pass		0.7	0	
+Math::NIntegrate	0.0.10	2026-10-18	pass		15.6	0	
+Red	0.2.7	2026-10-18	dep-fail	NativeLibs	3.2	1	FAILED: 02-cannon-name.t | # Failed test 'In CWD'
