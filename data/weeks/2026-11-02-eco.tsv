@@ -1,0 +1,136 @@
+name	version	released	verdict	detail	seconds	exit	first-error
+Arduino	0.0.1	2026-11-02	pass		1.7	0	
+DB::DuckDB	1.0.1	2026-11-02	dep-fail	Concurrent::Stack	9.4	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Distribution::Builder::Cmake-alt	1.0.16	2026-11-02	self-fail		1	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.15	2026-11-02	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.16	2026-11-02	dep-fail	Distribution::Builder::Cmake-alt	3.3	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Red	0.2.8	2026-11-02	dep-fail	Configuration	3	1	FAILED: 01-config.rakutest | error trying to assign 'bla' into type Int
+YAMLScript	0.3.7	2026-11-02	self-fail		0.8	1	FAILED: 01-load.rakutest | Shared library file 'libys.so.0.3.7' not found
+Distribution::Builder::Cmake-alt	1.0.14	2026-11-01	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.13	2026-11-01	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.12	2026-11-01	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.10	2026-11-01	self-fail		0.5	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.9	2026-11-01	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.8	2026-11-01	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.15	2026-11-01	dep-fail	Distribution::Builder::Cmake-alt	2.9	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.14	2026-11-01	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.13	2026-11-01	dep-fail	Distribution::Builder::Cmake-alt	2.9	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+HTML::Canvas	0.1.5	2026-11-01	dep-fail	Getopt::Long	6.9	1	FAILED: basic.rakutest | Unknown option -a
+MCP::Server::Tool::Ask	0.1.5	2026-11-01	dep-fail	MCP::Server	59.6	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+Math::NIntegrate	0.0.12	2026-11-01	pass		20.3	0	
+Mathematica::Serializer	0.2.1	2026-11-01	pass		1.2	0	
+App::DuckETL	0.6.0	2026-10-31	dep-fail	Concurrent::Stack	9.6	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+App::DuckETL	0.4.1	2026-10-31	dep-fail	Concurrent::Stack	10.1	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+App::DuckETL	0.4.0	2026-10-31	dep-fail	Concurrent::Stack	9.4	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+BinaryHeap	2.1.1	2026-10-31	self-fail		76.7	1	FAILED: 01-binaryheap.rakutest | # No such method 'top' for invocant of type 'Iterable'
+CSS::Properties	0.10.11	2026-10-31	dep-fail	CSS::Grammar	1.9	1	FAILED: compat.t | # Could not find symbol '&NameComponent' in 'GLOBAL::CSSValue'
+DB::DuckDB	0.9.2	2026-10-31	dep-fail	Concurrent::Stack	8.4	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+DB::DuckDB	0.9.1	2026-10-31	dep-fail	Concurrent::Stack	8.8	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Distribution::Builder::Cmake-alt	1.0.7	2026-10-31	self-fail		0.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+LLM::Agent	0.6.3	2026-10-31	dep-fail	Template::Jinja2	7.3	1	FAILED: 01-lexer.rakutest | Package 'TemplateActions' already has a method 'expr-part:sym<>' (did you mean to declare a multi method?)
+MCP::Client	0.6.2	2026-10-31	dep-fail	MCP::Server	2.9	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server	0.7.2	2026-10-31	self-fail		2.8	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::Ask	0.1.4	2026-10-31	dep-fail	MCP::Server	3	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.6	2026-10-31	dep-fail	MCP::Server	3.4	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.5	2026-10-31	dep-fail	MCP::Server	3.3	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.4	2026-10-31	dep-fail	MCP::Server	3.2	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.3	2026-10-31	dep-fail	MCP::Server	3.2	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.2	2026-10-31	dep-fail	MCP::Server	3.3	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::FileSystem	0.3.1	2026-10-31	dep-fail	MCP::Server	3.2	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::Shell	0.4.5	2026-10-31	dep-fail	MCP::Server	3	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+MCP::Server::Tool::Shell	0.4.4	2026-10-31	dep-fail	MCP::Server	2.9	1	FAILED: 06-dsl-trait.rakutest | ===SORRY!=== Parse error at line 37: expected ) (got '<')
+PDF::API6	0.2.11	2026-10-31	dep-fail	Hash::int	3.9	1	FAILED: 01-basic.rakutest | This type cannot unbox to a native integer: P6opaque, Str
+PDF::Class	0.5.32	2026-10-31	dep-fail	Getopt::Long	2.8	1	FAILED: basic.rakutest | Unknown option -a
+App::Doc-N-Save	0.1.25	2026-10-30	dep-fail	Terminal::Width	5.2	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.24	2026-10-30	dep-fail	Terminal::Width	4.3	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.23	2026-10-30	dep-fail	Terminal::Width	4.3	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.22	2026-10-30	dep-fail	Terminal::Width	4.4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.21	2026-10-30	dep-fail	Terminal::Width	4.4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.20	2026-10-30	dep-fail	Terminal::Width	4.4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.19	2026-10-30	dep-fail	Terminal::Width	4.5	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.18	2026-10-30	dep-fail	Terminal::Width	4.4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+App::Doc-N-Save	0.1.17	2026-10-30	dep-fail	Terminal::Width	4.4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+Bitcoin::Core::Secp256k1	0.0.29	2026-10-30	dep-fail	Method::Protected	93.4	1	FAILED: 01-basic.rakutest | # Failed test 'can we increment'
+DB::DuckDB	0.8.2	2026-10-30	dep-fail	Concurrent::Stack	9.4	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Distribution::Builder::Cmake-alt	1.0.6	2026-10-30	self-fail		0.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.5	2026-10-30	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.4	2026-10-30	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.3	2026-10-30	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.2	2026-10-30	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	1.0.1	2026-10-30	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Elucid8::Build	0.13.4	2026-10-30	dep-fail	JSON::Unmarshal	5.1	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+Gzz::Readline	1.0.12	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	3	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.11	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.10	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.9	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.8	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.6	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.5	2026-10-30	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Pakku	chou.5	2026-10-30	self-fail		1	1	FAILED: cmd.rakutest | # Failed test 'add Spec'
+BinaryHeap	2.1.0	2026-10-29	self-fail		76.3	1	FAILED: 01-binaryheap.rakutest | # No such method 'top' for invocant of type 'Iterable'
+COIN-OR	0.0.4	2026-10-29	pass		0.8	0	
+DB::DuckDB	0.7.1	2026-10-29	dep-fail	Concurrent::Stack	8.5	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+DB::DuckDB	0.7.0	2026-10-29	dep-fail	Concurrent::Stack	8.7	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Data::TypeSystem	0.1.9	2026-10-29	pass		0.9	0	
+LWP::Simple	0.110	2026-10-29	self-fail		1.7	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+Math::Optimization	0.0.3	2026-10-29	dep-fail	Math::Matrix	2.3	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Math::QuantileRegression	0.0.4	2026-10-29	dep-fail	Math::Matrix	3.8	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Math::Regressionizer	0.0.3	2026-10-29	dep-fail	Math::Matrix	4.1	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Math::SparseMatrix	0.0.16	2026-10-29	dep-fail	Math::SparseMatrix::Native	3	1	FAILED: 07-values-operations.rakutest | # Failed test 'expected min'
+Pakku	chou.4	2026-10-29	self-fail		0.8	1	FAILED: cmd.rakutest | # Failed test 'add Spec'
+Parameterizable	0.0.4	2026-10-29	pass		0.7	0	
+Rakuast::RakuDoc::Render	1.1.5	2026-10-29	dep-fail	JSON::Unmarshal	4.5	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+Testo	2.0	2026-10-29	self-fail		0.7	1	FAILED: 01-is.rakutest | Cannot resolve caller say(Failure:D: ...); none of these signatures matches:
+DB::DuckDB	0.6.5	2026-10-28	dep-fail	Concurrent::Stack	8.1	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+DSL::English::QuantileRegressionWorkflows	0.8.4	2026-10-28	dep-fail	Clipboard	3.3	1	FAILED: 01-copy-to-clipboard.t | /bin/sh: 1: xclip: not found
+Gzz::Readline	1.0.4	2026-10-28	dep-fail	Distribution::Builder::Cmake-alt	3.1	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.3	2026-10-28	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.2	2026-10-28	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	1.0.1	2026-10-28	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Math::Regressionizer	0.0.2	2026-10-28	dep-fail	Math::Matrix	3.9	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Woxi	0.0.1	2026-10-28	pass		2.7	0	
+YAMLStar	0.1.28	2026-10-28	self-fail		0.7	1	FAILED: 01-basic.rakutest | Shared library file 'libyamlstar.so' not found
+DB::DuckDB	0.5.0	2026-10-27	dep-fail	Concurrent::Stack	8.4	1	FAILED: stress.rakutest | # Failed test 'Pushed/popped correct values'
+Distribution::Builder::Cmake-alt	1.0.0	2026-10-27	self-fail		0.5	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.25	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.24	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.23	2026-10-27	self-fail		0.5	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.22	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.21	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.20	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.19	2026-10-27	self-fail		0.5	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.18	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.17	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.16	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.15	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.14	2026-10-27	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Duckie	0.0.14	2026-10-27	dep-fail	Log::Async	7.6	1	FAILED: 12-context.rakutest | # Failed test 'Got context'
+Gzz::Readline	1.0.0	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.44	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.43	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.42	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.41	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.40	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.39	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.8	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.38	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.37	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.36	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.35	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.34	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.33	2026-10-27	dep-fail	Distribution::Builder::Cmake-alt	2.9	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Math::Optimization	0.0.2	2026-10-27	dep-fail	Math::Matrix	1.9	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Math::QuantileRegression	0.0.3	2026-10-27	dep-fail	Math::Matrix	2.4	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Math::Regressionizer	0.0.1	2026-10-27	dep-fail	Math::Matrix	3.9	1	FAILED: 010-load.rakutest | # Failed test 'The module can be use-d ok: Math::Matrix'
+Distribution::Builder::Cmake-alt	0.0.13	2026-10-26	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.12	2026-10-26	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.11	2026-10-26	self-fail		0.5	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.10	2026-10-26	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Distribution::Builder::Cmake-alt	0.0.9	2026-10-26	self-fail		0.6	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+FFmpegProgressBar	0.0.9	2026-10-26	dep-fail	Pod::Load	4	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+FFmpegProgressBar	0.0.8	2026-10-26	dep-fail	Pod::Load	3.2	1	FAILED: 080-trait.rakutest | # Failed test 'and all array objects were checked'
+Git::Blame::File	0.0.12	2026-10-26	pass		0.7	0	
+Gzz::Readline	0.1.32	2026-10-26	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.31	2026-10-26	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.30	2026-10-26	dep-fail	Distribution::Builder::Cmake-alt	2.9	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+Gzz::Readline	0.1.29	2026-10-26	dep-fail	Distribution::Builder::Cmake-alt	2.7	1	FAILED: 01-basic.rakutest | # Failed test 'build process'
+WebDriver2	0.2.1	2026-10-26	dep-fail	HTTP::UserAgent::Strict	14.7	1	FAILED: 081-ua-strict-interop.rakutest | # Failed test 'length matches'

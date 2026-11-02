@@ -1,4 +1,6 @@
-# run=12 commit=f6cede71bf6f161cff15bfaae66222253d5226bb date=2026-10-26
+# run=13 commit=3d1fb627ec911dac2eda6bca3bca434990c0ea9f date=2026-11-02
+match	challenge-094/jaldhar-h-vyas/raku/ch-1.raku
+skip-rakudo-fails	challenge-094/jaldhar-h-vyas/raku/ch-2.raku
 match	challenge-128/jaldhar-h-vyas/raku/ch-1.raku
 skip-rakudo-fails	challenge-128/jaldhar-h-vyas/raku/ch-2.raku
 skip-rakudo-fails	challenge-129/jaldhar-h-vyas/raku/ch-1.raku
@@ -340,7 +342,7 @@ skip-nondeterministic	challenge-385/ash/raku/1.raku
 match	challenge-385/ash/raku/2.raku
 skip-nondeterministic	challenge-385/asherbhs/raku/ch-1.raku
 match	challenge-385/asherbhs/raku/ch-2.raku
-match	challenge-385/athanasius/raku/ch-1.raku
+mismatch	challenge-385/athanasius/raku/ch-1.raku
 match	challenge-385/athanasius/raku/ch-2.raku
 skip-rakudo-fails	challenge-385/davidsmith3/raku/ch-1.raku
 skip-rakudo-fails	challenge-385/davidsmith3/raku/ch-2.raku
@@ -569,3 +571,23 @@ match	challenge-396/ulrich-rieke/raku/ch-1.raku
 match	challenge-396/ulrich-rieke/raku/ch-2.raku
 match	challenge-396/zapwai/raku/ch-1.raku
 match	challenge-396/zapwai/raku/ch-2.raku
+skip-rakudo-fails	challenge-397/arne-sommer/raku/ch-1.raku
+skip-rakudo-fails	challenge-397/arne-sommer/raku/ch-2.raku
+mismatch	challenge-397/athanasius/raku/ch-1.raku
+mismatch	challenge-397/athanasius/raku/ch-2.raku
+skip-rakudo-fails	challenge-397/davidsmith3/raku/ch-1.raku
+match	challenge-397/davidsmith3/raku/ch-2.raku
+skip-rakudo-fails	challenge-397/jaldhar-h-vyas/raku/ch-1.raku
+match	challenge-397/jaldhar-h-vyas/raku/ch-2.raku
+match	challenge-397/mark-anderson/raku/ch-1.raku
+match	challenge-397/mark-anderson/raku/ch-2.raku
+match	challenge-397/mohammad-anwar/raku/ch-1.raku
+match	challenge-397/mohammad-anwar/raku/ch-2.raku
+match	challenge-397/packy-anderson/raku/ch-1.raku
+match	challenge-397/packy-anderson/raku/ch-2.raku
+match	challenge-397/roger-bell-west/raku/ch-1.p6
+match	challenge-397/roger-bell-west/raku/ch-2.p6
+match	challenge-397/ulrich-rieke/raku/ch-1.raku
+match	challenge-397/ulrich-rieke/raku/ch-2.raku
+match	challenge-397/zapwai/raku/ch-1.raku
+match	challenge-397/zapwai/raku/ch-2.raku

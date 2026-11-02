@@ -1,4 +1,4 @@
-# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-10-26
+# corpus-commit=f3727e1afa010c2b7f659b4461aac13bd6e83e71 date=2026-11-02
 MATCH	./books/perl6-at-a-glance/Greet.pm
 MATCH	./books/perl6-at-a-glance/Math.pm
 MATCH	./books/perl6-at-a-glance/N.pm
@@ -331,8 +331,8 @@ MATCH	./books/using-raku/bit-count.pl
 MATCH	./books/using-raku/bit-count2.pl
 MATCH	./books/using-raku/brainfuck.pl
 MATCH	./books/using-raku/caesar.pl
-DIFF-OUT	./books/using-raku/calculator-grammars.pl
-DIFF-OUT	./books/using-raku/calculator-regexes.pl
+MATCH	./books/using-raku/calculator-grammars.pl
+MATCH	./books/using-raku/calculator-regexes.pl
 MATCH	./books/using-raku/camel-case.pl
 MATCH	./books/using-raku/cat.pl
 MATCH	./books/using-raku/cat2.pl
@@ -780,9 +780,9 @@ MATCH	./course/exercises/advanced/metaoperators/concatenate-a-list.raku
 MATCH	./course/exercises/advanced/metaoperators/factorial.raku
 MATCH	./course/exercises/advanced/metaoperators/sum-of-array.raku
 MATCH	./course/exercises/advanced/module-introspection/list-the-symbols/Circle.rakumod
-DIFF-OUT	./course/exercises/advanced/module-introspection/list-the-symbols/list.raku
+MATCH	./course/exercises/advanced/module-introspection/list-the-symbols/list.raku
 MATCH	./course/exercises/advanced/module-introspection/lookup-symbol/Circle.rakumod
-DIFF-OUT	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku
+MATCH	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku
 MATCH	./course/exercises/advanced/modules-basics/maths-module/Maths.rakumod
 MATCH	./course/exercises/advanced/modules-basics/maths-module/maths.raku
 MATCH	./course/exercises/advanced/modules-basics/read-the-constant/Circle.rakumod
@@ -1199,7 +1199,7 @@ DIFF-EXIT	./programs/lingua/lingua
 MATCH	./programs/lingua/misc/ast-dumper.raku
 MATCH	./programs/lingua/misc/calc.raku
 MATCH	./programs/lingua/misc/junction.raku
-DIFF-OUT	./programs/lingua/misc/parse_number.raku
+MATCH	./programs/lingua/misc/parse_number.raku
 MATCH	./programs/lingua/misc/parse_number_raku.raku
 MATCH	./programs/lingua/run-tests
 MATCH	./programs/num-seq/fibonacci/fibonacci-cached.raku

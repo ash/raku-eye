@@ -1,0 +1,6 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./books/using-raku/calculator-grammars.pl	DIFF-OUT	MATCH						
+fix	./books/using-raku/calculator-regexes.pl	DIFF-OUT	MATCH						
+fix	./course/exercises/advanced/module-introspection/list-the-symbols/list.raku	DIFF-OUT	MATCH						
+fix	./course/exercises/advanced/module-introspection/lookup-symbol/lookup.raku	DIFF-OUT	MATCH						
+fix	./programs/lingua/misc/parse_number.raku	DIFF-OUT	MATCH						
