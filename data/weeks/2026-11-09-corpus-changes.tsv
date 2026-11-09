@@ -1,0 +1,2 @@
+kind	file	was	now	exit	expected_exit	line	expected	got	stderr
+fix	./snippets/perl6-play/1/bool.pl	DIFF-OUT	MATCH						

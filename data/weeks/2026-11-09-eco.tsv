@@ -1,0 +1,63 @@
+name	version	released	verdict	detail	seconds	exit	first-error
+Interval	0.0.7	2026-11-09	self-fail		1	1	FAILED: 01-basic.rakutest | # Failed test 'does addition work'
+JavaScript::D3	0.3.4	2026-11-08	self-fail		16.6	1	FAILED: 06-named-colors.rakutest | # Failed test 'The object is-a 'Map''
+LIVR	2.3.1	2026-11-08	self-fail		1.5	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+LLM::Chat	0.10.4	2026-11-08	dep-fail	Template::Jinja2	55.8	1	FAILED: 01-lexer.rakutest | Package 'TemplateActions' already has a method 'expr-part:sym<>' (did you mean to declare a multi method?)
+LLM::Data::Inference	0.13.0	2026-11-08	dep-fail	Template::Jinja2	3.2	1	FAILED: 01-lexer.rakutest | Package 'TemplateActions' already has a method 'expr-part:sym<>' (did you mean to declare a multi method?)
+LLM::Data::Inference	0.12.0	2026-11-08	dep-fail	Template::Jinja2	2.8	1	FAILED: 01-lexer.rakutest | Package 'TemplateActions' already has a method 'expr-part:sym<>' (did you mean to declare a multi method?)
+FFmpegProgressBar	0.0.10	2026-11-07	dep-fail	Pod::To::Man	3.6	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+LIVR	2.3.0	2026-11-07	self-fail		1.1	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+LIVR	2.2.2	2026-11-07	self-fail		1.2	1	FAILED: 01-parse.t | # Failed test 'right exception type (X::JSON::Tiny::Invalid)'
+Red	0.2.10	2026-11-07	dep-fail	Configuration	2.4	1	FAILED: 01-config.rakutest | error trying to assign 'bla' into type Int
+Sitemap	0.0.2	2026-11-07	dep-fail	Method::Also	4.5	1	FAILED: 01-basic.rakutest | Dynamic variable $*TYPE-ENV not found
+Syndicate	0.0.7	2026-11-07	self-fail		10.6	1	FAILED: 27-audit-round-10.rakutest | # Failed test 'failing extension parse is counted'
+Test::Selector	0.4.3	2026-11-07	self-fail		1.8	1	FAILED: all.rakutest | # Failed test 't_ignore-test Out okay.'
+Arduino::WiFi	0.0.1	2026-11-06	pass		0.7	0	
+EEL	0.3	2026-11-06	self-fail		0.9	1	FAILED: 04-slang.t | ===SORRY!=== Parse error at line 5: `use EEL`: the slang failed to activate: Invalid typename 'Tappable' (got 'sub')
+JavaScript::D3	0.3.3	2026-11-06	self-fail		3	1	FAILED: 06-named-colors.rakutest | # Failed test 'The object is-a 'Map''
+Rakuish	0.20.0	2026-11-06	dep-fail	Commands	1.2	1	FAILED: 01-basic.rakutest | # Failed test 'sys'
+Sparrowdo	0.1.58	2026-11-06	dep-fail	Data::Dump	3	1	FAILED: 01-hash.t | Cannot resolve caller Dump(Hash:D, :color(Bool)); none of these signatures matches:
+EEL	0.2	2026-11-05	self-fail		0.6	1	FAILED: 04-slang.t | ===SORRY!=== Parse error at line 5: `use EEL`: the slang failed to activate: Invalid typename 'Tappable' (got 'sub')
+EEL	0.1	2026-11-05	self-fail		0.6	1	FAILED: 04-slang.t | ===SORRY!=== Parse error at line 5: `use EEL`: the slang failed to activate: Invalid typename 'Tappable' (got 'sub')
+JavaScript::D3	0.3.2	2026-11-05	self-fail		2.9	1	FAILED: 06-named-colors.rakutest | # Failed test 'The object is-a 'Map''
+Rakuish	0.17.7	2026-11-05	dep-fail	Commands	0.5	1	FAILED: 01-basic.rakutest | # Failed test 'sys'
+Rakuish	0.17.4	2026-11-05	dep-fail	Commands	0.5	1	FAILED: 01-basic.rakutest | # Failed test 'sys'
+Slang::Quotes	0.0.1	2026-11-05	self-fail		0.8	1	FAILED: 01-quotes.rakutest | ===SORRY!=== Parse error at line 4: `use Slang::Quotes`: it overrides `quote:sym<hdcqmo>`, which rakupp cannot apply (docs/dev/plans/SLANG-PLAN.md) (got 'plan')
+Web::Lite	0.1.0	2026-11-05	self-fail		4.8	1	FAILED: 01-basic.rakutest | Web::Lite handler error: Cannot resolve caller next(Any:U); none of these signatures matches:
+Distribution::Builder::Cmake-alt	1.0.32	2026-11-04	dep-fail	Pod::To::Man	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+HTTP::Core	0.1.0	2026-11-04	self-fail		2.9	1	FAILED: 01-parse.rakutest | ===SORRY!=== Parse error at line 1: Error while compiling module HTTP::Core::Native (line 1): unexpected operator in term position (got '﻿')
+Injector	0.0.3	2026-11-04	self-fail		1.4	1	FAILED: 02-test.rakutest | Undefined routine 'bind'
+Injector	0.0.2	2026-11-04	self-fail		1.1	1	FAILED: 02-test.rakutest | Undefined routine 'bind'
+App::Doc-N-Save	0.1.30	2026-11-03	dep-fail	Terminal::Width	3.8	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+App::Doc-N-Save	0.1.29	2026-11-03	dep-fail	Terminal::Width	3.3	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+App::Doc-N-Save	0.1.28	2026-11-03	dep-fail	Terminal::Width	3.5	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+App::Doc-N-Save	0.1.27	2026-11-03	dep-fail	Terminal::Width	3.4	1	FAILED: 00-use.t | tput: No value for $TERM and no -T specified
+Arduino::LEDMatrix	0.0.1	2026-11-03	pass		0.7	0	
+Distribution::Builder::Auto	0.0.1	2026-11-03	dep-fail	Pod::To::Man	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.31	2026-11-03	dep-fail	Pod::To::Man	2.2	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.30	2026-11-03	dep-fail	Pod::To::Man	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.29	2026-11-03	dep-fail	Pod::To::Man	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.28	2026-11-03	dep-fail	Pod::To::Man	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.27	2026-11-03	dep-fail	Pod::To::Man	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.26	2026-11-03	dep-fail	Pod::To::Man	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.25	2026-11-03	dep-fail	Pod::To::Man	2.2	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.24	2026-11-03	dep-fail	Pod::To::Man	2.2	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.23	2026-11-03	dep-fail	Pod::To::Man	2.3	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Gzz::Readline	1.0.20	2026-11-03	dep-fail	Pod::To::Man	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Gzz::Readline	1.0.19	2026-11-03	dep-fail	Pod::To::Man	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Text::Utils	4.0.4	2026-11-03	dep-fail	Pod::To::HTML	4.6	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83133-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Text::Utils	4.0.3	2026-11-03	dep-fail	Pod::To::HTML	1.9	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83185-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Distribution::Builder::Cmake-alt	1.0.22	2026-11-02	dep-fail	Pod::To::Man	2.3	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.19	2026-11-02	dep-fail	Pod::To::Man	2.4	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.18	2026-11-02	dep-fail	Pod::To::Man	2.3	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Distribution::Builder::Cmake-alt	1.0.17	2026-11-02	dep-fail	Pod::To::Man	2.3	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Gzz::Readline	1.0.18	2026-11-02	dep-fail	Pod::To::Man	2.6	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Gzz::Readline	1.0.17	2026-11-02	dep-fail	Pod::To::Man	2.5	1	FAILED: 01-basic.rakutest | # Failed test 'has the class documentation'
+Pod::To::HTML	0.9.3	2026-11-02	self-fail		1.7	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83278-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Pod::To::HTML	0.9.2	2026-11-02	self-fail		1.7	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83293-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Pod::To::HTML	0.9.1	2026-11-02	self-fail		1.6	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83308-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Pod::To::Markdown	0.2.3	2026-11-02	dep-fail	Pod::To::HTML	1.6	1	FAILED: 011-external.rakutest | Failed to get the directory contents of '/tmp/rakupp-install-83326-Pod--To--HTML/Pod-To-HTML-0.9.3/Pod, indicated by extension.': No such file or directory
+Red	0.2.9	2026-11-02	dep-fail	Configuration	2.2	1	FAILED: 01-config.rakutest | error trying to assign 'bla' into type Int
+Red::Driver::Pg	0.0.1	2026-11-02	dep-fail	NativeLibs	3.7	1	FAILED: 02-cannon-name.t | # Failed test 'In CWD'
+Property::Text::Controls	1.1.0	1969-12-31	self-fail		6.5	1	FAILED: utf8-offsets.rakutest | # Failed test 'code dies'
+Property::Text::Controls	1.0.0	1969-12-31	self-fail		6.3	1	FAILED: utf8-offsets.rakutest | # Failed test 'code dies'
